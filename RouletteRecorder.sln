@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32414.318
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RouletteRecorder", "RouletteRecorder\RouletteRecorder.csproj", "{112FE70D-6D9F-4C9F-B4E1-83F142BA36D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RouletteRecorderPayload", "RouletteRecorderPayload\RouletteRecorderPayload.csproj", "{227A098B-9E73-4363-8000-5FF63A90DA00}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RouletteRecorderConsole", "RouletteRecorderConsole\RouletteRecorderConsole.csproj", "{6DDEB45E-E787-471B-B64C-84993614FAE0}"
+	ProjectSection(ProjectDependencies) = postProject
+		{112FE70D-6D9F-4C9F-B4E1-83F142BA36D2} = {112FE70D-6D9F-4C9F-B4E1-83F142BA36D2}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{112FE70D-6D9F-4C9F-B4E1-83F142BA36D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{112FE70D-6D9F-4C9F-B4E1-83F142BA36D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{112FE70D-6D9F-4C9F-B4E1-83F142BA36D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{112FE70D-6D9F-4C9F-B4E1-83F142BA36D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{227A098B-9E73-4363-8000-5FF63A90DA00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{227A098B-9E73-4363-8000-5FF63A90DA00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{227A098B-9E73-4363-8000-5FF63A90DA00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{227A098B-9E73-4363-8000-5FF63A90DA00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6DDEB45E-E787-471B-B64C-84993614FAE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DDEB45E-E787-471B-B64C-84993614FAE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DDEB45E-E787-471B-B64C-84993614FAE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DDEB45E-E787-471B-B64C-84993614FAE0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D847B7CF-4D40-4F41-83BA-08A27E1A08D2}
+	EndGlobalSection
+EndGlobal
