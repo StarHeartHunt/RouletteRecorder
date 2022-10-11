@@ -2,6 +2,7 @@
 using RouletteRecorder.Utils;
 using System;
 using System.Linq;
+using System.Windows.Controls;
 
 namespace RouletteRecorder.Monitors
 {
@@ -37,23 +38,7 @@ namespace RouletteRecorder.Monitors
 
             HandleMessageByOpcode(message);
         }
-        int Search(byte[] src, byte[] pattern)
-        {
-            int maxFirstCharSlot = src.Length - pattern.Length + 1;
-            for (int i = 0; i < maxFirstCharSlot; i++)
-            {
-                if (src[i] != pattern[0]) // compare only first byte
-                    continue;
 
-                // found a match on first byte, now try to match rest of the pattern
-                for (int j = pattern.Length - 1; j >= 1; j--)
-                {
-                    if (src[i + j] != pattern[j]) break;
-                    if (j == 1) return i;
-                }
-            }
-            return -1;
-        }
         public static byte[] StringToByteArray(string hex)
         {
             return Enumerable.Range(0, hex.Length)
@@ -64,6 +49,28 @@ namespace RouletteRecorder.Monitors
 
         private bool HandleMessageByOpcode(byte[] message)
         {
+            /*
+            try
+            {
+                if (message.Length == 128)
+                {
+                var data1 = message.Skip(32).ToArray();
+                Log.Debug(
+                String.Format("Opcode:{0},Server:{1},Zone:{2},Instance:{3},Content:{4}",
+                BitConverter.ToUInt16(message, 18),
+                BitConverter.ToUInt16(data1, 0),
+                BitConverter.ToUInt16(data1, 2),
+                BitConverter.ToUInt16(data1, 4),
+                BitConverter.ToUInt16(data1, 6)
+                ));
+                }
+            }
+            catch
+            {
+
+            }
+            */
+
             if (!ToInternalOpcode(BitConverter.ToUInt16(message, 18), out var opcode))
             {
                 return false;
@@ -123,9 +130,9 @@ namespace RouletteRecorder.Monitors
                 {
                     return false;
                 }
-
                 var roulette = BitConverter.ToUInt16(data, 2);
                 var instance = roulette == 0 ? BitConverter.ToUInt16(data, 20) : 0;
+                Log.Info(string.Format("[ContentFinderNotifyPop] roulette:{0}, instance:{1}", roulette, instance));
                 RouletteSingleton.Instance.Init();
                 if (roulette == 0) return false;
                 if (Data.Instance.Roulettes.TryGetValue(roulette, out var rouletteName))
@@ -136,7 +143,6 @@ namespace RouletteRecorder.Monitors
                 {
                     RouletteSingleton.Instance.RouletteType = "未知随机任务";
                 }
-                Log.Info("Detected ContentFinderNotifyPop");
 
             }
 

@@ -28,17 +28,17 @@ namespace RouletteRecorder.Constant
     {
         public static Dictionary<ushort, Opcode> China = new Dictionary<ushort, Opcode>
         {
-            { 0x012d, Opcode.ActorControl },
-            { 0x02b4, Opcode.ActorControlSelf },
+            { 0x01d4, Opcode.ActorControl },
+            { 0x012c, Opcode.ActorControlSelf },
             { 0x0356, Opcode.CEDirector },
             { 0x01e7, Opcode.CompanyAirshipStatus },
             { 0x0101, Opcode.CompanySubmersibleStatus },
-            { 0x03d1, Opcode.ContentFinderNotifyPop },
+            { 0x0317, Opcode.ContentFinderNotifyPop },
             { 0x011a, Opcode.DirectorStart },
             { 0x0321, Opcode.EventPlay },
             { 0x01c7, Opcode.Examine },
             { 0x01b5, Opcode.FateInfo },
-            { 0x019b, Opcode.InitZone },
+            { 0x012e, Opcode.InitZone },
             { 0x0281, Opcode.InventoryTransaction },
             { 0x03bc, Opcode.ItemInfo },
             { 0x0190, Opcode.MarketBoardItemListing },
