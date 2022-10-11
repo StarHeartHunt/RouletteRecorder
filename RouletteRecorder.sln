@@ -12,6 +12,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RouletteRecorderConsole", "
 		{112FE70D-6D9F-4C9F-B4E1-83F142BA36D2} = {112FE70D-6D9F-4C9F-B4E1-83F142BA36D2}
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{CD17C8C5-E555-4DBF-92A7-A4447321D1D4}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
