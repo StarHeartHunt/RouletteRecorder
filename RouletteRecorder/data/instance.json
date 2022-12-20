@@ -7,12 +7,12 @@
       "de": null,
       "fr": null
     },
-    "type": "2",
-    "level": "24",
-    "levelSync": "27",
-    "item": "0",
-    "itemSync": "0",
-    "memberType": "2"
+    "type": 2,
+    "level": 24,
+    "levelSync": 27,
+    "item": 0,
+    "itemSync": 0,
+    "memberType": 2
   },
   "2": {
     "name": {
@@ -22,12 +22,12 @@
       "de": null,
       "fr": null
     },
-    "type": "2",
-    "level": "16",
-    "levelSync": "19",
-    "item": "0",
-    "itemSync": "0",
-    "memberType": "2"
+    "type": 2,
+    "level": 16,
+    "levelSync": 19,
+    "item": 0,
+    "itemSync": 0,
+    "memberType": 2
   },
   "3": {
     "name": {
@@ -37,12 +37,12 @@
       "de": null,
       "fr": null
     },
-    "type": "2",
-    "level": "17",
-    "levelSync": "20",
-    "item": "0",
-    "itemSync": "0",
-    "memberType": "2"
+    "type": 2,
+    "level": 17,
+    "levelSync": 20,
+    "item": 0,
+    "itemSync": 0,
+    "memberType": 2
   },
   "4": {
     "name": {
@@ -52,12 +52,12 @@
       "de": null,
       "fr": null
     },
-    "type": "2",
-    "level": "15",
-    "levelSync": "18",
-    "item": "0",
-    "itemSync": "0",
-    "memberType": "2"
+    "type": 2,
+    "level": 15,
+    "levelSync": 18,
+    "item": 0,
+    "itemSync": 0,
+    "memberType": 2
   },
   "5": {
     "name": {
@@ -67,12 +67,12 @@
       "de": null,
       "fr": null
     },
-    "type": "2",
-    "level": "47",
-    "levelSync": "49",
-    "item": "0",
-    "itemSync": "0",
-    "memberType": "2"
+    "type": 2,
+    "level": 47,
+    "levelSync": 49,
+    "item": 0,
+    "itemSync": 0,
+    "memberType": 2
   },
   "6": {
     "name": {
@@ -82,12 +82,12 @@
       "de": null,
       "fr": null
     },
-    "type": "2",
-    "level": "28",
-    "levelSync": "31",
-    "item": "0",
-    "itemSync": "0",
-    "memberType": "2"
+    "type": 2,
+    "level": 28,
+    "levelSync": 31,
+    "item": 0,
+    "itemSync": 0,
+    "memberType": 2
   },
   "7": {
     "name": {
@@ -97,12 +97,12 @@
       "de": null,
       "fr": null
     },
-    "type": "2",
-    "level": "20",
-    "levelSync": "23",
-    "item": "0",
-    "itemSync": "0",
-    "memberType": "2"
+    "type": 2,
+    "level": 20,
+    "levelSync": 23,
+    "item": 0,
+    "itemSync": 0,
+    "memberType": 2
   },
   "8": {
     "name": {
@@ -112,12 +112,12 @@
       "de": null,
       "fr": null
     },
-    "type": "2",
-    "level": "32",
-    "levelSync": "34",
-    "item": "0",
-    "itemSync": "0",
-    "memberType": "2"
+    "type": 2,
+    "level": 32,
+    "levelSync": 34,
+    "item": 0,
+    "itemSync": 0,
+    "memberType": 2
   },
   "9": {
     "name": {
@@ -127,12 +127,12 @@
       "de": null,
       "fr": null
     },
-    "type": "2",
-    "level": "35",
-    "levelSync": "37",
-    "item": "0",
-    "itemSync": "0",
-    "memberType": "2"
+    "type": 2,
+    "level": 35,
+    "levelSync": 37,
+    "item": 0,
+    "itemSync": 0,
+    "memberType": 2
   },
   "10": {
     "name": {
@@ -142,12 +142,12 @@
       "de": null,
       "fr": null
     },
-    "type": "2",
-    "level": "50",
-    "levelSync": "50",
-    "item": "45",
-    "itemSync": "110",
-    "memberType": "2"
+    "type": 2,
+    "level": 50,
+    "levelSync": 50,
+    "item": 45,
+    "itemSync": 110,
+    "memberType": 2
   },
   "11": {
     "name": {
@@ -157,12 +157,12 @@
       "de": null,
       "fr": null
     },
-    "type": "2",
-    "level": "41",
-    "levelSync": "43",
-    "item": "0",
-    "itemSync": "0",
-    "memberType": "2"
+    "type": 2,
+    "level": 41,
+    "levelSync": 43,
+    "item": 0,
+    "itemSync": 0,
+    "memberType": 2
   },
   "12": {
     "name": {
@@ -172,12 +172,12 @@
       "de": null,
       "fr": null
     },
-    "type": "2",
-    "level": "38",
-    "levelSync": "40",
-    "item": "0",
-    "itemSync": "0",
-    "memberType": "2"
+    "type": 2,
+    "level": 38,
+    "levelSync": 40,
+    "item": 0,
+    "itemSync": 0,
+    "memberType": 2
   },
   "13": {
     "name": {
@@ -187,12 +187,12 @@
       "de": null,
       "fr": null
     },
-    "type": "2",
-    "level": "44",
-    "levelSync": "46",
-    "item": "0",
-    "itemSync": "0",
-    "memberType": "2"
+    "type": 2,
+    "level": 44,
+    "levelSync": 46,
+    "item": 0,
+    "itemSync": 0,
+    "memberType": 2
   },
   "14": {
     "name": {
@@ -202,12 +202,12 @@
       "de": null,
       "fr": null
     },
-    "type": "2",
-    "level": "50",
-    "levelSync": "50",
-    "item": "45",
-    "itemSync": "110",
-    "memberType": "2"
+    "type": 2,
+    "level": 50,
+    "levelSync": 50,
+    "item": 45,
+    "itemSync": 110,
+    "memberType": 2
   },
   "15": {
     "name": {
@@ -217,12 +217,12 @@
       "de": null,
       "fr": null
     },
-    "type": "2",
-    "level": "50",
-    "levelSync": "50",
-    "item": "42",
-    "itemSync": "60",
-    "memberType": "2"
+    "type": 2,
+    "level": 50,
+    "levelSync": 50,
+    "item": 42,
+    "itemSync": 60,
+    "memberType": 2
   },
   "16": {
     "name": {
@@ -232,12 +232,12 @@
       "de": null,
       "fr": null
     },
-    "type": "2",
-    "level": "50",
-    "levelSync": "50",
-    "item": "42",
-    "itemSync": "60",
-    "memberType": "2"
+    "type": 2,
+    "level": 50,
+    "levelSync": 50,
+    "item": 42,
+    "itemSync": 60,
+    "memberType": 2
   },
   "17": {
     "name": {
@@ -247,12 +247,12 @@
       "de": null,
       "fr": null
     },
-    "type": "2",
-    "level": "50",
-    "levelSync": "50",
-    "item": "48",
-    "itemSync": "110",
-    "memberType": "2"
+    "type": 2,
+    "level": 50,
+    "levelSync": 50,
+    "item": 48,
+    "itemSync": 110,
+    "memberType": 2
   },
   "18": {
     "name": {
@@ -262,12 +262,12 @@
       "de": null,
       "fr": null
     },
-    "type": "2",
-    "level": "50",
-    "levelSync": "50",
-    "item": "48",
-    "itemSync": "110",
-    "memberType": "2"
+    "type": 2,
+    "level": 50,
+    "levelSync": 50,
+    "item": 48,
+    "itemSync": 110,
+    "memberType": 2
   },
   "19": {
     "name": {
@@ -277,12 +277,12 @@
       "de": null,
       "fr": null
     },
-    "type": "2",
-    "level": "50",
-    "levelSync": "50",
-    "item": "48",
-    "itemSync": "110",
-    "memberType": "2"
+    "type": 2,
+    "level": 50,
+    "levelSync": 50,
+    "item": 48,
+    "itemSync": 110,
+    "memberType": 2
   },
   "20": {
     "name": {
@@ -292,12 +292,12 @@
       "de": null,
       "fr": null
     },
-    "type": "2",
-    "level": "50",
-    "levelSync": "50",
-    "item": "55",
-    "itemSync": "110",
-    "memberType": "2"
+    "type": 2,
+    "level": 50,
+    "levelSync": 50,
+    "item": 55,
+    "itemSync": 110,
+    "memberType": 2
   },
   "21": {
     "name": {
@@ -307,12 +307,12 @@
       "de": null,
       "fr": null
     },
-    "type": "2",
-    "level": "50",
-    "levelSync": "50",
-    "item": "55",
-    "itemSync": "110",
-    "memberType": "2"
+    "type": 2,
+    "level": 50,
+    "levelSync": 50,
+    "item": 55,
+    "itemSync": 110,
+    "memberType": 2
   },
   "22": {
     "name": {
@@ -322,12 +322,12 @@
       "de": null,
       "fr": null
     },
-    "type": "2",
-    "level": "50",
-    "levelSync": "50",
-    "item": "55",
-    "itemSync": "110",
-    "memberType": "2"
+    "type": 2,
+    "level": 50,
+    "levelSync": 50,
+    "item": 55,
+    "itemSync": 110,
+    "memberType": 2
   },
   "23": {
     "name": {
@@ -337,12 +337,12 @@
       "de": null,
       "fr": null
     },
-    "type": "2",
-    "level": "50",
-    "levelSync": "50",
-    "item": "70",
-    "itemSync": "110",
-    "memberType": "2"
+    "type": 2,
+    "level": 50,
+    "levelSync": 50,
+    "item": 70,
+    "itemSync": 110,
+    "memberType": 2
   },
   "24": {
     "name": {
@@ -352,12 +352,12 @@
       "de": null,
       "fr": null
     },
-    "type": "2",
-    "level": "50",
-    "levelSync": "50",
-    "item": "70",
-    "itemSync": "110",
-    "memberType": "2"
+    "type": 2,
+    "level": 50,
+    "levelSync": 50,
+    "item": 70,
+    "itemSync": 110,
+    "memberType": 2
   },
   "25": {
     "name": {
@@ -367,12 +367,12 @@
       "de": null,
       "fr": null
     },
-    "type": "2",
-    "level": "50",
-    "levelSync": "50",
-    "item": "70",
-    "itemSync": "110",
-    "memberType": "2"
+    "type": 2,
+    "level": 50,
+    "levelSync": 50,
+    "item": 70,
+    "itemSync": 110,
+    "memberType": 2
   },
   "26": {
     "name": {
@@ -382,12 +382,12 @@
       "de": null,
       "fr": null
     },
-    "type": "2",
-    "level": "50",
-    "levelSync": "50",
-    "item": "80",
-    "itemSync": "0",
-    "memberType": "2"
+    "type": 2,
+    "level": 50,
+    "levelSync": 50,
+    "item": 80,
+    "itemSync": 0,
+    "memberType": 2
   },
   "27": {
     "name": {
@@ -397,12 +397,12 @@
       "de": null,
       "fr": null
     },
-    "type": "2",
-    "level": "50",
-    "levelSync": "50",
-    "item": "80",
-    "itemSync": "0",
-    "memberType": "2"
+    "type": 2,
+    "level": 50,
+    "levelSync": 50,
+    "item": 80,
+    "itemSync": 0,
+    "memberType": 2
   },
   "28": {
     "name": {
@@ -412,12 +412,12 @@
       "de": null,
       "fr": null
     },
-    "type": "2",
-    "level": "50",
-    "levelSync": "50",
-    "item": "80",
-    "itemSync": "0",
-    "memberType": "2"
+    "type": 2,
+    "level": 50,
+    "levelSync": 50,
+    "item": 80,
+    "itemSync": 0,
+    "memberType": 2
   },
   "29": {
     "name": {
@@ -427,12 +427,12 @@
       "de": null,
       "fr": null
     },
-    "type": "2",
-    "level": "50",
-    "levelSync": "50",
-    "item": "90",
-    "itemSync": "0",
-    "memberType": "2"
+    "type": 2,
+    "level": 50,
+    "levelSync": 50,
+    "item": 90,
+    "itemSync": 0,
+    "memberType": 2
   },
   "30": {
     "name": {
@@ -442,12 +442,12 @@
       "de": null,
       "fr": null
     },
-    "type": "2",
-    "level": "50",
-    "levelSync": "50",
-    "item": "90",
-    "itemSync": "0",
-    "memberType": "2"
+    "type": 2,
+    "level": 50,
+    "levelSync": 50,
+    "item": 90,
+    "itemSync": 0,
+    "memberType": 2
   },
   "31": {
     "name": {
@@ -457,12 +457,12 @@
       "de": null,
       "fr": null
     },
-    "type": "2",
-    "level": "59",
-    "levelSync": "60",
-    "item": "120",
-    "itemSync": "150",
-    "memberType": "2"
+    "type": 2,
+    "level": 59,
+    "levelSync": 60,
+    "item": 120,
+    "itemSync": 150,
+    "memberType": 2
   },
   "32": {
     "name": {
@@ -472,12 +472,12 @@
       "de": null,
       "fr": null
     },
-    "type": "2",
-    "level": "50",
-    "levelSync": "50",
-    "item": "90",
-    "itemSync": "0",
-    "memberType": "2"
+    "type": 2,
+    "level": 50,
+    "levelSync": 50,
+    "item": 90,
+    "itemSync": 0,
+    "memberType": 2
   },
   "33": {
     "name": {
@@ -487,12 +487,12 @@
       "de": null,
       "fr": null
     },
-    "type": "2",
-    "level": "60",
-    "levelSync": "60",
-    "item": "145",
-    "itemSync": "210",
-    "memberType": "2"
+    "type": 2,
+    "level": 60,
+    "levelSync": 60,
+    "item": 145,
+    "itemSync": 210,
+    "memberType": 2
   },
   "34": {
     "name": {
@@ -502,12 +502,12 @@
       "de": null,
       "fr": null
     },
-    "type": "2",
-    "level": "57",
-    "levelSync": "58",
-    "item": "115",
-    "itemSync": "0",
-    "memberType": "2"
+    "type": 2,
+    "level": 57,
+    "levelSync": 58,
+    "item": 115,
+    "itemSync": 0,
+    "memberType": 2
   },
   "35": {
     "name": {
@@ -517,12 +517,12 @@
       "de": null,
       "fr": null
     },
-    "type": "2",
-    "level": "60",
-    "levelSync": "60",
-    "item": "145",
-    "itemSync": "210",
-    "memberType": "2"
+    "type": 2,
+    "level": 60,
+    "levelSync": 60,
+    "item": 145,
+    "itemSync": 210,
+    "memberType": 2
   },
   "36": {
     "name": {
@@ -532,12 +532,12 @@
       "de": null,
       "fr": null
     },
-    "type": "2",
-    "level": "51",
-    "levelSync": "52",
-    "item": "100",
-    "itemSync": "0",
-    "memberType": "2"
+    "type": 2,
+    "level": 51,
+    "levelSync": 52,
+    "item": 100,
+    "itemSync": 0,
+    "memberType": 2
   },
   "37": {
     "name": {
@@ -547,12 +547,12 @@
       "de": null,
       "fr": null
     },
-    "type": "2",
-    "level": "53",
-    "levelSync": "54",
-    "item": "105",
-    "itemSync": "0",
-    "memberType": "2"
+    "type": 2,
+    "level": 53,
+    "levelSync": 54,
+    "item": 105,
+    "itemSync": 0,
+    "memberType": 2
   },
   "38": {
     "name": {
@@ -562,12 +562,12 @@
       "de": null,
       "fr": null
     },
-    "type": "2",
-    "level": "60",
-    "levelSync": "60",
-    "item": "142",
-    "itemSync": "180",
-    "memberType": "2"
+    "type": 2,
+    "level": 60,
+    "levelSync": 60,
+    "item": 142,
+    "itemSync": 180,
+    "memberType": 2
   },
   "39": {
     "name": {
@@ -577,12 +577,12 @@
       "de": null,
       "fr": null
     },
-    "type": "2",
-    "level": "55",
-    "levelSync": "56",
-    "item": "110",
-    "itemSync": "0",
-    "memberType": "2"
+    "type": 2,
+    "level": 55,
+    "levelSync": 56,
+    "item": 110,
+    "itemSync": 0,
+    "memberType": 2
   },
   "40": {
     "name": {
@@ -592,12 +592,12 @@
       "de": null,
       "fr": null
     },
-    "type": "2",
-    "level": "60",
-    "levelSync": "60",
-    "item": "170",
-    "itemSync": "240",
-    "memberType": "2"
+    "type": 2,
+    "level": 60,
+    "levelSync": 60,
+    "item": 170,
+    "itemSync": 240,
+    "memberType": 2
   },
   "41": {
     "name": {
@@ -607,12 +607,12 @@
       "de": null,
       "fr": null
     },
-    "type": "2",
-    "level": "60",
-    "levelSync": "60",
-    "item": "170",
-    "itemSync": "240",
-    "memberType": "2"
+    "type": 2,
+    "level": 60,
+    "levelSync": 60,
+    "item": 170,
+    "itemSync": 240,
+    "memberType": 2
   },
   "42": {
     "name": {
@@ -622,12 +622,12 @@
       "de": null,
       "fr": null
     },
-    "type": "3",
-    "level": "10",
-    "levelSync": "11",
-    "item": "0",
-    "itemSync": "0",
-    "memberType": "2"
+    "type": 3,
+    "level": 10,
+    "levelSync": 11,
+    "item": 0,
+    "itemSync": 0,
+    "memberType": 2
   },
   "43": {
     "name": {
@@ -637,12 +637,12 @@
       "de": null,
       "fr": null
     },
-    "type": "3",
-    "level": "10",
-    "levelSync": "11",
-    "item": "0",
-    "itemSync": "0",
-    "memberType": "2"
+    "type": 3,
+    "level": 10,
+    "levelSync": 11,
+    "item": 0,
+    "itemSync": 0,
+    "memberType": 2
   },
   "44": {
     "name": {
@@ -652,12 +652,12 @@
       "de": null,
       "fr": null
     },
-    "type": "3",
-    "level": "15",
-    "levelSync": "16",
-    "item": "0",
-    "itemSync": "0",
-    "memberType": "2"
+    "type": 3,
+    "level": 15,
+    "levelSync": 16,
+    "item": 0,
+    "itemSync": 0,
+    "memberType": 2
   },
   "45": {
     "name": {
@@ -667,12 +667,12 @@
       "de": null,
       "fr": null
     },
-    "type": "3",
-    "level": "15",
-    "levelSync": "16",
-    "item": "0",
-    "itemSync": "0",
-    "memberType": "2"
+    "type": 3,
+    "level": 15,
+    "levelSync": 16,
+    "item": 0,
+    "itemSync": 0,
+    "memberType": 2
   },
   "46": {
     "name": {
@@ -682,12 +682,12 @@
       "de": null,
       "fr": null
     },
-    "type": "3",
-    "level": "20",
-    "levelSync": "21",
-    "item": "0",
-    "itemSync": "0",
-    "memberType": "2"
+    "type": 3,
+    "level": 20,
+    "levelSync": 21,
+    "item": 0,
+    "itemSync": 0,
+    "memberType": 2
   },
   "47": {
     "name": {
@@ -697,12 +697,12 @@
       "de": null,
       "fr": null
     },
-    "type": "3",
-    "level": "20",
-    "levelSync": "21",
-    "item": "0",
-    "itemSync": "0",
-    "memberType": "2"
+    "type": 3,
+    "level": 20,
+    "levelSync": 21,
+    "item": 0,
+    "itemSync": 0,
+    "memberType": 2
   },
   "48": {
     "name": {
@@ -712,12 +712,12 @@
       "de": null,
       "fr": null
     },
-    "type": "3",
-    "level": "25",
-    "levelSync": "26",
-    "item": "0",
-    "itemSync": "0",
-    "memberType": "2"
+    "type": 3,
+    "level": 25,
+    "levelSync": 26,
+    "item": 0,
+    "itemSync": 0,
+    "memberType": 2
   },
   "49": {
     "name": {
@@ -727,12 +727,12 @@
       "de": null,
       "fr": null
     },
-    "type": "3",
-    "level": "25",
-    "levelSync": "26",
-    "item": "0",
-    "itemSync": "0",
-    "memberType": "2"
+    "type": 3,
+    "level": 25,
+    "levelSync": 26,
+    "item": 0,
+    "itemSync": 0,
+    "memberType": 2
   },
   "50": {
     "name": {
@@ -742,12 +742,12 @@
       "de": null,
       "fr": null
     },
-    "type": "3",
-    "level": "30",
-    "levelSync": "31",
-    "item": "0",
-    "itemSync": "0",
-    "memberType": "2"
+    "type": 3,
+    "level": 30,
+    "levelSync": 31,
+    "item": 0,
+    "itemSync": 0,
+    "memberType": 2
   },
   "51": {
     "name": {
@@ -757,12 +757,12 @@
       "de": null,
       "fr": null
     },
-    "type": "3",
-    "level": "30",
-    "levelSync": "31",
-    "item": "0",
-    "itemSync": "0",
-    "memberType": "2"
+    "type": 3,
+    "level": 30,
+    "levelSync": 31,
+    "item": 0,
+    "itemSync": 0,
+    "memberType": 2
   },
   "52": {
     "name": {
@@ -772,12 +772,12 @@
       "de": null,
       "fr": null
     },
-    "type": "3",
-    "level": "35",
-    "levelSync": "36",
-    "item": "0",
-    "itemSync": "0",
-    "memberType": "2"
+    "type": 3,
+    "level": 35,
+    "levelSync": 36,
+    "item": 0,
+    "itemSync": 0,
+    "memberType": 2
   },
   "53": {
     "name": {
@@ -787,12 +787,12 @@
       "de": null,
       "fr": null
     },
-    "type": "3",
-    "level": "35",
-    "levelSync": "36",
-    "item": "0",
-    "itemSync": "0",
-    "memberType": "2"
+    "type": 3,
+    "level": 35,
+    "levelSync": 36,
+    "item": 0,
+    "itemSync": 0,
+    "memberType": 2
   },
   "54": {
     "name": {
@@ -802,12 +802,12 @@
       "de": null,
       "fr": null
     },
-    "type": "3",
-    "level": "40",
-    "levelSync": "41",
-    "item": "0",
-    "itemSync": "0",
-    "memberType": "2"
+    "type": 3,
+    "level": 40,
+    "levelSync": 41,
+    "item": 0,
+    "itemSync": 0,
+    "memberType": 2
   },
   "55": {
     "name": {
@@ -817,12 +817,12 @@
       "de": null,
       "fr": null
     },
-    "type": "3",
-    "level": "40",
-    "levelSync": "41",
-    "item": "0",
-    "itemSync": "0",
-    "memberType": "3"
+    "type": 3,
+    "level": 40,
+    "levelSync": 41,
+    "item": 0,
+    "itemSync": 0,
+    "memberType": 3
   },
   "56": {
     "name": {
@@ -832,12 +832,12 @@
       "de": null,
       "fr": null
     },
-    "type": "4",
-    "level": "20",
-    "levelSync": "22",
-    "item": "0",
-    "itemSync": "0",
-    "memberType": "2"
+    "type": 4,
+    "level": 20,
+    "levelSync": 22,
+    "item": 0,
+    "itemSync": 0,
+    "memberType": 2
   },
   "57": {
     "name": {
@@ -847,12 +847,12 @@
       "de": null,
       "fr": null
     },
-    "type": "4",
-    "level": "34",
-    "levelSync": "36",
-    "item": "0",
-    "itemSync": "0",
-    "memberType": "2"
+    "type": 4,
+    "level": 34,
+    "levelSync": 36,
+    "item": 0,
+    "itemSync": 0,
+    "memberType": 2
   },
   "58": {
     "name": {
@@ -862,12 +862,12 @@
       "de": null,
       "fr": null
     },
-    "type": "4",
-    "level": "44",
-    "levelSync": "46",
-    "item": "0",
-    "itemSync": "0",
-    "memberType": "2"
+    "type": 4,
+    "level": 44,
+    "levelSync": 46,
+    "item": 0,
+    "itemSync": 0,
+    "memberType": 2
   },
   "59": {
     "name": {
@@ -877,12 +877,12 @@
       "de": null,
       "fr": null
     },
-    "type": "4",
-    "level": "50",
-    "levelSync": "50",
-    "item": "49",
-    "itemSync": "0",
-    "memberType": "3"
+    "type": 4,
+    "level": 50,
+    "levelSync": 50,
+    "item": 49,
+    "itemSync": 0,
+    "memberType": 3
   },
   "60": {
     "name": {
@@ -892,12 +892,12 @@
       "de": null,
       "fr": null
     },
-    "type": "4",
-    "level": "50",
-    "levelSync": "50",
-    "item": "57",
-    "itemSync": "0",
-    "memberType": "3"
+    "type": 4,
+    "level": 50,
+    "levelSync": 50,
+    "item": 57,
+    "itemSync": 0,
+    "memberType": 3
   },
   "61": {
     "name": {
@@ -907,12 +907,12 @@
       "de": null,
       "fr": null
     },
-    "type": "4",
-    "level": "50",
-    "levelSync": "50",
-    "item": "52",
-    "itemSync": "0",
-    "memberType": "3"
+    "type": 4,
+    "level": 50,
+    "levelSync": 50,
+    "item": 52,
+    "itemSync": 0,
+    "memberType": 3
   },
   "63": {
     "name": {
@@ -922,12 +922,12 @@
       "de": null,
       "fr": null
     },
-    "type": "4",
-    "level": "50",
-    "levelSync": "50",
-    "item": "70",
-    "itemSync": "0",
-    "memberType": "3"
+    "type": 4,
+    "level": 50,
+    "levelSync": 50,
+    "item": 70,
+    "itemSync": 0,
+    "memberType": 3
   },
   "64": {
     "name": {
@@ -937,12 +937,12 @@
       "de": null,
       "fr": null
     },
-    "type": "4",
-    "level": "50",
-    "levelSync": "50",
-    "item": "67",
-    "itemSync": "0",
-    "memberType": "3"
+    "type": 4,
+    "level": 50,
+    "levelSync": 50,
+    "item": 67,
+    "itemSync": 0,
+    "memberType": 3
   },
   "65": {
     "name": {
@@ -952,12 +952,12 @@
       "de": null,
       "fr": null
     },
-    "type": "4",
-    "level": "50",
-    "levelSync": "50",
-    "item": "65",
-    "itemSync": "0",
-    "memberType": "3"
+    "type": 4,
+    "level": 50,
+    "levelSync": 50,
+    "item": 65,
+    "itemSync": 0,
+    "memberType": 3
   },
   "66": {
     "name": {
@@ -967,12 +967,12 @@
       "de": null,
       "fr": null
     },
-    "type": "4",
-    "level": "50",
-    "levelSync": "50",
-    "item": "54",
-    "itemSync": "0",
-    "memberType": "3"
+    "type": 4,
+    "level": 50,
+    "levelSync": 50,
+    "item": 54,
+    "itemSync": 0,
+    "memberType": 3
   },
   "67": {
     "name": {
@@ -982,12 +982,12 @@
       "de": null,
       "fr": null
     },
-    "type": "4",
-    "level": "50",
-    "levelSync": "50",
-    "item": "80",
-    "itemSync": "0",
-    "memberType": "3"
+    "type": 4,
+    "level": 50,
+    "levelSync": 50,
+    "item": 80,
+    "itemSync": 0,
+    "memberType": 3
   },
   "68": {
     "name": {
@@ -997,12 +997,12 @@
       "de": null,
       "fr": null
     },
-    "type": "4",
-    "level": "50",
-    "levelSync": "50",
-    "item": "61",
-    "itemSync": "0",
-    "memberType": "3"
+    "type": 4,
+    "level": 50,
+    "levelSync": 50,
+    "item": 61,
+    "itemSync": 0,
+    "memberType": 3
   },
   "72": {
     "name": {
@@ -1012,12 +1012,12 @@
       "de": null,
       "fr": null
     },
-    "type": "4",
-    "level": "50",
-    "levelSync": "50",
-    "item": "60",
-    "itemSync": "0",
-    "memberType": "3"
+    "type": 4,
+    "level": 50,
+    "levelSync": 50,
+    "item": 60,
+    "itemSync": 0,
+    "memberType": 3
   },
   "73": {
     "name": {
@@ -1027,12 +1027,12 @@
       "de": null,
       "fr": null
     },
-    "type": "4",
-    "level": "50",
-    "levelSync": "50",
-    "item": "80",
-    "itemSync": "0",
-    "memberType": "3"
+    "type": 4,
+    "level": 50,
+    "levelSync": 50,
+    "item": 80,
+    "itemSync": 0,
+    "memberType": 3
   },
   "74": {
     "name": {
@@ -1042,12 +1042,12 @@
       "de": null,
       "fr": null
     },
-    "type": "4",
-    "level": "50",
-    "levelSync": "50",
-    "item": "52",
-    "itemSync": "0",
-    "memberType": "3"
+    "type": 4,
+    "level": 50,
+    "levelSync": 50,
+    "item": 52,
+    "itemSync": 0,
+    "memberType": 3
   },
   "75": {
     "name": {
@@ -1057,12 +1057,12 @@
       "de": null,
       "fr": null
     },
-    "type": "4",
-    "level": "50",
-    "levelSync": "50",
-    "item": "52",
-    "itemSync": "0",
-    "memberType": "3"
+    "type": 4,
+    "level": 50,
+    "levelSync": 50,
+    "item": 52,
+    "itemSync": 0,
+    "memberType": 3
   },
   "76": {
     "name": {
@@ -1072,12 +1072,12 @@
       "de": null,
       "fr": null
     },
-    "type": "4",
-    "level": "50",
-    "levelSync": "50",
-    "item": "50",
-    "itemSync": "0",
-    "memberType": "3"
+    "type": 4,
+    "level": 50,
+    "levelSync": 50,
+    "item": 50,
+    "itemSync": 0,
+    "memberType": 3
   },
   "77": {
     "name": {
@@ -1087,12 +1087,12 @@
       "de": null,
       "fr": null
     },
-    "type": "4",
-    "level": "50",
-    "levelSync": "50",
-    "item": "65",
-    "itemSync": "0",
-    "memberType": "3"
+    "type": 4,
+    "level": 50,
+    "levelSync": 50,
+    "item": 65,
+    "itemSync": 0,
+    "memberType": 3
   },
   "78": {
     "name": {
@@ -1102,12 +1102,12 @@
       "de": null,
       "fr": null
     },
-    "type": "4",
-    "level": "50",
-    "levelSync": "50",
-    "item": "85",
-    "itemSync": "0",
-    "memberType": "3"
+    "type": 4,
+    "level": 50,
+    "levelSync": 50,
+    "item": 85,
+    "itemSync": 0,
+    "memberType": 3
   },
   "79": {
     "name": {
@@ -1117,12 +1117,12 @@
       "de": null,
       "fr": null
     },
-    "type": "4",
-    "level": "50",
-    "levelSync": "50",
-    "item": "80",
-    "itemSync": "0",
-    "memberType": "3"
+    "type": 4,
+    "level": 50,
+    "levelSync": 50,
+    "item": 80,
+    "itemSync": 0,
+    "memberType": 3
   },
   "80": {
     "name": {
@@ -1132,12 +1132,12 @@
       "de": null,
       "fr": null
     },
-    "type": "4",
-    "level": "50",
-    "levelSync": "50",
-    "item": "95",
-    "itemSync": "0",
-    "memberType": "3"
+    "type": 4,
+    "level": 50,
+    "levelSync": 50,
+    "item": 95,
+    "itemSync": 0,
+    "memberType": 3
   },
   "81": {
     "name": {
@@ -1147,12 +1147,12 @@
       "de": null,
       "fr": null
     },
-    "type": "4",
-    "level": "50",
-    "levelSync": "50",
-    "item": "80",
-    "itemSync": "0",
-    "memberType": "3"
+    "type": 4,
+    "level": 50,
+    "levelSync": 50,
+    "item": 80,
+    "itemSync": 0,
+    "memberType": 3
   },
   "82": {
     "name": {
@@ -1162,12 +1162,12 @@
       "de": null,
       "fr": null
     },
-    "type": "4",
-    "level": "50",
-    "levelSync": "50",
-    "item": "95",
-    "itemSync": "0",
-    "memberType": "3"
+    "type": 4,
+    "level": 50,
+    "levelSync": 50,
+    "item": 95,
+    "itemSync": 0,
+    "memberType": 3
   },
   "84": {
     "name": {
@@ -1177,12 +1177,12 @@
       "de": null,
       "fr": null
     },
-    "type": "4",
-    "level": "50",
-    "levelSync": "50",
-    "item": "90",
-    "itemSync": "0",
-    "memberType": "3"
+    "type": 4,
+    "level": 50,
+    "levelSync": 50,
+    "item": 90,
+    "itemSync": 0,
+    "memberType": 3
   },
   "85": {
     "name": {
@@ -1192,12 +1192,12 @@
       "de": null,
       "fr": null
     },
-    "type": "4",
-    "level": "50",
-    "levelSync": "50",
-    "item": "90",
-    "itemSync": "0",
-    "memberType": "3"
+    "type": 4,
+    "level": 50,
+    "levelSync": 50,
+    "item": 90,
+    "itemSync": 0,
+    "memberType": 3
   },
   "86": {
     "name": {
@@ -1207,12 +1207,12 @@
       "de": null,
       "fr": null
     },
-    "type": "4",
-    "level": "53",
-    "levelSync": "54",
-    "item": "0",
-    "itemSync": "0",
-    "memberType": "3"
+    "type": 4,
+    "level": 53,
+    "levelSync": 54,
+    "item": 0,
+    "itemSync": 0,
+    "memberType": 3
   },
   "87": {
     "name": {
@@ -1222,12 +1222,12 @@
       "de": null,
       "fr": null
     },
-    "type": "4",
-    "level": "60",
-    "levelSync": "60",
-    "item": "175",
-    "itemSync": "0",
-    "memberType": "3"
+    "type": 4,
+    "level": 60,
+    "levelSync": 60,
+    "item": 175,
+    "itemSync": 0,
+    "memberType": 3
   },
   "88": {
     "name": {
@@ -1237,12 +1237,12 @@
       "de": null,
       "fr": null
     },
-    "type": "4",
-    "level": "57",
-    "levelSync": "58",
-    "item": "0",
-    "itemSync": "0",
-    "memberType": "3"
+    "type": 4,
+    "level": 57,
+    "levelSync": 58,
+    "item": 0,
+    "itemSync": 0,
+    "memberType": 3
   },
   "89": {
     "name": {
@@ -1252,12 +1252,12 @@
       "de": null,
       "fr": null
     },
-    "type": "4",
-    "level": "60",
-    "levelSync": "60",
-    "item": "165",
-    "itemSync": "0",
-    "memberType": "3"
+    "type": 4,
+    "level": 60,
+    "levelSync": 60,
+    "item": 165,
+    "itemSync": 0,
+    "memberType": 3
   },
   "90": {
     "name": {
@@ -1267,12 +1267,12 @@
       "de": null,
       "fr": null
     },
-    "type": "4",
-    "level": "60",
-    "levelSync": "60",
-    "item": "142",
-    "itemSync": "0",
-    "memberType": "3"
+    "type": 4,
+    "level": 60,
+    "levelSync": 60,
+    "item": 142,
+    "itemSync": 0,
+    "memberType": 3
   },
   "91": {
     "name": {
@@ -1282,12 +1282,12 @@
       "de": null,
       "fr": null
     },
-    "type": "4",
-    "level": "60",
-    "levelSync": "60",
-    "item": "190",
-    "itemSync": "0",
-    "memberType": "3"
+    "type": 4,
+    "level": 60,
+    "levelSync": 60,
+    "item": 190,
+    "itemSync": 0,
+    "memberType": 3
   },
   "92": {
     "name": {
@@ -1297,12 +1297,12 @@
       "de": null,
       "fr": null
     },
-    "type": "5",
-    "level": "50",
-    "levelSync": "50",
-    "item": "50",
-    "itemSync": "0",
-    "memberType": "4"
+    "type": 5,
+    "level": 50,
+    "levelSync": 50,
+    "item": 50,
+    "itemSync": 0,
+    "memberType": 4
   },
   "102": {
     "name": {
@@ -1312,12 +1312,12 @@
       "de": null,
       "fr": null
     },
-    "type": "5",
-    "level": "50",
-    "levelSync": "50",
-    "item": "70",
-    "itemSync": "0",
-    "memberType": "4"
+    "type": 5,
+    "level": 50,
+    "levelSync": 50,
+    "item": 70,
+    "itemSync": 0,
+    "memberType": 4
   },
   "111": {
     "name": {
@@ -1327,12 +1327,12 @@
       "de": null,
       "fr": null
     },
-    "type": "5",
-    "level": "50",
-    "levelSync": "50",
-    "item": "90",
-    "itemSync": "0",
-    "memberType": "4"
+    "type": 5,
+    "level": 50,
+    "levelSync": 50,
+    "item": 90,
+    "itemSync": 0,
+    "memberType": 4
   },
   "112": {
     "name": {
@@ -1342,12 +1342,12 @@
       "de": null,
       "fr": null
     },
-    "type": "5",
-    "level": "60",
-    "levelSync": "60",
-    "item": "170",
-    "itemSync": "0",
-    "memberType": "3"
+    "type": 5,
+    "level": 60,
+    "levelSync": 60,
+    "item": 170,
+    "itemSync": 0,
+    "memberType": 3
   },
   "113": {
     "name": {
@@ -1357,12 +1357,12 @@
       "de": null,
       "fr": null
     },
-    "type": "5",
-    "level": "60",
-    "levelSync": "60",
-    "item": "170",
-    "itemSync": "0",
-    "memberType": "3"
+    "type": 5,
+    "level": 60,
+    "levelSync": 60,
+    "item": 170,
+    "itemSync": 0,
+    "memberType": 3
   },
   "114": {
     "name": {
@@ -1372,12 +1372,12 @@
       "de": null,
       "fr": null
     },
-    "type": "5",
-    "level": "60",
-    "levelSync": "60",
-    "item": "170",
-    "itemSync": "0",
-    "memberType": "3"
+    "type": 5,
+    "level": 60,
+    "levelSync": 60,
+    "item": 170,
+    "itemSync": 0,
+    "memberType": 3
   },
   "115": {
     "name": {
@@ -1387,12 +1387,12 @@
       "de": null,
       "fr": null
     },
-    "type": "5",
-    "level": "60",
-    "levelSync": "60",
-    "item": "170",
-    "itemSync": "0",
-    "memberType": "3"
+    "type": 5,
+    "level": 60,
+    "levelSync": 60,
+    "item": 170,
+    "itemSync": 0,
+    "memberType": 3
   },
   "120": {
     "name": {
@@ -1402,12 +1402,12 @@
       "de": null,
       "fr": null
     },
-    "type": "5",
-    "level": "60",
-    "levelSync": "60",
-    "item": "175",
-    "itemSync": "0",
-    "memberType": "4"
+    "type": 5,
+    "level": 60,
+    "levelSync": 60,
+    "item": 175,
+    "itemSync": 0,
+    "memberType": 4
   },
   "134": {
     "name": {
@@ -1417,12 +1417,12 @@
       "de": null,
       "fr": null
     },
-    "type": "4",
-    "level": "60",
-    "levelSync": "60",
-    "item": "190",
-    "itemSync": "0",
-    "memberType": "3"
+    "type": 4,
+    "level": 60,
+    "levelSync": 60,
+    "item": 190,
+    "itemSync": 0,
+    "memberType": 3
   },
   "135": {
     "name": {
@@ -1432,12 +1432,12 @@
       "de": null,
       "fr": null
     },
-    "type": "4",
-    "level": "60",
-    "levelSync": "60",
-    "item": "205",
-    "itemSync": "0",
-    "memberType": "3"
+    "type": 4,
+    "level": 60,
+    "levelSync": 60,
+    "item": 205,
+    "itemSync": 0,
+    "memberType": 3
   },
   "136": {
     "name": {
@@ -1447,12 +1447,12 @@
       "de": null,
       "fr": null
     },
-    "type": "5",
-    "level": "60",
-    "levelSync": "60",
-    "item": "200",
-    "itemSync": "0",
-    "memberType": "3"
+    "type": 5,
+    "level": 60,
+    "levelSync": 60,
+    "item": 200,
+    "itemSync": 0,
+    "memberType": 3
   },
   "137": {
     "name": {
@@ -1462,12 +1462,12 @@
       "de": null,
       "fr": null
     },
-    "type": "5",
-    "level": "60",
-    "levelSync": "60",
-    "item": "200",
-    "itemSync": "0",
-    "memberType": "3"
+    "type": 5,
+    "level": 60,
+    "levelSync": 60,
+    "item": 200,
+    "itemSync": 0,
+    "memberType": 3
   },
   "138": {
     "name": {
@@ -1477,12 +1477,12 @@
       "de": null,
       "fr": null
     },
-    "type": "5",
-    "level": "60",
-    "levelSync": "60",
-    "item": "200",
-    "itemSync": "0",
-    "memberType": "3"
+    "type": 5,
+    "level": 60,
+    "levelSync": 60,
+    "item": 200,
+    "itemSync": 0,
+    "memberType": 3
   },
   "139": {
     "name": {
@@ -1492,12 +1492,12 @@
       "de": null,
       "fr": null
     },
-    "type": "5",
-    "level": "60",
-    "levelSync": "60",
-    "item": "200",
-    "itemSync": "0",
-    "memberType": "3"
+    "type": 5,
+    "level": 60,
+    "levelSync": 60,
+    "item": 200,
+    "itemSync": 0,
+    "memberType": 3
   },
   "140": {
     "name": {
@@ -1507,12 +1507,12 @@
       "de": null,
       "fr": null
     },
-    "type": "2",
-    "level": "60",
-    "levelSync": "60",
-    "item": "180",
-    "itemSync": "0",
-    "memberType": "2"
+    "type": 2,
+    "level": 60,
+    "levelSync": 60,
+    "item": 180,
+    "itemSync": 0,
+    "memberType": 2
   },
   "141": {
     "name": {
@@ -1522,12 +1522,12 @@
       "de": null,
       "fr": null
     },
-    "type": "2",
-    "level": "60",
-    "levelSync": "60",
-    "item": "180",
-    "itemSync": "0",
-    "memberType": "2"
+    "type": 2,
+    "level": 60,
+    "levelSync": 60,
+    "item": 180,
+    "itemSync": 0,
+    "memberType": 2
   },
   "168": {
     "name": {
@@ -1537,12 +1537,12 @@
       "de": null,
       "fr": null
     },
-    "type": "5",
-    "level": "60",
-    "levelSync": "60",
-    "item": "205",
-    "itemSync": "0",
-    "memberType": "4"
+    "type": 5,
+    "level": 60,
+    "levelSync": 60,
+    "item": 205,
+    "itemSync": 0,
+    "memberType": 4
   },
   "169": {
     "name": {
@@ -1552,12 +1552,12 @@
       "de": null,
       "fr": null
     },
-    "type": "4",
-    "level": "60",
-    "levelSync": "60",
-    "item": "205",
-    "itemSync": "0",
-    "memberType": "3"
+    "type": 4,
+    "level": 60,
+    "levelSync": 60,
+    "item": 205,
+    "itemSync": 0,
+    "memberType": 3
   },
   "170": {
     "name": {
@@ -1567,12 +1567,12 @@
       "de": null,
       "fr": null
     },
-    "type": "4",
-    "level": "60",
-    "levelSync": "60",
-    "item": "220",
-    "itemSync": "0",
-    "memberType": "3"
+    "type": 4,
+    "level": 60,
+    "levelSync": 60,
+    "item": 220,
+    "itemSync": 0,
+    "memberType": 3
   },
   "171": {
     "name": {
@@ -1582,12 +1582,12 @@
       "de": null,
       "fr": null
     },
-    "type": "2",
-    "level": "60",
-    "levelSync": "60",
-    "item": "200",
-    "itemSync": "0",
-    "memberType": "2"
+    "type": 2,
+    "level": 60,
+    "levelSync": 60,
+    "item": 200,
+    "itemSync": 0,
+    "memberType": 2
   },
   "172": {
     "name": {
@@ -1597,12 +1597,12 @@
       "de": null,
       "fr": null
     },
-    "type": "2",
-    "level": "60",
-    "levelSync": "60",
-    "item": "200",
-    "itemSync": "0",
-    "memberType": "2"
+    "type": 2,
+    "level": 60,
+    "levelSync": 60,
+    "item": 200,
+    "itemSync": 0,
+    "memberType": 2
   },
   "182": {
     "name": {
@@ -1612,12 +1612,12 @@
       "de": null,
       "fr": null
     },
-    "type": "2",
-    "level": "60",
-    "levelSync": "60",
-    "item": "210",
-    "itemSync": "0",
-    "memberType": "2"
+    "type": 2,
+    "level": 60,
+    "levelSync": 60,
+    "item": 210,
+    "itemSync": 0,
+    "memberType": 2
   },
   "183": {
     "name": {
@@ -1627,12 +1627,12 @@
       "de": null,
       "fr": null
     },
-    "type": "4",
-    "level": "60",
-    "levelSync": "60",
-    "item": "220",
-    "itemSync": "0",
-    "memberType": "3"
+    "type": 4,
+    "level": 60,
+    "levelSync": 60,
+    "item": 220,
+    "itemSync": 0,
+    "memberType": 3
   },
   "184": {
     "name": {
@@ -1642,12 +1642,12 @@
       "de": null,
       "fr": null
     },
-    "type": "4",
-    "level": "60",
-    "levelSync": "60",
-    "item": "235",
-    "itemSync": "0",
-    "memberType": "3"
+    "type": 4,
+    "level": 60,
+    "levelSync": 60,
+    "item": 235,
+    "itemSync": 0,
+    "memberType": 3
   },
   "186": {
     "name": {
@@ -1657,12 +1657,12 @@
       "de": null,
       "fr": null
     },
-    "type": "5",
-    "level": "60",
-    "levelSync": "60",
-    "item": "230",
-    "itemSync": "0",
-    "memberType": "3"
+    "type": 5,
+    "level": 60,
+    "levelSync": 60,
+    "item": 230,
+    "itemSync": 0,
+    "memberType": 3
   },
   "187": {
     "name": {
@@ -1672,12 +1672,12 @@
       "de": null,
       "fr": null
     },
-    "type": "5",
-    "level": "60",
-    "levelSync": "60",
-    "item": "230",
-    "itemSync": "0",
-    "memberType": "3"
+    "type": 5,
+    "level": 60,
+    "levelSync": 60,
+    "item": 230,
+    "itemSync": 0,
+    "memberType": 3
   },
   "188": {
     "name": {
@@ -1687,12 +1687,12 @@
       "de": null,
       "fr": null
     },
-    "type": "5",
-    "level": "60",
-    "levelSync": "60",
-    "item": "230",
-    "itemSync": "0",
-    "memberType": "3"
+    "type": 5,
+    "level": 60,
+    "levelSync": 60,
+    "item": 230,
+    "itemSync": 0,
+    "memberType": 3
   },
   "189": {
     "name": {
@@ -1702,12 +1702,12 @@
       "de": null,
       "fr": null
     },
-    "type": "5",
-    "level": "60",
-    "levelSync": "60",
-    "item": "230",
-    "itemSync": "0",
-    "memberType": "3"
+    "type": 5,
+    "level": 60,
+    "levelSync": 60,
+    "item": 230,
+    "itemSync": 0,
+    "memberType": 3
   },
   "196": {
     "name": {
@@ -1717,12 +1717,12 @@
       "de": null,
       "fr": null
     },
-    "type": "2",
-    "level": "60",
-    "levelSync": "60",
-    "item": "210",
-    "itemSync": "0",
-    "memberType": "2"
+    "type": 2,
+    "level": 60,
+    "levelSync": 60,
+    "item": 210,
+    "itemSync": 0,
+    "memberType": 2
   },
   "219": {
     "name": {
@@ -1732,12 +1732,12 @@
       "de": null,
       "fr": null
     },
-    "type": "2",
-    "level": "60",
-    "levelSync": "60",
-    "item": "230",
-    "itemSync": "0",
-    "memberType": "2"
+    "type": 2,
+    "level": 60,
+    "levelSync": 60,
+    "item": 230,
+    "itemSync": 0,
+    "memberType": 2
   },
   "220": {
     "name": {
@@ -1747,12 +1747,12 @@
       "de": null,
       "fr": null
     },
-    "type": "5",
-    "level": "60",
-    "levelSync": "60",
-    "item": "235",
-    "itemSync": "0",
-    "memberType": "4"
+    "type": 5,
+    "level": 60,
+    "levelSync": 60,
+    "item": 235,
+    "itemSync": 0,
+    "memberType": 4
   },
   "221": {
     "name": {
@@ -1762,12 +1762,12 @@
       "de": null,
       "fr": null
     },
-    "type": "2",
-    "level": "60",
-    "levelSync": "60",
-    "item": "230",
-    "itemSync": "0",
-    "memberType": "2"
+    "type": 2,
+    "level": 60,
+    "levelSync": 60,
+    "item": 230,
+    "itemSync": 0,
+    "memberType": 2
   },
   "223": {
     "name": {
@@ -1777,12 +1777,12 @@
       "de": null,
       "fr": null
     },
-    "type": "4",
-    "level": "60",
-    "levelSync": "60",
-    "item": "235",
-    "itemSync": "0",
-    "memberType": "3"
+    "type": 4,
+    "level": 60,
+    "levelSync": 60,
+    "item": 235,
+    "itemSync": 0,
+    "memberType": 3
   },
   "224": {
     "name": {
@@ -1792,12 +1792,12 @@
       "de": null,
       "fr": null
     },
-    "type": "4",
-    "level": "60",
-    "levelSync": "60",
-    "item": "250",
-    "itemSync": "0",
-    "memberType": "3"
+    "type": 4,
+    "level": 60,
+    "levelSync": 60,
+    "item": 250,
+    "itemSync": 0,
+    "memberType": 3
   },
   "235": {
     "name": {
@@ -1807,12 +1807,12 @@
       "de": null,
       "fr": null
     },
-    "type": "2",
-    "level": "63",
-    "levelSync": "64",
-    "item": "245",
-    "itemSync": "0",
-    "memberType": "2"
+    "type": 2,
+    "level": 63,
+    "levelSync": 64,
+    "item": 245,
+    "itemSync": 0,
+    "memberType": 2
   },
   "236": {
     "name": {
@@ -1822,12 +1822,12 @@
       "de": null,
       "fr": null
     },
-    "type": "2",
-    "level": "70",
-    "levelSync": "70",
-    "item": "280",
-    "itemSync": "340",
-    "memberType": "2"
+    "type": 2,
+    "level": 70,
+    "levelSync": 70,
+    "item": 280,
+    "itemSync": 340,
+    "memberType": 2
   },
   "238": {
     "name": {
@@ -1837,12 +1837,12 @@
       "de": null,
       "fr": null
     },
-    "type": "2",
-    "level": "61",
-    "levelSync": "62",
-    "item": "240",
-    "itemSync": "0",
-    "memberType": "2"
+    "type": 2,
+    "level": 61,
+    "levelSync": 62,
+    "item": 240,
+    "itemSync": 0,
+    "memberType": 2
   },
   "239": {
     "name": {
@@ -1852,12 +1852,12 @@
       "de": null,
       "fr": null
     },
-    "type": "4",
-    "level": "70",
-    "levelSync": "70",
-    "item": "280",
-    "itemSync": "0",
-    "memberType": "3"
+    "type": 4,
+    "level": 70,
+    "levelSync": 70,
+    "item": 280,
+    "itemSync": 0,
+    "memberType": 3
   },
   "240": {
     "name": {
@@ -1867,12 +1867,12 @@
       "de": null,
       "fr": null
     },
-    "type": "2",
-    "level": "65",
-    "levelSync": "66",
-    "item": "250",
-    "itemSync": "0",
-    "memberType": "2"
+    "type": 2,
+    "level": 65,
+    "levelSync": 66,
+    "item": 250,
+    "itemSync": 0,
+    "memberType": 2
   },
   "241": {
     "name": {
@@ -1882,12 +1882,12 @@
       "de": null,
       "fr": null
     },
-    "type": "2",
-    "level": "67",
-    "levelSync": "68",
-    "item": "255",
-    "itemSync": "0",
-    "memberType": "2"
+    "type": 2,
+    "level": 67,
+    "levelSync": 68,
+    "item": 255,
+    "itemSync": 0,
+    "memberType": 2
   },
   "242": {
     "name": {
@@ -1897,12 +1897,12 @@
       "de": null,
       "fr": null
     },
-    "type": "2",
-    "level": "69",
-    "levelSync": "70",
-    "item": "260",
-    "itemSync": "290",
-    "memberType": "2"
+    "type": 2,
+    "level": 69,
+    "levelSync": 70,
+    "item": 260,
+    "itemSync": 290,
+    "memberType": 2
   },
   "243": {
     "name": {
@@ -1912,12 +1912,12 @@
       "de": null,
       "fr": null
     },
-    "type": "4",
-    "level": "63",
-    "levelSync": "64",
-    "item": "0",
-    "itemSync": "0",
-    "memberType": "3"
+    "type": 4,
+    "level": 63,
+    "levelSync": 64,
+    "item": 0,
+    "itemSync": 0,
+    "memberType": 3
   },
   "244": {
     "name": {
@@ -1927,12 +1927,12 @@
       "de": null,
       "fr": null
     },
-    "type": "4",
-    "level": "70",
-    "levelSync": "70",
-    "item": "300",
-    "itemSync": "0",
-    "memberType": "3"
+    "type": 4,
+    "level": 70,
+    "levelSync": 70,
+    "item": 300,
+    "itemSync": 0,
+    "memberType": 3
   },
   "247": {
     "name": {
@@ -1942,12 +1942,12 @@
       "de": null,
       "fr": null
     },
-    "type": "2",
-    "level": "70",
-    "levelSync": "70",
-    "item": "280",
-    "itemSync": "310",
-    "memberType": "2"
+    "type": 2,
+    "level": 70,
+    "levelSync": 70,
+    "item": 280,
+    "itemSync": 310,
+    "memberType": 2
   },
   "252": {
     "name": {
@@ -1957,12 +1957,12 @@
       "de": null,
       "fr": null
     },
-    "type": "5",
-    "level": "70",
-    "levelSync": "70",
-    "item": "295",
-    "itemSync": "0",
-    "memberType": "3"
+    "type": 5,
+    "level": 70,
+    "levelSync": 70,
+    "item": 295,
+    "itemSync": 0,
+    "memberType": 3
   },
   "253": {
     "name": {
@@ -1972,12 +1972,12 @@
       "de": null,
       "fr": null
     },
-    "type": "5",
-    "level": "70",
-    "levelSync": "70",
-    "item": "295",
-    "itemSync": "0",
-    "memberType": "3"
+    "type": 5,
+    "level": 70,
+    "levelSync": 70,
+    "item": 295,
+    "itemSync": 0,
+    "memberType": 3
   },
   "254": {
     "name": {
@@ -1987,12 +1987,12 @@
       "de": null,
       "fr": null
     },
-    "type": "5",
-    "level": "70",
-    "levelSync": "70",
-    "item": "295",
-    "itemSync": "0",
-    "memberType": "3"
+    "type": 5,
+    "level": 70,
+    "levelSync": 70,
+    "item": 295,
+    "itemSync": 0,
+    "memberType": 3
   },
   "255": {
     "name": {
@@ -2002,12 +2002,12 @@
       "de": null,
       "fr": null
     },
-    "type": "5",
-    "level": "70",
-    "levelSync": "70",
-    "item": "295",
-    "itemSync": "0",
-    "memberType": "3"
+    "type": 5,
+    "level": 70,
+    "levelSync": 70,
+    "item": 295,
+    "itemSync": 0,
+    "memberType": 3
   },
   "262": {
     "name": {
@@ -2017,12 +2017,12 @@
       "de": null,
       "fr": null
     },
-    "type": "2",
-    "level": "70",
-    "levelSync": "70",
-    "item": "280",
-    "itemSync": "340",
-    "memberType": "2"
+    "type": 2,
+    "level": 70,
+    "levelSync": 70,
+    "item": 280,
+    "itemSync": 340,
+    "memberType": 2
   },
   "263": {
     "name": {
@@ -2032,12 +2032,12 @@
       "de": null,
       "fr": null
     },
-    "type": "4",
-    "level": "67",
-    "levelSync": "68",
-    "item": "0",
-    "itemSync": "0",
-    "memberType": "3"
+    "type": 4,
+    "level": 67,
+    "levelSync": 68,
+    "item": 0,
+    "itemSync": 0,
+    "memberType": 3
   },
   "264": {
     "name": {
@@ -2047,12 +2047,12 @@
       "de": null,
       "fr": null
     },
-    "type": "4",
-    "level": "70",
-    "levelSync": "70",
-    "item": "300",
-    "itemSync": "0",
-    "memberType": "3"
+    "type": 4,
+    "level": 70,
+    "levelSync": 70,
+    "item": 300,
+    "itemSync": 0,
+    "memberType": 3
   },
   "278": {
     "name": {
@@ -2062,12 +2062,12 @@
       "de": null,
       "fr": null
     },
-    "type": "4",
-    "level": "70",
-    "levelSync": "70",
-    "item": "320",
-    "itemSync": "0",
-    "memberType": "3"
+    "type": 4,
+    "level": 70,
+    "levelSync": 70,
+    "item": 320,
+    "itemSync": 0,
+    "memberType": 3
   },
   "279": {
     "name": {
@@ -2077,12 +2077,12 @@
       "de": null,
       "fr": null
     },
-    "type": "2",
-    "level": "70",
-    "levelSync": "70",
-    "item": "300",
-    "itemSync": "370",
-    "memberType": "2"
+    "type": 2,
+    "level": 70,
+    "levelSync": 70,
+    "item": 300,
+    "itemSync": 370,
+    "memberType": 2
   },
   "281": {
     "name": {
@@ -2092,12 +2092,12 @@
       "de": null,
       "fr": null
     },
-    "type": "5",
-    "level": "70",
-    "levelSync": "70",
-    "item": "305",
-    "itemSync": "0",
-    "memberType": "4"
+    "type": 5,
+    "level": 70,
+    "levelSync": 70,
+    "item": 305,
+    "itemSync": 0,
+    "memberType": 4
   },
   "284": {
     "name": {
@@ -2107,12 +2107,12 @@
       "de": null,
       "fr": null
     },
-    "type": "2",
-    "level": "70",
-    "levelSync": "70",
-    "item": "310",
-    "itemSync": "0",
-    "memberType": "2"
+    "type": 2,
+    "level": 70,
+    "levelSync": 70,
+    "item": 310,
+    "itemSync": 0,
+    "memberType": 2
   },
   "285": {
     "name": {
@@ -2122,12 +2122,12 @@
       "de": null,
       "fr": null
     },
-    "type": "2",
-    "level": "70",
-    "levelSync": "70",
-    "item": "310",
-    "itemSync": "0",
-    "memberType": "2"
+    "type": 2,
+    "level": 70,
+    "levelSync": 70,
+    "item": 310,
+    "itemSync": 0,
+    "memberType": 2
   },
   "286": {
     "name": {
@@ -2137,12 +2137,12 @@
       "de": null,
       "fr": null
     },
-    "type": "5",
-    "level": "70",
-    "levelSync": "70",
-    "item": "325",
-    "itemSync": "0",
-    "memberType": "3"
+    "type": 5,
+    "level": 70,
+    "levelSync": 70,
+    "item": 325,
+    "itemSync": 0,
+    "memberType": 3
   },
   "287": {
     "name": {
@@ -2152,12 +2152,12 @@
       "de": null,
       "fr": null
     },
-    "type": "5",
-    "level": "70",
-    "levelSync": "70",
-    "item": "325",
-    "itemSync": "0",
-    "memberType": "3"
+    "type": 5,
+    "level": 70,
+    "levelSync": 70,
+    "item": 325,
+    "itemSync": 0,
+    "memberType": 3
   },
   "288": {
     "name": {
@@ -2167,12 +2167,12 @@
       "de": null,
       "fr": null
     },
-    "type": "5",
-    "level": "70",
-    "levelSync": "70",
-    "item": "325",
-    "itemSync": "0",
-    "memberType": "3"
+    "type": 5,
+    "level": 70,
+    "levelSync": 70,
+    "item": 325,
+    "itemSync": 0,
+    "memberType": 3
   },
   "289": {
     "name": {
@@ -2182,12 +2182,12 @@
       "de": null,
       "fr": null
     },
-    "type": "5",
-    "level": "70",
-    "levelSync": "70",
-    "item": "325",
-    "itemSync": "0",
-    "memberType": "3"
+    "type": 5,
+    "level": 70,
+    "levelSync": 70,
+    "item": 325,
+    "itemSync": 0,
+    "memberType": 3
   },
   "290": {
     "name": {
@@ -2197,12 +2197,12 @@
       "de": null,
       "fr": null
     },
-    "type": "4",
-    "level": "70",
-    "levelSync": "70",
-    "item": "325",
-    "itemSync": "0",
-    "memberType": "3"
+    "type": 4,
+    "level": 70,
+    "levelSync": 70,
+    "item": 325,
+    "itemSync": 0,
+    "memberType": 3
   },
   "291": {
     "name": {
@@ -2212,12 +2212,12 @@
       "de": null,
       "fr": null
     },
-    "type": "4",
-    "level": "70",
-    "levelSync": "70",
-    "item": "340",
-    "itemSync": "0",
-    "memberType": "3"
+    "type": 4,
+    "level": 70,
+    "levelSync": 70,
+    "item": 340,
+    "itemSync": 0,
+    "memberType": 3
   },
   "474": {
     "name": {
@@ -2227,12 +2227,12 @@
       "de": null,
       "fr": null
     },
-    "type": "4",
-    "level": "70",
-    "levelSync": "70",
-    "item": "320",
-    "itemSync": "0",
-    "memberType": "3"
+    "type": 4,
+    "level": 70,
+    "levelSync": 70,
+    "item": 320,
+    "itemSync": 0,
+    "memberType": 3
   },
   "475": {
     "name": {
@@ -2242,12 +2242,12 @@
       "de": null,
       "fr": null
     },
-    "type": "4",
-    "level": "70",
-    "levelSync": "70",
-    "item": "350",
-    "itemSync": "0",
-    "memberType": "2"
+    "type": 4,
+    "level": 70,
+    "levelSync": 70,
+    "item": 350,
+    "itemSync": 0,
+    "memberType": 2
   },
   "536": {
     "name": {
@@ -2257,12 +2257,12 @@
       "de": null,
       "fr": null
     },
-    "type": "2",
-    "level": "70",
-    "levelSync": "70",
-    "item": "330",
-    "itemSync": "0",
-    "memberType": "2"
+    "type": 2,
+    "level": 70,
+    "levelSync": 70,
+    "item": 330,
+    "itemSync": 0,
+    "memberType": 2
   },
   "537": {
     "name": {
@@ -2272,12 +2272,12 @@
       "de": null,
       "fr": null
     },
-    "type": "4",
-    "level": "70",
-    "levelSync": "70",
-    "item": "335",
-    "itemSync": "0",
-    "memberType": "3"
+    "type": 4,
+    "level": 70,
+    "levelSync": 70,
+    "item": 335,
+    "itemSync": 0,
+    "memberType": 3
   },
   "538": {
     "name": {
@@ -2287,12 +2287,12 @@
       "de": null,
       "fr": null
     },
-    "type": "4",
-    "level": "70",
-    "levelSync": "70",
-    "item": "350",
-    "itemSync": "0",
-    "memberType": "3"
+    "type": 4,
+    "level": 70,
+    "levelSync": 70,
+    "item": 350,
+    "itemSync": 0,
+    "memberType": 3
   },
   "550": {
     "name": {
@@ -2302,12 +2302,12 @@
       "de": null,
       "fr": null
     },
-    "type": "5",
-    "level": "70",
-    "levelSync": "70",
-    "item": "335",
-    "itemSync": "0",
-    "memberType": "4"
+    "type": 5,
+    "level": 70,
+    "levelSync": 70,
+    "item": 335,
+    "itemSync": 0,
+    "memberType": 4
   },
   "584": {
     "name": {
@@ -2317,12 +2317,12 @@
       "de": null,
       "fr": null
     },
-    "type": "2",
-    "level": "70",
-    "levelSync": "70",
-    "item": "340",
-    "itemSync": "0",
-    "memberType": "2"
+    "type": 2,
+    "level": 70,
+    "levelSync": 70,
+    "item": 340,
+    "itemSync": 0,
+    "memberType": 2
   },
   "585": {
     "name": {
@@ -2332,12 +2332,12 @@
       "de": null,
       "fr": null
     },
-    "type": "2",
-    "level": "70",
-    "levelSync": "70",
-    "item": "340",
-    "itemSync": "0",
-    "memberType": "2"
+    "type": 2,
+    "level": 70,
+    "levelSync": 70,
+    "item": 340,
+    "itemSync": 0,
+    "memberType": 2
   },
   "587": {
     "name": {
@@ -2347,12 +2347,12 @@
       "de": null,
       "fr": null
     },
-    "type": "5",
-    "level": "70",
-    "levelSync": "70",
-    "item": "355",
-    "itemSync": "0",
-    "memberType": "3"
+    "type": 5,
+    "level": 70,
+    "levelSync": 70,
+    "item": 355,
+    "itemSync": 0,
+    "memberType": 3
   },
   "588": {
     "name": {
@@ -2362,12 +2362,12 @@
       "de": null,
       "fr": null
     },
-    "type": "5",
-    "level": "70",
-    "levelSync": "70",
-    "item": "355",
-    "itemSync": "0",
-    "memberType": "3"
+    "type": 5,
+    "level": 70,
+    "levelSync": 70,
+    "item": 355,
+    "itemSync": 0,
+    "memberType": 3
   },
   "589": {
     "name": {
@@ -2377,12 +2377,12 @@
       "de": null,
       "fr": null
     },
-    "type": "5",
-    "level": "70",
-    "levelSync": "70",
-    "item": "355",
-    "itemSync": "0",
-    "memberType": "3"
+    "type": 5,
+    "level": 70,
+    "levelSync": 70,
+    "item": 355,
+    "itemSync": 0,
+    "memberType": 3
   },
   "590": {
     "name": {
@@ -2392,12 +2392,12 @@
       "de": null,
       "fr": null
     },
-    "type": "5",
-    "level": "70",
-    "levelSync": "70",
-    "item": "355",
-    "itemSync": "0",
-    "memberType": "3"
+    "type": 5,
+    "level": 70,
+    "levelSync": 70,
+    "item": 355,
+    "itemSync": 0,
+    "memberType": 3
   },
   "595": {
     "name": {
@@ -2407,12 +2407,12 @@
       "de": null,
       "fr": null
     },
-    "type": "4",
-    "level": "70",
-    "levelSync": "70",
-    "item": "365",
-    "itemSync": "0",
-    "memberType": "3"
+    "type": 4,
+    "level": 70,
+    "levelSync": 70,
+    "item": 365,
+    "itemSync": 0,
+    "memberType": 3
   },
   "596": {
     "name": {
@@ -2422,12 +2422,12 @@
       "de": null,
       "fr": null
     },
-    "type": "4",
-    "level": "70",
-    "levelSync": "70",
-    "item": "355",
-    "itemSync": "0",
-    "memberType": "3"
+    "type": 4,
+    "level": 70,
+    "levelSync": 70,
+    "item": 355,
+    "itemSync": 0,
+    "memberType": 3
   },
   "597": {
     "name": {
@@ -2437,12 +2437,12 @@
       "de": null,
       "fr": null
     },
-    "type": "4",
-    "level": "70",
-    "levelSync": "70",
-    "item": "370",
-    "itemSync": "0",
-    "memberType": "3"
+    "type": 4,
+    "level": 70,
+    "levelSync": 70,
+    "item": 370,
+    "itemSync": 0,
+    "memberType": 3
   },
   "611": {
     "name": {
@@ -2452,12 +2452,12 @@
       "de": null,
       "fr": null
     },
-    "type": "2",
-    "level": "70",
-    "levelSync": "70",
-    "item": "360",
-    "itemSync": "0",
-    "memberType": "2"
+    "type": 2,
+    "level": 70,
+    "levelSync": 70,
+    "item": 360,
+    "itemSync": 0,
+    "memberType": 2
   },
   "636": {
     "name": {
@@ -2467,12 +2467,12 @@
       "de": null,
       "fr": null
     },
-    "type": "5",
-    "level": "70",
-    "levelSync": "70",
-    "item": "365",
-    "itemSync": "0",
-    "memberType": "4"
+    "type": 5,
+    "level": 70,
+    "levelSync": 70,
+    "item": 365,
+    "itemSync": 0,
+    "memberType": 4
   },
   "637": {
     "name": {
@@ -2482,12 +2482,12 @@
       "de": null,
       "fr": null
     },
-    "type": "4",
-    "level": "70",
-    "levelSync": "70",
-    "item": "365",
-    "itemSync": "0",
-    "memberType": "3"
+    "type": 4,
+    "level": 70,
+    "levelSync": 70,
+    "item": 365,
+    "itemSync": 0,
+    "memberType": 3
   },
   "638": {
     "name": {
@@ -2497,12 +2497,12 @@
       "de": null,
       "fr": null
     },
-    "type": "4",
-    "level": "70",
-    "levelSync": "70",
-    "item": "380",
-    "itemSync": "0",
-    "memberType": "3"
+    "type": 4,
+    "level": 70,
+    "levelSync": 70,
+    "item": 380,
+    "itemSync": 0,
+    "memberType": 3
   },
   "649": {
     "name": {
@@ -2512,12 +2512,12 @@
       "de": null,
       "fr": null
     },
-    "type": "2",
-    "level": "73",
-    "levelSync": "74",
-    "item": "375",
-    "itemSync": "0",
-    "memberType": "2"
+    "type": 2,
+    "level": 73,
+    "levelSync": 74,
+    "item": 375,
+    "itemSync": 0,
+    "memberType": 2
   },
   "651": {
     "name": {
@@ -2527,12 +2527,12 @@
       "de": null,
       "fr": null
     },
-    "type": "2",
-    "level": "75",
-    "levelSync": "76",
-    "item": "380",
-    "itemSync": "0",
-    "memberType": "2"
+    "type": 2,
+    "level": 75,
+    "levelSync": 76,
+    "item": 380,
+    "itemSync": 0,
+    "memberType": 2
   },
   "652": {
     "name": {
@@ -2542,12 +2542,12 @@
       "de": null,
       "fr": null
     },
-    "type": "2",
-    "level": "80",
-    "levelSync": "80",
-    "item": "410",
-    "itemSync": "440",
-    "memberType": "2"
+    "type": 2,
+    "level": 80,
+    "levelSync": 80,
+    "item": 410,
+    "itemSync": 440,
+    "memberType": 2
   },
   "653": {
     "name": {
@@ -2557,12 +2557,12 @@
       "de": null,
       "fr": null
     },
-    "type": "5",
-    "level": "80",
-    "levelSync": "80",
-    "item": "425",
-    "itemSync": "0",
-    "memberType": "3"
+    "type": 5,
+    "level": 80,
+    "levelSync": 80,
+    "item": 425,
+    "itemSync": 0,
+    "memberType": 3
   },
   "655": {
     "name": {
@@ -2572,12 +2572,12 @@
       "de": null,
       "fr": null
     },
-    "type": "2",
-    "level": "80",
-    "levelSync": "80",
-    "item": "410",
-    "itemSync": "470",
-    "memberType": "2"
+    "type": 2,
+    "level": 80,
+    "levelSync": 80,
+    "item": 410,
+    "itemSync": 470,
+    "memberType": 2
   },
   "656": {
     "name": {
@@ -2587,12 +2587,12 @@
       "de": null,
       "fr": null
     },
-    "type": "2",
-    "level": "77",
-    "levelSync": "78",
-    "item": "385",
-    "itemSync": "0",
-    "memberType": "2"
+    "type": 2,
+    "level": 77,
+    "levelSync": 78,
+    "item": 385,
+    "itemSync": 0,
+    "memberType": 2
   },
   "657": {
     "name": {
@@ -2602,12 +2602,12 @@
       "de": null,
       "fr": null
     },
-    "type": "4",
-    "level": "73",
-    "levelSync": "74",
-    "item": "0",
-    "itemSync": "0",
-    "memberType": "3"
+    "type": 4,
+    "level": 73,
+    "levelSync": 74,
+    "item": 0,
+    "itemSync": 0,
+    "memberType": 3
   },
   "658": {
     "name": {
@@ -2617,12 +2617,12 @@
       "de": null,
       "fr": null
     },
-    "type": "4",
-    "level": "80",
-    "levelSync": "80",
-    "item": "430",
-    "itemSync": "0",
-    "memberType": "3"
+    "type": 4,
+    "level": 80,
+    "levelSync": 80,
+    "item": 430,
+    "itemSync": 0,
+    "memberType": 3
   },
   "659": {
     "name": {
@@ -2632,12 +2632,12 @@
       "de": null,
       "fr": null
     },
-    "type": "2",
-    "level": "79",
-    "levelSync": "80",
-    "item": "390",
-    "itemSync": "420",
-    "memberType": "2"
+    "type": 2,
+    "level": 79,
+    "levelSync": 80,
+    "item": 390,
+    "itemSync": 420,
+    "memberType": 2
   },
   "661": {
     "name": {
@@ -2647,12 +2647,12 @@
       "de": null,
       "fr": null
     },
-    "type": "2",
-    "level": "80",
-    "levelSync": "80",
-    "item": "410",
-    "itemSync": "470",
-    "memberType": "2"
+    "type": 2,
+    "level": 80,
+    "levelSync": 80,
+    "item": 410,
+    "itemSync": 470,
+    "memberType": 2
   },
   "666": {
     "name": {
@@ -2662,12 +2662,12 @@
       "de": null,
       "fr": null
     },
-    "type": "4",
-    "level": "79",
-    "levelSync": "80",
-    "item": "0",
-    "itemSync": "420",
-    "memberType": "3"
+    "type": 4,
+    "level": 79,
+    "levelSync": 80,
+    "item": 0,
+    "itemSync": 420,
+    "memberType": 3
   },
   "667": {
     "name": {
@@ -2677,12 +2677,12 @@
       "de": null,
       "fr": null
     },
-    "type": "4",
-    "level": "80",
-    "levelSync": "80",
-    "item": "430",
-    "itemSync": "0",
-    "memberType": "3"
+    "type": 4,
+    "level": 80,
+    "levelSync": 80,
+    "item": 430,
+    "itemSync": 0,
+    "memberType": 3
   },
   "676": {
     "name": {
@@ -2692,12 +2692,12 @@
       "de": null,
       "fr": null
     },
-    "type": "2",
-    "level": "71",
-    "levelSync": "72",
-    "item": "370",
-    "itemSync": "0",
-    "memberType": "2"
+    "type": 2,
+    "level": 71,
+    "levelSync": 72,
+    "item": 370,
+    "itemSync": 0,
+    "memberType": 2
   },
   "682": {
     "name": {
@@ -2707,12 +2707,12 @@
       "de": null,
       "fr": null
     },
-    "type": "5",
-    "level": "80",
-    "levelSync": "80",
-    "item": "425",
-    "itemSync": "0",
-    "memberType": "3"
+    "type": 5,
+    "level": 80,
+    "levelSync": 80,
+    "item": 425,
+    "itemSync": 0,
+    "memberType": 3
   },
   "684": {
     "name": {
@@ -2722,12 +2722,12 @@
       "de": null,
       "fr": null
     },
-    "type": "5",
-    "level": "80",
-    "levelSync": "80",
-    "item": "425",
-    "itemSync": "0",
-    "memberType": "3"
+    "type": 5,
+    "level": 80,
+    "levelSync": 80,
+    "item": 425,
+    "itemSync": 0,
+    "memberType": 3
   },
   "687": {
     "name": {
@@ -2737,12 +2737,12 @@
       "de": null,
       "fr": null
     },
-    "type": "4",
-    "level": "80",
-    "levelSync": "80",
-    "item": "410",
-    "itemSync": "0",
-    "memberType": "3"
+    "type": 4,
+    "level": 80,
+    "levelSync": 80,
+    "item": 410,
+    "itemSync": 0,
+    "memberType": 3
   },
   "689": {
     "name": {
@@ -2752,12 +2752,12 @@
       "de": null,
       "fr": null
     },
-    "type": "5",
-    "level": "80",
-    "levelSync": "80",
-    "item": "425",
-    "itemSync": "0",
-    "memberType": "3"
+    "type": 5,
+    "level": 80,
+    "levelSync": 80,
+    "item": 425,
+    "itemSync": 0,
+    "memberType": 3
   },
   "692": {
     "name": {
@@ -2767,12 +2767,12 @@
       "de": null,
       "fr": null
     },
-    "type": "2",
-    "level": "80",
-    "levelSync": "80",
-    "item": "430",
-    "itemSync": "470",
-    "memberType": "2"
+    "type": 2,
+    "level": 80,
+    "levelSync": 80,
+    "item": 430,
+    "itemSync": 470,
+    "memberType": 2
   },
   "693": {
     "name": {
@@ -2782,12 +2782,12 @@
       "de": null,
       "fr": null
     },
-    "type": "4",
-    "level": "80",
-    "levelSync": "80",
-    "item": "450",
-    "itemSync": "0",
-    "memberType": "3"
+    "type": 4,
+    "level": 80,
+    "levelSync": 80,
+    "item": 450,
+    "itemSync": 0,
+    "memberType": 3
   },
   "700": {
     "name": {
@@ -2797,12 +2797,12 @@
       "de": null,
       "fr": null
     },
-    "type": "5",
-    "level": "80",
-    "levelSync": "80",
-    "item": "435",
-    "itemSync": "0",
-    "memberType": "4"
+    "type": 5,
+    "level": 80,
+    "levelSync": 80,
+    "item": 435,
+    "itemSync": 0,
+    "memberType": 4
   },
   "714": {
     "name": {
@@ -2812,12 +2812,12 @@
       "de": null,
       "fr": null
     },
-    "type": "2",
-    "level": "80",
-    "levelSync": "80",
-    "item": "440",
-    "itemSync": "500",
-    "memberType": "2"
+    "type": 2,
+    "level": 80,
+    "levelSync": 80,
+    "item": 440,
+    "itemSync": 500,
+    "memberType": 2
   },
   "715": {
     "name": {
@@ -2827,12 +2827,12 @@
       "de": null,
       "fr": null
     },
-    "type": "5",
-    "level": "80",
-    "levelSync": "80",
-    "item": "455",
-    "itemSync": "0",
-    "memberType": "3"
+    "type": 5,
+    "level": 80,
+    "levelSync": 80,
+    "item": 455,
+    "itemSync": 0,
+    "memberType": 3
   },
   "717": {
     "name": {
@@ -2842,12 +2842,12 @@
       "de": null,
       "fr": null
     },
-    "type": "4",
-    "level": "80",
-    "levelSync": "80",
-    "item": "455",
-    "itemSync": "0",
-    "memberType": "3"
+    "type": 4,
+    "level": 80,
+    "levelSync": 80,
+    "item": 455,
+    "itemSync": 0,
+    "memberType": 3
   },
   "718": {
     "name": {
@@ -2857,12 +2857,12 @@
       "de": null,
       "fr": null
     },
-    "type": "4",
-    "level": "80",
-    "levelSync": "80",
-    "item": "470",
-    "itemSync": "0",
-    "memberType": "3"
+    "type": 4,
+    "level": 80,
+    "levelSync": 80,
+    "item": 470,
+    "itemSync": 0,
+    "memberType": 3
   },
   "719": {
     "name": {
@@ -2872,12 +2872,12 @@
       "de": null,
       "fr": null
     },
-    "type": "5",
-    "level": "80",
-    "levelSync": "80",
-    "item": "455",
-    "itemSync": "0",
-    "memberType": "3"
+    "type": 5,
+    "level": 80,
+    "levelSync": 80,
+    "item": 455,
+    "itemSync": 0,
+    "memberType": 3
   },
   "725": {
     "name": {
@@ -2887,12 +2887,12 @@
       "de": null,
       "fr": null
     },
-    "type": "4",
-    "level": "80",
-    "levelSync": "80",
-    "item": "470",
-    "itemSync": "0",
-    "memberType": "3"
+    "type": 4,
+    "level": 80,
+    "levelSync": 80,
+    "item": 470,
+    "itemSync": 0,
+    "memberType": 3
   },
   "726": {
     "name": {
@@ -2902,12 +2902,12 @@
       "de": null,
       "fr": null
     },
-    "type": "5",
-    "level": "80",
-    "levelSync": "80",
-    "item": "455",
-    "itemSync": "0",
-    "memberType": "3"
+    "type": 5,
+    "level": 80,
+    "levelSync": 80,
+    "item": 455,
+    "itemSync": 0,
+    "memberType": 3
   },
   "728": {
     "name": {
@@ -2917,12 +2917,12 @@
       "de": null,
       "fr": null
     },
-    "type": "5",
-    "level": "80",
-    "levelSync": "80",
-    "item": "455",
-    "itemSync": "0",
-    "memberType": "3"
+    "type": 5,
+    "level": 80,
+    "levelSync": 80,
+    "item": 455,
+    "itemSync": 0,
+    "memberType": 3
   },
   "736": {
     "name": {
@@ -2932,12 +2932,12 @@
       "de": null,
       "fr": null
     },
-    "type": "5",
-    "level": "80",
-    "levelSync": "80",
-    "item": "465",
-    "itemSync": "0",
-    "memberType": "4"
+    "type": 5,
+    "level": 80,
+    "levelSync": 80,
+    "item": 465,
+    "itemSync": 0,
+    "memberType": 4
   },
   "737": {
     "name": {
@@ -2947,12 +2947,12 @@
       "de": null,
       "fr": null
     },
-    "type": "2",
-    "level": "80",
-    "levelSync": "80",
-    "item": "460",
-    "itemSync": "500",
-    "memberType": "2"
+    "type": 2,
+    "level": 80,
+    "levelSync": 80,
+    "item": 460,
+    "itemSync": 500,
+    "memberType": 2
   },
   "738": {
     "name": {
@@ -2962,12 +2962,12 @@
       "de": null,
       "fr": null
     },
-    "type": "4",
-    "level": "80",
-    "levelSync": "80",
-    "item": "465",
-    "itemSync": "0",
-    "memberType": "3"
+    "type": 4,
+    "level": 80,
+    "levelSync": 80,
+    "item": 465,
+    "itemSync": 0,
+    "memberType": 3
   },
   "739": {
     "name": {
@@ -2977,12 +2977,12 @@
       "de": null,
       "fr": null
     },
-    "type": "4",
-    "level": "80",
-    "levelSync": "80",
-    "item": "480",
-    "itemSync": "0",
-    "memberType": "3"
+    "type": 4,
+    "level": 80,
+    "levelSync": 80,
+    "item": 480,
+    "itemSync": 0,
+    "memberType": 3
   },
   "746": {
     "name": {
@@ -2992,12 +2992,12 @@
       "de": null,
       "fr": null
     },
-    "type": "2",
-    "level": "80",
-    "levelSync": "80",
-    "item": "470",
-    "itemSync": "0",
-    "memberType": "2"
+    "type": 2,
+    "level": 80,
+    "levelSync": 80,
+    "item": 470,
+    "itemSync": 0,
+    "memberType": 2
   },
   "747": {
     "name": {
@@ -3007,12 +3007,12 @@
       "de": null,
       "fr": null
     },
-    "type": "5",
-    "level": "80",
-    "levelSync": "80",
-    "item": "485",
-    "itemSync": "0",
-    "memberType": "3"
+    "type": 5,
+    "level": 80,
+    "levelSync": 80,
+    "item": 485,
+    "itemSync": 0,
+    "memberType": 3
   },
   "749": {
     "name": {
@@ -3022,12 +3022,12 @@
       "de": null,
       "fr": null
     },
-    "type": "5",
-    "level": "80",
-    "levelSync": "80",
-    "item": "485",
-    "itemSync": "0",
-    "memberType": "3"
+    "type": 5,
+    "level": 80,
+    "levelSync": 80,
+    "item": 485,
+    "itemSync": 0,
+    "memberType": 3
   },
   "751": {
     "name": {
@@ -3037,12 +3037,12 @@
       "de": null,
       "fr": null
     },
-    "type": "5",
-    "level": "80",
-    "levelSync": "80",
-    "item": "485",
-    "itemSync": "0",
-    "memberType": "3"
+    "type": 5,
+    "level": 80,
+    "levelSync": 80,
+    "item": 485,
+    "itemSync": 0,
+    "memberType": 3
   },
   "758": {
     "name": {
@@ -3052,12 +3052,12 @@
       "de": null,
       "fr": null
     },
-    "type": "5",
-    "level": "80",
-    "levelSync": "80",
-    "item": "485",
-    "itemSync": "0",
-    "memberType": "3"
+    "type": 5,
+    "level": 80,
+    "levelSync": 80,
+    "item": 485,
+    "itemSync": 0,
+    "memberType": 3
   },
   "762": {
     "name": {
@@ -3067,12 +3067,12 @@
       "de": null,
       "fr": null
     },
-    "type": "4",
-    "level": "80",
-    "levelSync": "80",
-    "item": "485",
-    "itemSync": "0",
-    "memberType": "3"
+    "type": 4,
+    "level": 80,
+    "levelSync": 80,
+    "item": 485,
+    "itemSync": 0,
+    "memberType": 3
   },
   "763": {
     "name": {
@@ -3082,12 +3082,12 @@
       "de": null,
       "fr": null
     },
-    "type": "4",
-    "level": "80",
-    "levelSync": "80",
-    "item": "500",
-    "itemSync": "0",
-    "memberType": "3"
+    "type": 4,
+    "level": 80,
+    "levelSync": 80,
+    "item": 500,
+    "itemSync": 0,
+    "memberType": 3
   },
   "777": {
     "name": {
@@ -3097,12 +3097,12 @@
       "de": null,
       "fr": null
     },
-    "type": "2",
-    "level": "80",
-    "levelSync": "80",
-    "item": "490",
-    "itemSync": "0",
-    "memberType": "2"
+    "type": 2,
+    "level": 80,
+    "levelSync": 80,
+    "item": 490,
+    "itemSync": 0,
+    "memberType": 2
   },
   "779": {
     "name": {
@@ -3112,12 +3112,12 @@
       "de": null,
       "fr": null
     },
-    "type": "5",
-    "level": "80",
-    "levelSync": "80",
-    "item": "495",
-    "itemSync": "0",
-    "memberType": "4"
+    "type": 5,
+    "level": 80,
+    "levelSync": 80,
+    "item": 495,
+    "itemSync": 0,
+    "memberType": 4
   },
   "781": {
     "name": {
@@ -3127,12 +3127,12 @@
       "de": null,
       "fr": null
     },
-    "type": "4",
-    "level": "80",
-    "levelSync": "80",
-    "item": "495",
-    "itemSync": "0",
-    "memberType": "3"
+    "type": 4,
+    "level": 80,
+    "levelSync": 80,
+    "item": 495,
+    "itemSync": 0,
+    "memberType": 3
   },
   "782": {
     "name": {
@@ -3142,12 +3142,12 @@
       "de": null,
       "fr": null
     },
-    "type": "4",
-    "level": "80",
-    "levelSync": "80",
-    "item": "510",
-    "itemSync": "0",
-    "memberType": "3"
+    "type": 4,
+    "level": 80,
+    "levelSync": 80,
+    "item": 510,
+    "itemSync": 0,
+    "memberType": 3
   },
   "783": {
     "name": {
@@ -3157,12 +3157,12 @@
       "de": null,
       "fr": null
     },
-    "type": "2",
-    "level": "81",
-    "levelSync": "82",
-    "item": "500",
-    "itemSync": "0",
-    "memberType": "2"
+    "type": 2,
+    "level": 81,
+    "levelSync": 82,
+    "item": 500,
+    "itemSync": 0,
+    "memberType": 2
   },
   "784": {
     "name": {
@@ -3172,12 +3172,12 @@
       "de": null,
       "fr": null
     },
-    "type": "2",
-    "level": "90",
-    "levelSync": "90",
-    "item": "540",
-    "itemSync": "600",
-    "memberType": "2"
+    "type": 2,
+    "level": 90,
+    "levelSync": 90,
+    "item": 540,
+    "itemSync": 600,
+    "memberType": 2
   },
   "785": {
     "name": {
@@ -3187,12 +3187,12 @@
       "de": null,
       "fr": null
     },
-    "type": "2",
-    "level": "83",
-    "levelSync": "84",
-    "item": "505",
-    "itemSync": "0",
-    "memberType": "2"
+    "type": 2,
+    "level": 83,
+    "levelSync": 84,
+    "item": 505,
+    "itemSync": 0,
+    "memberType": 2
   },
   "786": {
     "name": {
@@ -3202,12 +3202,12 @@
       "de": null,
       "fr": null
     },
-    "type": "2",
-    "level": "89",
-    "levelSync": "90",
-    "item": "520",
-    "itemSync": "550",
-    "memberType": "2"
+    "type": 2,
+    "level": 89,
+    "levelSync": 90,
+    "item": 520,
+    "itemSync": 550,
+    "memberType": 2
   },
   "787": {
     "name": {
@@ -3217,12 +3217,12 @@
       "de": null,
       "fr": null
     },
-    "type": "2",
-    "level": "87",
-    "levelSync": "88",
-    "item": "515",
-    "itemSync": "0",
-    "memberType": "2"
+    "type": 2,
+    "level": 87,
+    "levelSync": 88,
+    "item": 515,
+    "itemSync": 0,
+    "memberType": 2
   },
   "789": {
     "name": {
@@ -3232,12 +3232,12 @@
       "de": null,
       "fr": null
     },
-    "type": "2",
-    "level": "85",
-    "levelSync": "86",
-    "item": "510",
-    "itemSync": "0",
-    "memberType": "2"
+    "type": 2,
+    "level": 85,
+    "levelSync": 86,
+    "item": 510,
+    "itemSync": 0,
+    "memberType": 2
   },
   "790": {
     "name": {
@@ -3247,12 +3247,12 @@
       "de": null,
       "fr": null
     },
-    "type": "4",
-    "level": "89",
-    "levelSync": "90",
-    "item": "0",
-    "itemSync": "550",
-    "memberType": "3"
+    "type": 4,
+    "level": 89,
+    "levelSync": 90,
+    "item": 0,
+    "itemSync": 550,
+    "memberType": 3
   },
   "792": {
     "name": {
@@ -3262,12 +3262,12 @@
       "de": null,
       "fr": null
     },
-    "type": "2",
-    "level": "90",
-    "levelSync": "90",
-    "item": "540",
-    "itemSync": "570",
-    "memberType": "2"
+    "type": 2,
+    "level": 90,
+    "levelSync": 90,
+    "item": 540,
+    "itemSync": 570,
+    "memberType": 2
   },
   "794": {
     "name": {
@@ -3277,12 +3277,12 @@
       "de": null,
       "fr": null
     },
-    "type": "2",
-    "level": "90",
-    "levelSync": "90",
-    "item": "540",
-    "itemSync": "600",
-    "memberType": "2"
+    "type": 2,
+    "level": 90,
+    "levelSync": 90,
+    "item": 540,
+    "itemSync": 600,
+    "memberType": 2
   },
   "796": {
     "name": {
@@ -3292,12 +3292,12 @@
       "de": null,
       "fr": null
     },
-    "type": "4",
-    "level": "90",
-    "levelSync": "90",
-    "item": "540",
-    "itemSync": "0",
-    "memberType": "3"
+    "type": 4,
+    "level": 90,
+    "levelSync": 90,
+    "item": 540,
+    "itemSync": 0,
+    "memberType": 3
   },
   "800": {
     "name": {
@@ -3307,12 +3307,12 @@
       "de": null,
       "fr": null
     },
-    "type": "5",
-    "level": "90",
-    "levelSync": "90",
-    "item": "565",
-    "itemSync": "0",
-    "memberType": "3"
+    "type": 5,
+    "level": 90,
+    "levelSync": 90,
+    "item": 565,
+    "itemSync": 0,
+    "memberType": 3
   },
   "802": {
     "name": {
@@ -3322,12 +3322,12 @@
       "de": null,
       "fr": null
     },
-    "type": "4",
-    "level": "83",
-    "levelSync": "84",
-    "item": "0",
-    "itemSync": "0",
-    "memberType": "3"
+    "type": 4,
+    "level": 83,
+    "levelSync": 84,
+    "item": 0,
+    "itemSync": 0,
+    "memberType": 3
   },
   "806": {
     "name": {
@@ -3337,12 +3337,12 @@
       "de": null,
       "fr": null
     },
-    "type": "5",
-    "level": "90",
-    "levelSync": "90",
-    "item": "565",
-    "itemSync": "0",
-    "memberType": "3"
+    "type": 5,
+    "level": 90,
+    "levelSync": 90,
+    "item": 565,
+    "itemSync": 0,
+    "memberType": 3
   },
   "808": {
     "name": {
@@ -3352,12 +3352,12 @@
       "de": null,
       "fr": null
     },
-    "type": "5",
-    "level": "90",
-    "levelSync": "90",
-    "item": "565",
-    "itemSync": "0",
-    "memberType": "3"
+    "type": 5,
+    "level": 90,
+    "levelSync": 90,
+    "item": 565,
+    "itemSync": 0,
+    "memberType": 3
   },
   "810": {
     "name": {
@@ -3367,12 +3367,12 @@
       "de": null,
       "fr": null
     },
-    "type": "5",
-    "level": "90",
-    "levelSync": "90",
-    "item": "565",
-    "itemSync": "0",
-    "memberType": "3"
+    "type": 5,
+    "level": 90,
+    "levelSync": 90,
+    "item": 565,
+    "itemSync": 0,
+    "memberType": 3
   },
   "830": {
     "name": {
@@ -3382,12 +3382,12 @@
       "de": null,
       "fr": null
     },
-    "type": "4",
-    "level": "50",
-    "levelSync": "50",
-    "item": "42",
-    "itemSync": "60",
-    "memberType": "2"
+    "type": 4,
+    "level": 50,
+    "levelSync": 50,
+    "item": 42,
+    "itemSync": 60,
+    "memberType": 2
   },
   "844": {
     "name": {
@@ -3397,12 +3397,12 @@
       "de": null,
       "fr": null
     },
-    "type": "2",
-    "level": "90",
-    "levelSync": "90",
-    "item": "560",
-    "itemSync": "600",
-    "memberType": "2"
+    "type": 2,
+    "level": 90,
+    "levelSync": 90,
+    "item": 560,
+    "itemSync": 600,
+    "memberType": 2
   },
   "866": {
     "name": {
@@ -3412,12 +3412,12 @@
       "de": null,
       "fr": null
     },
-    "type": "5",
-    "level": "90",
-    "levelSync": "90",
-    "item": "565",
-    "itemSync": "0",
-    "memberType": "4"
+    "type": 5,
+    "level": 90,
+    "levelSync": 90,
+    "item": 565,
+    "itemSync": 0,
+    "memberType": 4
   },
   "869": {
     "name": {
@@ -3427,12 +3427,12 @@
       "de": null,
       "fr": null
     },
-    "type": "2",
-    "level": "90",
-    "levelSync": "90",
-    "item": "575",
-    "itemSync": "0",
-    "memberType": "2"
+    "type": 2,
+    "level": 90,
+    "levelSync": 90,
+    "item": 575,
+    "itemSync": 0,
+    "memberType": 2
   },
   "870": {
     "name": {
@@ -3442,12 +3442,12 @@
       "de": null,
       "fr": null
     },
-    "type": "4",
-    "level": "90",
-    "levelSync": "90",
-    "item": "585",
-    "itemSync": "0",
-    "memberType": "3"
+    "type": 4,
+    "level": 90,
+    "levelSync": 90,
+    "item": 585,
+    "itemSync": 0,
+    "memberType": 3
   },
   "872": {
     "name": {
@@ -3457,12 +3457,12 @@
       "de": null,
       "fr": null
     },
-    "type": "5",
-    "level": "90",
-    "levelSync": "90",
-    "item": "585",
-    "itemSync": "0",
-    "memberType": "3"
+    "type": 5,
+    "level": 90,
+    "levelSync": 90,
+    "item": 585,
+    "itemSync": 0,
+    "memberType": 3
   },
   "876": {
     "name": {
@@ -3472,12 +3472,12 @@
       "de": null,
       "fr": null
     },
-    "type": "5",
-    "level": "90",
-    "levelSync": "90",
-    "item": "585",
-    "itemSync": "0",
-    "memberType": "3"
+    "type": 5,
+    "level": 90,
+    "levelSync": 90,
+    "item": 585,
+    "itemSync": 0,
+    "memberType": 3
   },
   "880": {
     "name": {
@@ -3487,12 +3487,12 @@
       "de": null,
       "fr": null
     },
-    "type": "5",
-    "level": "90",
-    "levelSync": "90",
-    "item": "585",
-    "itemSync": "0",
-    "memberType": "3"
+    "type": 5,
+    "level": 90,
+    "levelSync": 90,
+    "item": 585,
+    "itemSync": 0,
+    "memberType": 3
   },
   "883": {
     "name": {
@@ -3502,11 +3502,11 @@
       "de": null,
       "fr": null
     },
-    "type": "5",
-    "level": "90",
-    "levelSync": "90",
-    "item": "585",
-    "itemSync": "0",
-    "memberType": "3"
+    "type": 5,
+    "level": 90,
+    "levelSync": 90,
+    "item": 585,
+    "itemSync": 0,
+    "memberType": 3
   }
 }
