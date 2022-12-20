@@ -3,7 +3,6 @@ using RouletteRecorder.Monitors;
 using RouletteRecorder.Utils;
 using System;
 using System.ComponentModel;
-using System.Linq;
 using System.Windows.Controls;
 
 namespace RouletteRecorder.Views
