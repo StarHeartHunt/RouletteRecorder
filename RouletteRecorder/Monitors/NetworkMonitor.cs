@@ -111,7 +111,7 @@ namespace RouletteRecorder.Monitors
                         BitConverter.ToInt32(param2, 0) == 0x40000003
                         || BitConverter.ToInt32(param2, 0) == 0x40000002) // Victory: 21:zone:40000003:00:00:00:00 行会令 40000002
                     {
-                        Log.Info($"[NetworkMonitor] Detected ActorControlSelf(Victory): param2:{param2}");
+                        Log.Info($"[NetworkMonitor] Detected ActorControlSelf (Victory)");
                         if (Config.Instance.MonitorType == MonitorType.Network)
                         {
                             RouletteSingleton.Instance.IsCompleted = true;
@@ -131,7 +131,7 @@ namespace RouletteRecorder.Monitors
                 }
                 var roulette = BitConverter.ToUInt16(data, 2);
                 var instance = roulette == 0 ? BitConverter.ToUInt16(data, 0x1c) : 0;
-                Log.Info(string.Format("[ContentFinderNotifyPop] roulette:{0}, instance:{1}", roulette, instance));
+                Log.Info(string.Format("[NetworkMonitor] Detected ContentFinderNotifyPop: roulette:{0}, instance:{1}", roulette, instance));
                 RouletteSingleton.Instance.Init();
                 if (roulette == 0) return false;
                 if (Data.Instance.Roulettes.TryGetValue(roulette, out var rouletteName))
