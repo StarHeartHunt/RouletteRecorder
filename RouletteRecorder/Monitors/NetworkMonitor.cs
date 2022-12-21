@@ -81,7 +81,7 @@ namespace RouletteRecorder.Monitors
 
             if (opcode == Opcode.InitZone)
             {
-                if (message.Length != 128)
+                if (message.Length != 136)
                 {
                     return false;
                 }
@@ -99,7 +99,7 @@ namespace RouletteRecorder.Monitors
                 {
                     RouletteSingleton.Instance.RouletteName = "未知副本";
                 }
-                Log.Info("Detected InitZone");
+                Log.Info($"[NetworkMonitor] Detected InitZone: serverId:{serverId}, zoneId:{zoneId}, instanceId:{instanceId}, contentId:{contentId}");
             }
             else if (opcode == Opcode.ActorControlSelf)
             {
@@ -111,7 +111,7 @@ namespace RouletteRecorder.Monitors
                         BitConverter.ToInt32(param2, 0) == 0x40000003
                         || BitConverter.ToInt32(param2, 0) == 0x40000002) // Victory: 21:zone:40000003:00:00:00:00 行会令 40000002
                     {
-                        Log.Info("[NetworkMonitor] Detected Victory");
+                        Log.Info($"[NetworkMonitor] Detected ActorControlSelf(Victory): param2:{param2}");
                         if (Config.Instance.MonitorType == MonitorType.Network)
                         {
                             RouletteSingleton.Instance.IsCompleted = true;
@@ -125,12 +125,12 @@ namespace RouletteRecorder.Monitors
             }
             else if (opcode == Opcode.ContentFinderNotifyPop)
             {
-                if (message.Length != 64)
+                if (message.Length != 72)
                 {
                     return false;
                 }
                 var roulette = BitConverter.ToUInt16(data, 2);
-                var instance = roulette == 0 ? BitConverter.ToUInt16(data, 20) : 0;
+                var instance = roulette == 0 ? BitConverter.ToUInt16(data, 0x1c) : 0;
                 Log.Info(string.Format("[ContentFinderNotifyPop] roulette:{0}, instance:{1}", roulette, instance));
                 RouletteSingleton.Instance.Init();
                 if (roulette == 0) return false;
