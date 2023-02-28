@@ -3167,7 +3167,7 @@
   "238": {
     "name": {
       "chs": "漂流海域妖歌海",
-      "en": "The Sirensong Sea",
+      "en": "the Sirensong Sea",
       "ja": "漂流海域 セイレーン海",
       "de": "Sirenen-See",
       "fr": "la Mer du Chant des sirènes"
@@ -9376,7 +9376,7 @@
   },
   "868": {
     "name": {
-      "chs": "",
+      "chs": "多变迷宫 希拉狄哈水道",
       "en": "The Sil'dihn Subterrane",
       "ja": "ヴァリアントダンジョン シラディハ水道",
       "de": "Die Unterstadt von Sil'dih",
@@ -9479,21 +9479,6 @@
     "itemSync": 620,
     "memberType": 1
   },
-  "875": {
-    "name": {
-      "chs": "萨菲洛特幻巧战",
-      "en": "Containment Bay S1T7 (Unreal)",
-      "ja": "幻魔神セフィロト討滅戦",
-      "de": "Traumprüfung - Sephirot",
-      "fr": "Unité de contention S1P7 (irréel)"
-    },
-    "type": 4,
-    "level": 90,
-    "levelSync": 90,
-    "item": 560,
-    "itemSync": 565,
-    "memberType": 3
-  },
   "876": {
     "name": {
       "chs": "万魔殿 炼净之狱3",
@@ -9526,7 +9511,7 @@
   },
   "878": {
     "name": {
-      "chs": "",
+      "chs": "异闻迷宫 异闻希拉狄哈水道",
       "en": "Another Sil'dihn Subterrane",
       "ja": "アナザーダンジョン 異聞シラディハ水道",
       "de": "Die kuriose Unterstadt von Sil'dih",
@@ -9541,7 +9526,7 @@
   },
   "879": {
     "name": {
-      "chs": "",
+      "chs": "异闻迷宫 零式异闻希拉狄哈水道",
       "en": "Another Sil'dihn Subterrane (Savage)",
       "ja": "アナザーダンジョン 異聞シラディハ水道 零式",
       "de": "Die kuriose Unterstadt von Sil'dih (episch)",
@@ -9628,5 +9613,20 @@
     "item": 0,
     "itemSync": 110,
     "memberType": 1
+  },
+  "886": {
+    "name": {
+      "chs": "",
+      "en": "Mount Ordeals",
+      "ja": "ルビカンテ討滅戦",
+      "de": "Prophetie - Rubicante",
+      "fr": "Le Mont du Supplice"
+    },
+    "type": 0,
+    "level": 0,
+    "levelSync": 0,
+    "item": 0,
+    "itemSync": 0,
+    "memberType": 0
   }
 }
