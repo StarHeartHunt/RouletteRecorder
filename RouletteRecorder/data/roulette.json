@@ -41,6 +41,13 @@
     "de": "Zufallsinhalt: Prüfung",
     "fr": "Mission aléatoire : défis"
   },
+  "7": {
+    "chs": "每日挑战：纷争前线",
+    "en": "Daily Challenge: Frontline",
+    "ja": "デイリーチャレンジ：フロントライン",
+    "de": "Tagesherausforderung: PvP-Front",
+    "fr": "Challenge quotidien : Front"
+  },
   "8": {
     "chs": "随机任务：90级",
     "en": "Duty Roulette: Level 90 Dungeons",
@@ -68,5 +75,19 @@
     "ja": "コンテンツルーレット：ノーマルレイド",
     "de": "Zufallsinhalt: Normaler Raid",
     "fr": "Mission aléatoire : raids normaux"
+  },
+  "40": {
+    "chs": "水晶冲突（练习赛）",
+    "en": "Crystalline Conflict (Casual Match)",
+    "ja": "クリスタルコンフリクト(カジュアルマッチ)",
+    "de": "Crystalline Conflict: Freies Spiel",
+    "fr": "Crystalline Conflict (partie non classée)"
+  },
+  "41": {
+    "chs": "水晶冲突（段位赛）",
+    "en": "Crystalline Conflict (Ranked Match)",
+    "ja": "クリスタルコンフリクト(ランクマッチ)",
+    "de": "Crystalline Conflict: Gewertetes Spiel",
+    "fr": "Crystalline Conflict (partie classée)"
   }
 }

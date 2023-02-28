@@ -9479,6 +9479,21 @@
     "itemSync": 620,
     "memberType": 1
   },
+  "875": {
+    "name": {
+      "chs": "萨菲洛特幻巧战",
+      "en": "Containment Bay S1T7 (Unreal)",
+      "ja": "幻魔神セフィロト討滅戦",
+      "de": "Traumprüfung - Sephirot",
+      "fr": "Unité de contention S1P7 (irréel)"
+    },
+    "type": 4,
+    "level": 90,
+    "levelSync": 90,
+    "item": 560,
+    "itemSync": 565,
+    "memberType": 3
+  },
   "876": {
     "name": {
       "chs": "万魔殿 炼净之狱3",
