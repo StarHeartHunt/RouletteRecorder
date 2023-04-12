@@ -246,7 +246,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include=".github\workflows\build.yml" />
     <None Include="app.config" />
     <None Include="data\dynamic-event.json" />
     <None Include="data\fate.json" />
