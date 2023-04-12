@@ -87,7 +87,6 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>del /S /Q "$(TargetDir)*.xml"
-XCOPY "$(SolutionDir)RouletteRecorder\data" "$(TargetDir)data" /E /I /Y</PostBuildEvent>
+    <PostBuildEvent>$(TargetDir)..\RouletteRecorder.Packer $(ConfigurationName)</PostBuildEvent>
   </PropertyGroup>
 </Project>

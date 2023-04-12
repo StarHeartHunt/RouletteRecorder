@@ -290,4 +290,20 @@
   </PropertyGroup>
   <Import Project="..\packages\Costura.Fody.5.7.0\build\Costura.Fody.targets" Condition="Exists('..\packages\Costura.Fody.5.7.0\build\Costura.Fody.targets')" />
   <Import Project="..\packages\Fody.6.6.4\build\Fody.targets" Condition="Exists('..\packages\Fody.6.6.4\build\Fody.targets')" />
+  <Target Name="CopyData" AfterTargets="AfterBuild">
+    <ItemGroup>
+      <DataFiles Include="$(SolutionDir)RouletteRecorder\data\*.json" />
+    </ItemGroup>
+    <Copy SourceFiles="@(DataFiles)" DestinationFolder="$(TargetDir)data" ContinueOnError="true" />
+    <Message Text="Copied files: '@(CopiedFiles)'" />
+  </Target>
+  <Target Name="DeleteXMLFiles" AfterTargets="AfterBuild">
+    <ItemGroup>
+      <XMLFiles Include="$(TargetDir)*.xml" />
+    </ItemGroup>
+    <Delete Files="@(XMLFiles)">
+      <Output TaskParameter="DeletedFiles" ItemName="DeletedList" />
+    </Delete>
+    <Message Text="Deleted files: '@(DeletedList)'" />
+  </Target>
 </Project>
