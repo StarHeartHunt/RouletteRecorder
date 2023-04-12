@@ -9,7 +9,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("StarHeartHunt")]
 [assembly: AssemblyProduct("RouletteRecorder")]
-[assembly: AssemblyCopyright("Copyright © StarHeartHunt 2022")]
+[assembly: AssemblyCopyright("Copyright © StarHeartHunt 2023")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
