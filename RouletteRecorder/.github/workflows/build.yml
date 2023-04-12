@@ -1,0 +1,71 @@
+﻿name: Build
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    strategy:
+      matrix:
+        configuration: [Release]
+
+    runs-on: windows-latest
+    
+    env:
+      THIRDPARTY_ACT: https://github.com/EQAditu/AdvancedCombatTracker/releases/download/3.6.0.275/ACTv3.zip
+      THIRDPARTY_FFXIV_ACT_PLUGIN: https://github.com/ravahn/FFXIV_ACT_Plugin/raw/master/Releases/FFXIV_ACT_Plugin_SDK_2.0.7.0.zip
+      SOLUTION_NAME: RouletteRecorder.sln
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - uses: actions/cache@v3
+      with:
+        path: ~/.nuget/packages
+        key: ${{ runner.os }}-nuget-${{ hashFiles('**/*.csproj') }}
+        restore-keys: |
+          ${{ runner.os }}-nuget-
+        
+    - name: Setup NuGet.exe for use with actions
+      uses: nuget/setup-nuget@v1
+    - name: Setup MSBuild.exe
+      uses: microsoft/setup-msbuild@v1.1
+
+    - name: Setup thirdparty dependencies
+      run: |
+        nuget restore ${{ env.SOLUTION_NAME }}
+
+        New-Item -Name "thirdparty" -ItemType "directory" -Force
+
+        Invoke-WebRequest -Uri ${{ env.THIRDPARTY_ACT }} -OutFile thirdparty\ACT.zip
+        Expand-Archive thirdparty\ACT.zip -DestinationPath thirdparty\ACT -Force
+
+        Invoke-WebRequest -Uri ${{ env.THIRDPARTY_FFXIV_ACT_PLUGIN }} -OutFile thirdparty\FFXIV_ACT_Plugin.zip
+        Expand-Archive thirdparty\FFXIV_ACT_Plugin.zip -DestinationPath thirdparty\FFXIV_ACT_Plugin -Force
+
+        Get-ChildItem .\thirdparty
+        Get-ChildItem .\thirdparty\ACT
+        Get-ChildItem .\thirdparty\FFXIV_ACT_Plugin
+
+    - name: Build
+      run: msbuild $env:SOLUTION_NAME /p:Configuration=$env:Configuration
+      env:
+        Configuration: ${{ matrix.configuration }}
+
+    - name: Upload build artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: Bundle
+        path: bin\*.zip
+        
+    - name: Release
+      uses: softprops/action-gh-release@v1
+      if: startsWith(github.ref, 'refs/tags/')
+      with:
+        files: bin\*.zip
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

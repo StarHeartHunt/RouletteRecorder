@@ -43,7 +43,8 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Advanced Combat Tracker">
-      <HintPath>..\..\..\Program Files\CafeAct\Advanced Combat Tracker.dll</HintPath>
+      <HintPath Condition="Exists('..\thirdparty\ACT\Advanced Combat Tracker.dll')">..\thirdparty\ACT\Advanced Combat Tracker.dll</HintPath>
+      <HintPath Condition="Exists('..\thirdparty\ACT\Advanced Combat Tracker.exe')">..\thirdparty\ACT\Advanced Combat Tracker.exe</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Costura, Version=5.7.0.0, Culture=neutral, processorArchitecture=MSIL">
@@ -53,12 +54,16 @@
       <HintPath>..\packages\CsvHelper.30.0.1\lib\net47\CsvHelper.dll</HintPath>
     </Reference>
     <Reference Include="FFXIV_ACT_Plugin">
-      <HintPath>..\..\..\ChromeDownload\FFXIV_ACT_Plugin_SDK_2.0.7.0\FFXIV_ACT_Plugin.dll</HintPath>
-      <Private>False</Private>
+      <HintPath>..\thirdparty\FFXIV_ACT_Plugin\FFXIV_ACT_Plugin.dll</HintPath>
     </Reference>
     <Reference Include="FFXIV_ACT_Plugin.Common">
-      <HintPath>..\..\..\ChromeDownload\FFXIV_ACT_Plugin_SDK_2.0.7.0\SDK\FFXIV_ACT_Plugin.Common.dll</HintPath>
-      <Private>False</Private>
+      <HintPath>..\thirdparty\FFXIV_ACT_Plugin\SDK\FFXIV_ACT_Plugin.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="FFXIV_ACT_Plugin.Memory">
+      <HintPath>..\thirdparty\FFXIV_ACT_Plugin\SDK\FFXIV_ACT_Plugin.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="FFXIV_ACT_Plugin.Network">
+      <HintPath>..\thirdparty\FFXIV_ACT_Plugin\SDK\FFXIV_ACT_Plugin.Network.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.1.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
@@ -241,6 +246,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <None Include=".github\workflows\build.yml" />
     <None Include="app.config" />
     <None Include="data\dynamic-event.json" />
     <None Include="data\fate.json" />
@@ -266,6 +272,7 @@
   <ItemGroup>
     <Content Include="FodyWeavers.xml" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
