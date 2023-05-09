@@ -76,6 +76,153 @@
     "de": "Zufallsinhalt: Normaler Raid",
     "fr": "Mission aléatoire : raids normaux"
   },
+  "18": {
+    "chs": "陆行鸟竞赛：荒野大道",
+    "en": "Chocobo Race: Sagolii Road",
+    "ja": "チョコボレース：サゴリーロード",
+    "de": "Chocobo-Rennen: Sagolii-Straße",
+    "fr": "Course de chocobos : Route de Sagolii"
+  },
+  "19": {
+    "chs": "陆行鸟竞赛：太阳海岸",
+    "en": "Chocobo Race: Costa del Sol",
+    "ja": "チョコボレース：コスタ・デル・ソル",
+    "de": "Chocobo-Rennen: Sonnenküste",
+    "fr": "Course de chocobos : Costa del Sol"
+  },
+  "20": {
+    "chs": "陆行鸟竞赛：恬静小路",
+    "en": "Chocobo Race: Tranquil Paths",
+    "ja": "チョコボレース：トランキルパス",
+    "de": "Chocobo-Rennen: Pfad der Seelenruhe",
+    "fr": "Course de chocobos : Sentes tranquilles"
+  },
+  "21": {
+    "chs": "陆行鸟竞赛：随机赛道",
+    "en": "Chocobo Race: Random",
+    "ja": "チョコボレース：コースルーレット",
+    "de": "Chocobo-Rennen: Zufallsstrecke",
+    "fr": "Course de chocobos : aléatoire"
+  },
+  "22": {
+    "chs": "陆行鸟竞赛：荒野大道（无报酬）",
+    "en": "Chocobo Race: Sagolii Road (No Rewards)",
+    "ja": "チョコボレース：サゴリーロード (報酬なし)",
+    "de": "Chocobo-Rennen: Sagolii-Straße (keine Belohnung)",
+    "fr": "Course de chocobos : Route de Sagolii (sans récompense)"
+  },
+  "23": {
+    "chs": "陆行鸟竞赛：太阳海岸（无报酬）",
+    "en": "Chocobo Race: Costa del Sol (No Rewards)",
+    "ja": "チョコボレース：コスタ・デル・ソル (報酬なし)",
+    "de": "Chocobo-Rennen: Sonnenküste (keine Belohnung)",
+    "fr": "Course de chocobos : Costa del Sol (sans récompense)"
+  },
+  "24": {
+    "chs": "陆行鸟竞赛：恬静小路（无报酬）",
+    "en": "Chocobo Race: Tranquil Paths (No Rewards)",
+    "ja": "チョコボレース：トランキルパス (報酬なし)",
+    "de": "Chocobo-Rennen: Pfad der Seelenruhe (keine Belohnung)",
+    "fr": "Course de chocobos : Sentes tranquilles (sans récompense)"
+  },
+  "25": {
+    "chs": "陆行鸟竞赛：随机赛道（无报酬）",
+    "en": "Chocobo Race: Random (No Rewards)",
+    "ja": "チョコボレース：コースルーレット (報酬なし)",
+    "de": "Chocobo-Rennen: Zufallsstrecke (keine Belohnung)",
+    "fr": "Course de chocobos : aléatoire (sans récompense)"
+  },
+  "26": {
+    "chs": "陆行鸟竞赛：随机赛道",
+    "en": "Chocobo Race: Random",
+    "ja": "チョコボレース：コースルーレット",
+    "de": "Chocobo-Rennen: Zufallsstrecke",
+    "fr": "Course de chocobos : aléatoire"
+  },
+  "27": {
+    "chs": "陆行鸟竞赛：随机赛道",
+    "en": "Chocobo Race: Random",
+    "ja": "チョコボレース：コースルーレット",
+    "de": "Chocobo-Rennen: Zufallsstrecke",
+    "fr": "Course de chocobos : aléatoire"
+  },
+  "28": {
+    "chs": "陆行鸟竞赛：随机赛道",
+    "en": "Chocobo Race: Random",
+    "ja": "チョコボレース：コースルーレット",
+    "de": "Chocobo-Rennen: Zufallsstrecke",
+    "fr": "Course de chocobos : aléatoire"
+  },
+  "29": {
+    "chs": "陆行鸟竞赛：随机赛道",
+    "en": "Chocobo Race: Random",
+    "ja": "チョコボレース：コースルーレット",
+    "de": "Chocobo-Rennen: Zufallsstrecke",
+    "fr": "Course de chocobos : aléatoire"
+  },
+  "30": {
+    "chs": "陆行鸟竞赛：随机赛道",
+    "en": "Chocobo Race: Random",
+    "ja": "チョコボレース：コースルーレット",
+    "de": "Chocobo-Rennen: Zufallsstrecke",
+    "fr": "Course de chocobos : aléatoire"
+  },
+  "31": {
+    "chs": "陆行鸟竞赛：随机赛道",
+    "en": "Chocobo Race: Random",
+    "ja": "チョコボレース：コースルーレット",
+    "de": "Chocobo-Rennen: Zufallsstrecke",
+    "fr": "Course de chocobos : aléatoire"
+  },
+  "32": {
+    "chs": "陆行鸟竞赛：随机赛道",
+    "en": "Chocobo Race: Random",
+    "ja": "チョコボレース：コースルーレット",
+    "de": "Chocobo-Rennen: Zufallsstrecke",
+    "fr": "Course de chocobos : aléatoire"
+  },
+  "33": {
+    "chs": "陆行鸟竞赛：随机赛道",
+    "en": "Chocobo Race: Random",
+    "ja": "チョコボレース：コースルーレット",
+    "de": "Chocobo-Rennen: Zufallsstrecke",
+    "fr": "Course de chocobos : aléatoire"
+  },
+  "34": {
+    "chs": "陆行鸟竞赛：随机赛道",
+    "en": "Chocobo Race: Random",
+    "ja": "チョコボレース：コースルーレット",
+    "de": "Chocobo-Rennen: Zufallsstrecke",
+    "fr": "Course de chocobos : aléatoire"
+  },
+  "35": {
+    "chs": "陆行鸟竞赛：随机赛道",
+    "en": "Chocobo Race: Random",
+    "ja": "チョコボレース：コースルーレット",
+    "de": "Chocobo-Rennen: Zufallsstrecke",
+    "fr": "Course de chocobos : aléatoire"
+  },
+  "36": {
+    "chs": "陆行鸟竞赛：随机赛道",
+    "en": "Chocobo Race: Random",
+    "ja": "チョコボレース：コースルーレット",
+    "de": "Chocobo-Rennen: Zufallsstrecke",
+    "fr": "Course de chocobos : aléatoire"
+  },
+  "37": {
+    "chs": "陆行鸟竞赛：随机赛道",
+    "en": "Chocobo Race: Random",
+    "ja": "チョコボレース：コースルーレット",
+    "de": "Chocobo-Rennen: Zufallsstrecke",
+    "fr": "Course de chocobos : aléatoire"
+  },
+  "38": {
+    "chs": "陆行鸟竞赛：随机赛道",
+    "en": "Chocobo Race: Random",
+    "ja": "チョコボレース：コースルーレット",
+    "de": "Chocobo-Rennen: Zufallsstrecke",
+    "fr": "Course de chocobos : aléatoire"
+  },
   "40": {
     "chs": "水晶冲突（练习赛）",
     "en": "Crystalline Conflict (Casual Match)",
