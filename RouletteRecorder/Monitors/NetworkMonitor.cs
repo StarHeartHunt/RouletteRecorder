@@ -2,6 +2,7 @@
 using RouletteRecorder.Utils;
 using System;
 using System.Linq;
+using System.Security.Policy;
 
 namespace RouletteRecorder.Monitors
 {
@@ -30,7 +31,9 @@ namespace RouletteRecorder.Monitors
 
         private void HandleMessage(byte[] message)
         {
-            if (message.Length < 32 || message[12] != 3)
+            var segmentType = message[12];
+            // Deucalion gives wrong type (0)
+            if (message.Length < 32 || (segmentType != 0 && segmentType != 3))
             {
                 return;
             }
@@ -48,28 +51,6 @@ namespace RouletteRecorder.Monitors
 
         private bool HandleMessageByOpcode(byte[] message)
         {
-            /*
-            try
-            {
-                if (message.Length == 128)
-                {
-                var data1 = message.Skip(32).ToArray();
-                Log.Debug(
-                String.Format("Opcode:{0},Server:{1},Zone:{2},Instance:{3},Content:{4}",
-                BitConverter.ToUInt16(message, 18),
-                BitConverter.ToUInt16(data1, 0),
-                BitConverter.ToUInt16(data1, 2),
-                BitConverter.ToUInt16(data1, 4),
-                BitConverter.ToUInt16(data1, 6)
-                ));
-                }
-            }
-            catch
-            {
-
-            }
-            */
-
             if (!ToInternalOpcode(BitConverter.ToUInt16(message, 18), out var opcode))
             {
                 return false;
@@ -78,6 +59,7 @@ namespace RouletteRecorder.Monitors
             var source = BitConverter.ToUInt32(message, 4);
             var target = BitConverter.ToUInt32(message, 8);
             var data = message.Skip(32).ToArray();
+            // Log.Debug($"[NetworkMonitor] source:{source}, target:{target}, data:{data}");
 
             if (opcode == Opcode.InitZone)
             {

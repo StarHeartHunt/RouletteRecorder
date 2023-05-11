@@ -8,9 +8,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("RouletteRecorder.Packer")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Razer")]
+[assembly: AssemblyCompany("StarHeartHunt")]
 [assembly: AssemblyProduct("RouletteRecorder.Packer")]
-[assembly: AssemblyCopyright("Copyright © Razer 2023")]
+[assembly: AssemblyCopyright("Copyright © StarHeartHunt 2023")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
