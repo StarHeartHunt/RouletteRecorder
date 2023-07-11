@@ -7,6 +7,23 @@
 
     public class Program
     {
+        private static void GenerateAssembly()
+        {
+            string version = DateTime.UtcNow.ToString("yy.M.d.Hmm");
+
+            var path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\RouletteRecorder\Properties\AssemblyInfo.cs");
+            var template = @"using System.Reflection;
+
+[assembly: AssemblyTitle(""RouletteRecorder"")]
+[assembly: AssemblyDescription(""RouletteRecorder"")]
+[assembly: AssemblyCompany(""StarHeartHunt"")]
+[assembly: AssemblyVersion(""{0}"")]
+[assembly: AssemblyCopyright(""Copyright © StarHeartHunt {1}"")]
+";
+            var content = string.Format(template, version, DateTime.Now.Year.ToString());
+            Console.WriteLine(content);
+            File.WriteAllText(path, content);
+        }
 
         private static void Bundle(string env)
         {
@@ -42,7 +59,14 @@
         private static void Main(string[] args)
         {
             string env = args.Length >= 1 ? args[0] : "Release";
-            Bundle(env);
+            if (env == "Assembly")
+            {
+                GenerateAssembly();
+            }
+            else
+            {
+                Bundle(env);
+            }
         }
 
     }

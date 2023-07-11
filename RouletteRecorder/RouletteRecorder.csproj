@@ -306,4 +306,7 @@
     </Delete>
     <Message Text="Deleted files: '@(DeletedList)'" />
   </Target>
+  <PropertyGroup>
+    <PreBuildEvent>$(TargetDir)..\RouletteRecorder.Packer Assembly</PreBuildEvent>
+  </PropertyGroup>
 </Project>
