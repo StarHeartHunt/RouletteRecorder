@@ -12,9 +12,9 @@ namespace RouletteRecorder.Constant
     {
         public static Dictionary<ushort, Opcode> China = new Dictionary<ushort, Opcode>
         {
-            { 0x01A3, Opcode.ActorControlSelf },
-            { 0x00CA, Opcode.ContentFinderNotifyPop },
-            { 0x01E3, Opcode.InitZone },
+            { 0x0223, Opcode.ActorControlSelf },
+            { 0x01EB, Opcode.ContentFinderNotifyPop },
+            { 0x018E, Opcode.InitZone },
         };
     }
 }
