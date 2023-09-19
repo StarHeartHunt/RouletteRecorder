@@ -220,6 +220,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Config.cs" />
+    <Compile Include="Constant\OpcodeChina.cs" />
     <Compile Include="Constant\OpcodeStorage.cs" />
     <Compile Include="DAO\Roulette.cs" />
     <Compile Include="Data.cs" />
