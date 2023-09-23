@@ -229,7 +229,6 @@
     <Compile Include="Models\ItemName.cs" />
     <Compile Include="Models\JobName.cs" />
     <Compile Include="Models\WorldData.cs" />
-    <Compile Include="Monitors\GameMonitor.cs" />
     <Compile Include="Monitors\MonitorType.cs" />
     <Compile Include="Monitors\NetworkMonitor.cs" />
     <Compile Include="RecorderInit.cs" />
@@ -237,7 +236,6 @@
     <Compile Include="Utils\BindingTarget.cs" />
     <Compile Include="Utils\Database.cs" />
     <Compile Include="Utils\Helper.cs" />
-    <Compile Include="Utils\Injector.cs" />
     <Compile Include="Utils\Log.cs" />
     <Compile Include="Utils\ParsePlugin.cs" />
     <Compile Include="Utils\RouletteSingleton.cs" />

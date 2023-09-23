@@ -10,7 +10,6 @@ namespace RouletteRecorder.Views
     public partial class MainControl : UserControl
     {
         private IActPluginV1 ffxivPlugin = null;
-        Injector injector;
         public MainControl()
         {
             Config.Load();
@@ -62,13 +61,6 @@ namespace RouletteRecorder.Views
             ParsePlugin.Init(ffxivPlugin, network);
             ParsePlugin.Instance.Network = network;
             ParsePlugin.Instance.Start();
-
-            if (Config.Instance.MonitorType == MonitorType.Game)
-            {
-                injector = new Injector();
-                injector.Init();
-                injector.Start();
-            }
         }
         public void DeInit()
         {
@@ -76,10 +68,6 @@ namespace RouletteRecorder.Views
             Data.Instance.PropertyChanged -= Data_PropertyChanged;
             Database.Release();
             ParsePlugin.Instance.Stop();
-            if (injector != null)
-            {
-                injector.Stop();
-            }
         }
 
         private void LogException(Exception e)
