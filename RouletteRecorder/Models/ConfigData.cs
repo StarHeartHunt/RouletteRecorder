@@ -14,7 +14,7 @@ namespace RouletteRecorder.Models
         private ConfigData(ObservableCollection<int> rouletteTypes, Monitors.MonitorType monitorType)
         {
             RouletteTypes = rouletteTypes ?? new ObservableCollection<int>();
-            MonitorType = monitorType == Monitors.MonitorType.Network ? Monitors.MonitorType.Network : Monitors.MonitorType.Game;
+            MonitorType = Monitors.MonitorType.Network;
         }
         [JsonProperty("roulette")]
         public ObservableCollection<int> RouletteTypes { get; set; }

@@ -12,7 +12,6 @@ namespace RouletteRecorder
         public static Dictionary<Monitors.MonitorType, string> MonitorTypes = new Dictionary<Monitors.MonitorType, string>()
         {
             { Monitors.MonitorType.Network, "网络解析" },
-            { Monitors.MonitorType.Game,"内存解析" },
         };
         public static Models.ConfigData Instance { get; private set; } = new Models.ConfigData();
         public static void Load()

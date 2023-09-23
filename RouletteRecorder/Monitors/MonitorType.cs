@@ -2,7 +2,6 @@
 {
     public enum MonitorType
     {
-        Network,
-        Game
+        Network
     }
 }
