@@ -1,4 +1,9 @@
-﻿using RouletteRecorder.DAO;
+﻿using CsvHelper;
+using CsvHelper.Configuration;
+using RouletteRecorder.DAO;
+using System;
+using System.Collections.Generic;
+using System.Globalization;
 using System.IO;
 using System.Text;
 
@@ -6,47 +11,40 @@ namespace RouletteRecorder.Utils
 {
     public static class Database
     {
-        private static string header = "任务类型,日期,开始时间,结束时间,副本名称,职业,完成情况";
-        private static string path = Helper.GetDbPath();
-        private static FileStream fs;
+        private static readonly string path = Helper.GetDbPath();
+
+        private static readonly FileStream fs = new FileStream(path, FileMode.OpenOrCreate, FileAccess.ReadWrite, FileShare.Read);
+
         public static bool InitDatabase()
         {
-            if (fs == null)
-            {
-                fs = new FileStream(path, FileMode.OpenOrCreate, FileAccess.ReadWrite, FileShare.Read);
-            }
+            if (new FileInfo(path).Length > 0) return true;
 
-            using (StreamReader streamReader = new StreamReader(fs, Encoding.UTF8, true, 4096, true))
+            var config = new CsvConfiguration(CultureInfo.InvariantCulture)
             {
-                streamReader.BaseStream.Seek(0, SeekOrigin.Begin);
-                string line = streamReader.ReadLine();
-                if (line == null)
-                {
-                    using (StreamWriter streamWriter = new StreamWriter(fs, Encoding.UTF8, 4096, true))
-                    {
-                        streamWriter.BaseStream.Seek(0, SeekOrigin.Begin);
-                        streamWriter.WriteLine(header);
-                    }
-                }
+                NewLine = Environment.NewLine
+            };
+
+            using (var writer = new StreamWriter(fs, new UTF8Encoding(false), 4096, true))
+            using (var csv = new CsvWriter(writer, config))
+            {
+                csv.WriteRecords(new List<Roulette>());
             }
             return true;
         }
+
         public static bool InsertRoulette(Roulette roulette)
         {
-            var line = string.Format(
-                "{0},{1},{2},{3},{4},{5},{6}",
-                roulette.RouletteType,
-                roulette.Date,
-                roulette.StartedAt,
-                roulette.EndedAt,
-                roulette.RouletteName,
-                roulette.JobName,
-                roulette.IsCompleted
-                );
-            using (StreamWriter streamWriter = new StreamWriter(fs, Encoding.UTF8, 1024, true))
+            var config = new CsvConfiguration(CultureInfo.InvariantCulture)
             {
-                streamWriter.BaseStream.Seek(0, SeekOrigin.End);
-                streamWriter.WriteLine(line);
+                NewLine = Environment.NewLine,
+                HasHeaderRecord = false,
+            };
+
+            using (var writer = new StreamWriter(fs, new UTF8Encoding(false), 4096, true))
+            using (var csv = new CsvWriter(writer, config))
+            {
+                writer.BaseStream.Seek(0, SeekOrigin.End);
+                csv.WriteRecords(new List<Roulette>() { roulette });
             }
             return true;
         }
