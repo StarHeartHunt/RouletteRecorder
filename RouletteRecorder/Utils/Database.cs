@@ -24,7 +24,7 @@ namespace RouletteRecorder.Utils
                 NewLine = Environment.NewLine
             };
 
-            using (var writer = new StreamWriter(fs, new UTF8Encoding(false), 4096, true))
+            using (var writer = new StreamWriter(fs, Encoding.UTF8, 4096, true))
             using (var csv = new CsvWriter(writer, config))
             {
                 csv.WriteRecords(new List<Roulette>());
@@ -40,7 +40,7 @@ namespace RouletteRecorder.Utils
                 HasHeaderRecord = false,
             };
 
-            using (var writer = new StreamWriter(fs, new UTF8Encoding(false), 4096, true))
+            using (var writer = new StreamWriter(fs, Encoding.UTF8, 4096, true))
             using (var csv = new CsvWriter(writer, config))
             {
                 writer.BaseStream.Seek(0, SeekOrigin.End);
