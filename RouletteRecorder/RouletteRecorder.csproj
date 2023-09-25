@@ -104,7 +104,6 @@
     <Compile Include="Utils\Helper.cs" />
     <Compile Include="Utils\Log.cs" />
     <Compile Include="Utils\ParsePlugin.cs" />
-    <Compile Include="Utils\RouletteSingleton.cs" />
     <Compile Include="ViewModels\MainViewModel.cs" />
     <Compile Include="Views\MainControl.xaml.cs">
       <DependentUpon>MainControl.xaml</DependentUpon>

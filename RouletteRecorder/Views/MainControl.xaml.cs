@@ -1,4 +1,5 @@
 ﻿using Advanced_Combat_Tracker;
+using RouletteRecorder.DAO;
 using RouletteRecorder.Monitors;
 using RouletteRecorder.Utils;
 using System;
@@ -30,6 +31,7 @@ namespace RouletteRecorder.Views
                 return viewModel;
             }
         }
+
         private void Init()
         {
             Utils.Log.Handler += Log;
@@ -86,6 +88,7 @@ namespace RouletteRecorder.Views
                 ViewModel.Log = string.Format("[{0}][{1}]{2}\r\n", DateTime.Now, type, message) + ViewModel.Log;
             });
         }
+
         private void Data_PropertyChanged(object sender, PropertyChangedEventArgs e)
         {
             if (e.PropertyName == "Roulettes")
@@ -93,10 +96,11 @@ namespace RouletteRecorder.Views
                 ViewModel.RouletteTypes = ViewModels.RouletteTypeNodeList.Create(Data.Instance.Roulettes);
             }
         }
+
         private void Button_Click(object sender, System.Windows.RoutedEventArgs e)
         {
-            RouletteSingleton.Instance.Init("test", "test2", true);
-            Database.InsertRoulette(RouletteSingleton.Instance);
+            Roulette.Init("test", "test2", true);
+            Database.InsertRoulette(Roulette.Instance);
         }
 
         private void Button_Click_1(object sender, System.Windows.RoutedEventArgs e)
@@ -104,6 +108,7 @@ namespace RouletteRecorder.Views
             Utils.Log.Info(viewModel.SelectedMonitorIndex.ToString());
             Utils.Log.Info(((int)Config.Instance.MonitorType).ToString());
         }
+
         private void RouletteTypeNode_PropertyChanged(object sender, PropertyChangedEventArgs e)
         {
             if (e.PropertyName == "IsChecked")

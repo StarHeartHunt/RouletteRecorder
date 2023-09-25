@@ -1,10 +1,20 @@
-﻿using CsvHelper.Configuration.Attributes;
+﻿using Advanced_Combat_Tracker;
+using CsvHelper.Configuration.Attributes;
+using RouletteRecorder.Utils;
 using System;
+using System.Linq;
 
 namespace RouletteRecorder.DAO
 {
     public class Roulette
     {
+        public static Roulette Instance { get; private set; } = null;
+
+        public static void Init(string rouletteName = null, string rouletteType = null, bool isCompleted = false)
+        {
+            Instance = new Roulette(rouletteName, rouletteType, isCompleted);
+        }
+
         [Name("日期")]
         public string Date { get; set; }
 
@@ -26,7 +36,7 @@ namespace RouletteRecorder.DAO
         [Name("完成情况")]
         public bool IsCompleted { get; set; }
 
-        public void Init(string rouletteName = null, string rouletteType = null, bool isCompleted = false)
+        public Roulette(string rouletteName = null, string rouletteType = null, bool isCompleted = false)
         {
             Date = DateTime.Now.ToString("yyyy-MM-dd");
             StartedAt = DateTime.Now.ToString("T");
@@ -34,6 +44,27 @@ namespace RouletteRecorder.DAO
             RouletteName = rouletteName;
             RouletteType = rouletteType;
             IsCompleted = isCompleted;
+        }
+        public void Finish()
+        {
+            var ffxivPlugin = (FFXIV_ACT_Plugin.FFXIV_ACT_Plugin)Helper.GetFFXIVPlugin();
+            var jobId = ffxivPlugin.DataRepository.GetPlayer().JobID;
+            if (Data.Instance.Jobs.TryGetValue(Convert.ToInt32(jobId), out var jobName))
+            {
+                Instance.JobName = jobName.Name;
+            }
+            else
+            {
+                Instance.JobName = "未知职业";
+            }
+            Instance.EndedAt = DateTime.Now.ToString("T");
+            if (
+                Instance.RouletteType != null
+                && Config.Instance.RouletteTypes.Select(type => Data.Instance.Roulettes[type].Chinese).Contains(Instance.RouletteType)
+            )
+            {
+                Database.InsertRoulette(Instance);
+            }
         }
     }
 }

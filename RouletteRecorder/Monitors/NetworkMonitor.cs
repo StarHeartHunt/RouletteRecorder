@@ -1,8 +1,8 @@
 ﻿using RouletteRecorder.Constant;
+using RouletteRecorder.DAO;
 using RouletteRecorder.Utils;
 using System;
 using System.Linq;
-using System.Security.Policy;
 
 namespace RouletteRecorder.Monitors
 {
@@ -73,13 +73,18 @@ namespace RouletteRecorder.Monitors
                 var instanceId = BitConverter.ToUInt16(data, 4);
                 var contentId = BitConverter.ToUInt16(data, 6);
 
+                if (Roulette.Instance == null)
+                {
+                    Roulette.Init();
+                }
+
                 if (Data.Instance.Instances.TryGetValue(contentId, out var instanceData))
                 {
-                    RouletteSingleton.Instance.RouletteName = instanceData.Name.ToString();
+                    Roulette.Instance.RouletteName = instanceData.Name.ToString();
                 }
                 else
                 {
-                    RouletteSingleton.Instance.RouletteName = "未知副本";
+                    Roulette.Instance.RouletteName = "未知副本";
                 }
                 Log.Info($"[NetworkMonitor] Detected InitZone: serverId:{serverId}, zoneId:{zoneId}, instanceId:{instanceId}, contentId:{contentId}");
             }
@@ -96,10 +101,10 @@ namespace RouletteRecorder.Monitors
                         Log.Info($"[NetworkMonitor] Detected ActorControlSelf (Victory)");
                         if (Config.Instance.MonitorType == MonitorType.Network)
                         {
-                            RouletteSingleton.Instance.IsCompleted = true;
-                            if (RouletteSingleton.Instance.RouletteType != null)
+                            Roulette.Instance.IsCompleted = true;
+                            if (Roulette.Instance.RouletteType != null)
                             {
-                                RouletteSingleton.Instance.Finish();
+                                Roulette.Instance.Finish();
                             }
                         }
                     }
@@ -114,21 +119,22 @@ namespace RouletteRecorder.Monitors
                 var roulette = BitConverter.ToUInt16(data, 2);
                 var instance = roulette == 0 ? BitConverter.ToUInt16(data, 0x1c) : 0;
                 Log.Info(string.Format("[NetworkMonitor] Detected ContentFinderNotifyPop: roulette:{0}, instance:{1}", roulette, instance));
-                RouletteSingleton.Instance.Init();
+                Roulette.Init();
                 if (roulette == 0) return false;
                 if (Data.Instance.Roulettes.TryGetValue(roulette, out var rouletteName))
                 {
-                    RouletteSingleton.Instance.RouletteType = rouletteName.ToString();
+                    Roulette.Instance.RouletteType = rouletteName.ToString();
                 }
                 else
                 {
-                    RouletteSingleton.Instance.RouletteType = "未知随机任务";
+                    Roulette.Instance.RouletteType = "未知随机任务";
                 }
 
             }
 
             return true;
         }
+
         public void HandleMessageSent(string connection, long epoch, byte[] message)
         {
         }
