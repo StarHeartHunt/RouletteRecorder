@@ -158,7 +158,7 @@
     </PackageReference>
   </ItemGroup>
   <PropertyGroup>
-    <PostBuildEvent>$(TargetDir)..\RouletteRecorder.Packer $(ConfigurationName)</PostBuildEvent>
+    <PostBuildEvent Condition=" '$(Configuration)' == 'Release' ">$(TargetDir)..\RouletteRecorder.Packer $(ConfigurationName)</PostBuildEvent>
   </PropertyGroup>
   <Target Name="CopyData" AfterTargets="BeforeBuild">
     <ItemGroup>
@@ -177,6 +177,6 @@
     <Message Text="Deleted files: '@(DeletedList)'" />
   </Target>
   <PropertyGroup>
-    <PreBuildEvent>$(TargetDir)..\RouletteRecorder.Packer Assembly</PreBuildEvent>
+    <PreBuildEvent Condition=" '$(Configuration)' == 'Release' ">$(TargetDir)..\RouletteRecorder.Packer Assembly</PreBuildEvent>
   </PropertyGroup>
 </Project>
