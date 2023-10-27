@@ -59,28 +59,31 @@ namespace RouletteRecorder.DAO
                 Instance.JobName = "未知职业";
             }
             Instance.EndedAt = DateTime.Now.ToString("T");
-            if (
-                Instance.RouletteType != null
-                && Config.Instance.RouletteTypes.Select(type => Data.Instance.Roulettes[type].Chinese).Contains(Instance.RouletteType)
-            )
+
+            if (Instance.RouletteType == null) return;
+
+            if (Config.Instance.RouletteTypes.Select(type => Data.Instance.Roulettes[type].Chinese).Contains(Instance.RouletteType))
             {
                 Database.InsertRoulette(Instance);
-                try
+                if (Config.Instance.DungeonLogger.Enabled)
                 {
-                    var client = new DungeonLoggerClient();
-                    await client.PostLogin(Config.Instance.DungeonLogger.Password, Config.Instance.DungeonLogger.Username);
+                    try
+                    {
+                        var client = new DungeonLoggerClient();
+                        await client.PostLogin(Config.Instance.DungeonLogger.Password, Config.Instance.DungeonLogger.Username);
 
-                    var maze = await client.GetStatMaze();
-                    var job = await client.GetStatProf();
+                        var maze = await client.GetStatMaze();
+                        var job = await client.GetStatProf();
 
-                    var mazeId = maze.Data.Find((ele) => ele.Name.Equals(Instance.RouletteName)).Id;
-                    var profKey = job.Data.Find((ele) => ele.NameCn.Equals(Instance.JobName)).Key;
+                        var mazeId = maze.Data.Find((ele) => ele.Name.Equals(Instance.RouletteName)).Id;
+                        var profKey = job.Data.Find((ele) => ele.NameCn.Equals(Instance.JobName)).Key;
 
-                    await client.PostRecord(mazeId, profKey);
-                }
-                catch (Exception e)
-                {
-                    Log.Error(string.Format("[{0}]{1}\r\n{2}", e.GetType(), e.Message, e.StackTrace));
+                        await client.PostRecord(mazeId, profKey);
+                    }
+                    catch (Exception e)
+                    {
+                        Log.Error(string.Format("[{0}]{1}\r\n{2}", e.GetType(), e.Message, e.StackTrace));
+                    }
                 }
             }
         }
