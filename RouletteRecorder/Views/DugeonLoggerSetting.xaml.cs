@@ -29,11 +29,6 @@ namespace RouletteRecorder.Views
             InitializeComponent();
         }
 
-        private void Window_SourceInitialized(object sender, System.EventArgs e)
-        {
-
-        }
-
         private void IPasswordTextBox_PasswordChanged(object sender, RoutedEventArgs e)
         {
             ViewModel.Password = IPasswordTextBox.Password;
@@ -41,7 +36,6 @@ namespace RouletteRecorder.Views
 
         private async void BDungeonSettingConfigSave_ClickAsync(object sender, RoutedEventArgs e)
         {
-            Config.Instance.DungeonLogger.Username = ViewModel.Username;
             Config.Instance.DungeonLogger.Password = ViewModel.Password;
             var client = new DungeonLoggerClient();
             try
