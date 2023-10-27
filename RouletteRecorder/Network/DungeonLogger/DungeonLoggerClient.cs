@@ -1,5 +1,6 @@
 ﻿using Newtonsoft.Json;
 using RouletteRecorder.Network.DungeonLogger.Structures;
+using System;
 using System.Collections.Generic;
 using System.Net;
 using System.Net.Http;
@@ -16,7 +17,7 @@ namespace RouletteRecorder.Network.DungeonLogger
         Task<Response<List<StatMaze>>> GetStatMaze();
     }
 
-    public class DungeonLoggerClient : IDungeonLoggerClient
+    public class DungeonLoggerClient : IDungeonLoggerClient, IDisposable
     {
         private readonly HttpClient _client;
         private readonly CookieContainer cookieContainer;
@@ -75,6 +76,11 @@ namespace RouletteRecorder.Network.DungeonLogger
             var content = await response.Content.ReadAsStringAsync();
 
             return JsonConvert.DeserializeObject<Response<List<StatMaze>>>(content);
+        }
+
+        public void Dispose()
+        {
+            _client.Dispose();
         }
     }
 }
