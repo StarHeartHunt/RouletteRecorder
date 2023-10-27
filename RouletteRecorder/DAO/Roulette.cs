@@ -15,6 +15,9 @@ namespace RouletteRecorder.DAO
             Instance = new Roulette(rouletteName, rouletteType, isCompleted);
         }
 
+        [Name("任务类型")]
+        public string RouletteType { get; set; }
+
         [Name("日期")]
         public string Date { get; set; }
 
@@ -26,9 +29,6 @@ namespace RouletteRecorder.DAO
 
         [Name("副本名称")]
         public string RouletteName { get; set; }
-
-        [Name("任务类型")]
-        public string RouletteType { get; set; }
 
         [Name("职业")]
         public string JobName { get; set; }
