@@ -35,15 +35,18 @@ namespace RouletteRecorder.Views
         private async void BDungeonSettingConfigSave_ClickAsync(object sender, RoutedEventArgs e)
         {
             Config.Instance.DungeonLogger.Password = ViewModel.Password;
-            var client = new DungeonLoggerClient();
-            try
+            using (var client = new DungeonLoggerClient())
             {
-                var response = await client.PostLogin(Config.Instance.DungeonLogger.Password, Config.Instance.DungeonLogger.Username);
-                MessageBox.Show(response.Msg);
-                Close();
-            } catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
+                try
+                {
+                    var response = await client.PostLogin(Config.Instance.DungeonLogger.Password, Config.Instance.DungeonLogger.Username);
+                    MessageBox.Show(response.Msg);
+                    Close();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
             }
         }
     }
