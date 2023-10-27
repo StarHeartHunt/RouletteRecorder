@@ -4,6 +4,7 @@ using RouletteRecorder.Monitors;
 using RouletteRecorder.Utils;
 using System;
 using System.ComponentModel;
+using System.Windows;
 using System.Windows.Controls;
 
 namespace RouletteRecorder.Views
@@ -107,6 +108,13 @@ namespace RouletteRecorder.Views
         {
             Utils.Log.Info(viewModel.SelectedMonitorIndex.ToString());
             Utils.Log.Info(((int)Config.Instance.MonitorType).ToString());
+        }
+
+        private void BDungeonSettingConfig_Click(object sender, RoutedEventArgs e)
+        {
+            var dialog = new DungeonLoggerSetting();
+            dialog.WindowStartupLocation = WindowStartupLocation.CenterScreen;
+            dialog.ShowDialog();
         }
 
         private void RouletteTypeNode_PropertyChanged(object sender, PropertyChangedEventArgs e)

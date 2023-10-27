@@ -3,6 +3,7 @@ using RouletteRecorder.DAO;
 using RouletteRecorder.Utils;
 using System;
 using System.Linq;
+using System.Threading.Tasks;
 
 namespace RouletteRecorder.Monitors
 {
@@ -104,7 +105,7 @@ namespace RouletteRecorder.Monitors
                             Roulette.Instance.IsCompleted = true;
                             if (Roulette.Instance.RouletteType != null)
                             {
-                                Roulette.Instance.Finish();
+                                Task.Run(() => Roulette.Instance.Finish());
                             }
                         }
                     }
