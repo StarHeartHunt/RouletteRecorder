@@ -37,7 +37,7 @@
                              x:Name="iAccountTextBox"
                              Text="{Binding DungeonLogger.Username, Mode=TwoWay, Source={x:Static roulette:Config.Instance}}"/>
                     <TextBlock Margin="0,6,0,6" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center">密码</TextBlock>
-                    <PasswordBox Margin="0,6,6,6" Grid.Row="1" Grid.Column="2" MinWidth="150" x:Name="IPasswordTextBox" PasswordChanged="IPasswordTextBox_PasswordChanged"/>
+                    <PasswordBox Margin="0,6,6,6" Grid.Row="1" Grid.Column="2" MinWidth="150" x:Name="iPasswordTextBox" PasswordChanged="IPasswordTextBox_PasswordChanged"/>
                     <Button Grid.Row="3" Grid.ColumnSpan="2" x:Name="bDungeonSettingConfigSave" Click="BDungeonSettingConfigSave_ClickAsync" Content="保存" HorizontalAlignment="Right" Margin="0,0,6,6" VerticalAlignment="Center" Width="50" Height="24"/>
                 </Grid>
             </GroupBox>

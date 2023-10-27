@@ -29,7 +29,7 @@ namespace RouletteRecorder.Views
 
         private void IPasswordTextBox_PasswordChanged(object sender, RoutedEventArgs e)
         {
-            ViewModel.Password = IPasswordTextBox.Password;
+            ViewModel.Password = iPasswordTextBox.Password;
         }
 
         private async void BDungeonSettingConfigSave_ClickAsync(object sender, RoutedEventArgs e)
