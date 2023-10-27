@@ -1,5 +1,4 @@
 ﻿using RouletteRecorder.Utils;
-using System.Windows;
 
 namespace RouletteRecorder.ViewModels
 {

@@ -1,8 +1,6 @@
 ﻿using RouletteRecorder.Network.DungeonLogger;
 using System;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
 
 namespace RouletteRecorder.Views
 {
