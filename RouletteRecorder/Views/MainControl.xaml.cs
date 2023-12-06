@@ -62,6 +62,17 @@ namespace RouletteRecorder.Views
             var network = new NetworkMonitor();
             ffxivPlugin = Helper.GetFFXIVPlugin();
             ParsePlugin.Init(ffxivPlugin, network);
+
+            if (Config.Instance.Language == null)
+            {
+                Config.Instance.Language = ParsePlugin.Instance.GetLanguage();
+            }
+
+            if (Config.Instance.Region == null)
+            {
+                Config.Instance.Region = ParsePlugin.Instance.GetRegion();
+            }
+
             ParsePlugin.Instance.Network = network;
             ParsePlugin.Instance.Start();
         }

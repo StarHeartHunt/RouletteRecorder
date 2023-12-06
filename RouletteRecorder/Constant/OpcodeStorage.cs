@@ -10,6 +10,13 @@ namespace RouletteRecorder.Constant
     }
     internal static class OpcodeStorage
     {
+        public static Dictionary<ushort, Opcode> Global = new Dictionary<ushort, Opcode>
+        {
+            { (ushort)FFXIVOpcodes.Global.ServerZoneIpcType.ActorControlSelf, Opcode.ActorControlSelf },
+            { (ushort)FFXIVOpcodes.Global.ServerZoneIpcType.ContentFinderNotifyPop, Opcode.ContentFinderNotifyPop },
+            { (ushort)FFXIVOpcodes.Global.ServerZoneIpcType.InitZone, Opcode.InitZone },
+        };
+
         public static Dictionary<ushort, Opcode> China = new Dictionary<ushort, Opcode>
         {
             { (ushort)FFXIVOpcodes.CN.ServerZoneIpcType.ActorControlSelf, Opcode.ActorControlSelf },

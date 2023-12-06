@@ -22,6 +22,36 @@
                     </Grid.ColumnDefinitions>
 
                     <DockPanel Grid.Column="0" LastChildFill="True" Margin="6">
+                        <GroupBox x:Name="gSettingL12n" Header="区服设置" VerticalAlignment="Top" Margin="0" DockPanel.Dock="Top">
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="1*"/>
+                                    <RowDefinition Height="1*"/>
+                                </Grid.RowDefinitions>
+
+                                <Grid Margin="6,0,0,0">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="2*"/>
+                                        <ColumnDefinition Width="3*"/>
+                                        <ColumnDefinition Width="2*"/>
+                                        <ColumnDefinition Width="3*"/>
+                                        <ColumnDefinition Width="2*"/>
+                                        <ColumnDefinition Width="3*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Label Content="区域" Padding="0,5,5,5" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                                    <ComboBox HorizontalAlignment="Stretch" Margin="6,0" VerticalAlignment="Center" Grid.Column="1" 
+                                          ItemsSource="{Binding Regions}"
+                                          DisplayMemberPath="Name" SelectedValue="{Binding Region, Mode=TwoWay, Source={x:Static roulette:Config.Instance}}"
+                                          IsEditable="True" IsReadOnly="True" Focusable="False" SelectedValuePath="ID" />
+                                    <Label Content="语言" HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Column="2" Margin="6,0,0,0"/>
+                                    <ComboBox HorizontalAlignment="Stretch" Margin="6,0" VerticalAlignment="Center" Grid.Column="3" 
+                                          ItemsSource="{Binding Languages}"
+                                          DisplayMemberPath="Name" SelectedValue="{Binding Language, Mode=TwoWay, Source={x:Static roulette:Config.Instance}}"
+                                          IsEditable="True" IsReadOnly="True" Focusable="False" SelectedValuePath="ID" />
+                                </Grid>
+                                <TextBlock Grid.Row="1" Margin="6,0,0,0">区域：切换插件所解析的服务器<LineBreak/>语言：记录副本名称时使用的语言配置</TextBlock>
+                            </Grid>
+                        </GroupBox>
                         <GroupBox Header="订阅任务类型" VerticalAlignment="Top" Margin="0,6,0,0" DockPanel.Dock="Top">
                             <ListBox Margin="6,6,6,6" ItemsSource="{Binding RouletteTypes,Mode=TwoWay}" IsSynchronizedWithCurrentItem="true">
                                 <ListBox.ItemTemplate>
@@ -66,12 +96,14 @@
                     </DockPanel>
                 </Grid>
             </TabItem>
+
             <TabItem Header="日志">
                 <Grid Background="#FFE5E5E5">
                     <TextBox x:Name="tLogBox" TextWrapping="Wrap" IsReadOnly="True" IsUndoEnabled="False" Text="{Binding Log, Mode=OneWay}"
                               ScrollViewer.HorizontalScrollBarVisibility="Disabled" ScrollViewer.VerticalScrollBarVisibility="Auto"/>
                 </Grid>
             </TabItem>
+
             <TabItem Header="调试">
                 <DockPanel LastChildFill="True">
                     <GroupBox Header="动作" VerticalAlignment="Top" Margin="0,6,0,0" DockPanel.Dock="Top">

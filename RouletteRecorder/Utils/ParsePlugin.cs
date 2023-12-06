@@ -39,6 +39,18 @@ namespace RouletteRecorder.Utils
             return _parsePlugin.DataRepository.GetSelectedLanguageID();
         }
 
+        public Constant.Region GetRegion()
+        {
+            var language = GetLanguage();
+            switch (language)
+            {
+                case Language.Chinese:
+                    return Constant.Region.China;
+                default:
+                    return Constant.Region.Global;
+            }
+        }
+
         public uint GetServer()
         {
             var combatantList = _parsePlugin.DataRepository.GetCombatantList();

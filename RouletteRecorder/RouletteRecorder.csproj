@@ -87,7 +87,9 @@
   <ItemGroup>
     <Compile Include="Config.cs" />
     <Compile Include="Constant\OpcodeChina.cs" />
+    <Compile Include="Constant\OpcodeGlobal.cs" />
     <Compile Include="Constant\OpcodeStorage.cs" />
+    <Compile Include="Constant\Region.cs" />
     <Compile Include="DAO\Roulette.cs" />
     <Compile Include="Data.cs" />
     <Compile Include="Models\ConfigData.cs" />

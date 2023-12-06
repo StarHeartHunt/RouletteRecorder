@@ -11,7 +11,19 @@ namespace RouletteRecorder.Monitors
     {
         private bool ToInternalOpcode(ushort opcode, out Opcode internalOpcode)
         {
-            return OpcodeStorage.China.TryGetValue(opcode, out internalOpcode);
+            var region = Config.Instance.Region;
+            switch (region)
+            {
+                case Region.Global:
+                    return OpcodeStorage.Global.TryGetValue(opcode, out internalOpcode);
+
+                case Region.China:
+                    return OpcodeStorage.China.TryGetValue(opcode, out internalOpcode);
+
+                default:
+                    internalOpcode = default;
+                    return false;
+            }
         }
 
         public void HandleMessageReceived(string connection, long epoch, byte[] message)
