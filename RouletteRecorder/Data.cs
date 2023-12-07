@@ -27,7 +27,7 @@ namespace RouletteRecorder
             }
             catch
             {
-                MessageBox.Show(string.Format("无法找到数据文件 {0} 或读取时发生错误", file), "RouletteRecorder");
+                MessageBox.Show($"无法找到数据文件 {file} 或读取时发生错误", "RouletteRecorder");
                 dict = new T();
                 return false;
             }
