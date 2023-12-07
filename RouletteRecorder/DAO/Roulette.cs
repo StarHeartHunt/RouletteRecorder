@@ -84,7 +84,7 @@ namespace RouletteRecorder.DAO
             }
             catch (Exception e)
             {
-                Log.Error(Constant.LogType.Database, $"[{e.GetType()}]{e.Message}\r\n{e.StackTrace}");
+                Log.Error(Constant.LogType.DungeonLogger, $"[{e.GetType()}]{e.Message}\r\n{e.StackTrace}");
             }
         }
     }

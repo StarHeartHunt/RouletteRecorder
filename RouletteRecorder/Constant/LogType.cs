@@ -6,7 +6,7 @@
         LogLine,
         State,
         Event,
-        Database,
+        DungeonLogger,
 
 #if DEBUG
         Request,
