@@ -29,6 +29,7 @@ namespace RouletteRecorder.Utils
             {
                 csv.WriteRecords(new List<Roulette>());
             }
+
             return true;
         }
 

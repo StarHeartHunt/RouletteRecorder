@@ -37,9 +37,16 @@
                                 <Grid.RowDefinitions>
                                     <RowDefinition Height="1*"/>
                                     <RowDefinition Height="1*"/>
+                                    <RowDefinition Height="1*"/>
                                 </Grid.RowDefinitions>
 
-                                <Grid Margin="6,0,0,0">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="1*"/>
+                                    <ColumnDefinition Width="1*"/>
+                                    <ColumnDefinition Width="1*"/>
+                                </Grid.ColumnDefinitions>
+
+                                <Grid Margin="6,0,0,0" Grid.ColumnSpan="3">
                                     <Grid.ColumnDefinitions>
                                         <ColumnDefinition Width="2*"/>
                                         <ColumnDefinition Width="3*"/>
@@ -59,7 +66,10 @@
                                           DisplayMemberPath="Name" SelectedValue="{Binding Language, Mode=TwoWay, Source={x:Static roulette:Config.Instance}}"
                                           IsEditable="True" IsReadOnly="True" Focusable="False" SelectedValuePath="ID" />
                                 </Grid>
-                                <TextBlock Grid.Row="1" Margin="6,0,0,0">区域：切换插件所解析的服务器<LineBreak/>语言：记录副本名称时使用的语言配置</TextBlock>
+                                <TextBlock Grid.Row="1" Margin="6,0,0,3">区域：切换插件所解析的服务器</TextBlock>
+                                <TextBlock Grid.Row="1" Margin="6,0,0,3" Grid.Column="1">语言：记录副本名称时使用的语言配置</TextBlock>
+                                <CheckBox Grid.Row="2" Content="记录日志" HorizontalAlignment="Left" Margin="6,0,0,0" VerticalAlignment="Center" IsChecked="{Binding Logger.Enabled, Mode=TwoWay, Source={x:Static roulette:Config.Instance}}" />
+                                <CheckBox Grid.Row="2" Grid.Column="1" Content="调试模式" HorizontalAlignment="Left" Margin="6,0,0,0" VerticalAlignment="Center" IsChecked="{Binding Logger.Debug, Mode=TwoWay, Source={x:Static roulette:Config.Instance}}"/>
                             </Grid>
                         </GroupBox>
                         <GroupBox Header="订阅任务类型" VerticalAlignment="Top" Margin="0,6,0,0" DockPanel.Dock="Top">

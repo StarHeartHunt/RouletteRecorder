@@ -8,7 +8,7 @@ namespace RouletteRecorder.Models
 {
     public class ConfigData : BindingTarget
     {
-        public ConfigData() : this(null, null, null, null)
+        public ConfigData() : this(null, null, null, null, null)
         {
         }
 
@@ -16,6 +16,7 @@ namespace RouletteRecorder.Models
         private ConfigData(
             Region? region,
             Language? language,
+            ConfigLogger logger,
             ObservableCollection<int> rouletteTypes,
             ConfigDungeonLogger dungeonLogger)
         {
@@ -23,6 +24,7 @@ namespace RouletteRecorder.Models
             Language = language;
             RouletteTypes = rouletteTypes ?? new ObservableCollection<int>();
             MonitorType = Monitors.MonitorType.Network;
+            Logger = logger ?? new ConfigLogger();
             DungeonLogger = dungeonLogger ?? new ConfigDungeonLogger();
         }
 
@@ -49,8 +51,6 @@ namespace RouletteRecorder.Models
     {
         [JsonProperty("enabled")]
         public bool Enabled { get; set; }
-        [JsonProperty("compat")]
-        public bool Compat { get; set; }
         [JsonProperty("debug")]
         public bool Debug { get; set; }
     }
