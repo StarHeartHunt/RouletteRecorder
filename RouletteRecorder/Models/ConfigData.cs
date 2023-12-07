@@ -38,8 +38,21 @@ namespace RouletteRecorder.Models
         [JsonProperty("monitor")]
         public Monitors.MonitorType MonitorType { get; set; }
 
+        [JsonProperty("logger")]
+        public ConfigLogger Logger { get; set; }
+
         [JsonProperty("dungeonLogger")]
         public ConfigDungeonLogger DungeonLogger { get; set; }
+    }
+
+    public class ConfigLogger : BindingTarget
+    {
+        [JsonProperty("enabled")]
+        public bool Enabled { get; set; }
+        [JsonProperty("compat")]
+        public bool Compat { get; set; }
+        [JsonProperty("debug")]
+        public bool Debug { get; set; }
     }
 
     public class ConfigDungeonLogger : BindingTarget

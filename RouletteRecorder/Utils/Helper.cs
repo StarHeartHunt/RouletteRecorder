@@ -4,37 +4,28 @@ using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Reflection;
+using System.Threading.Tasks;
 
 namespace RouletteRecorder.Utils
 {
-    public class Helper
+    internal class Helper
     {
-        public static IActPluginV1 GetFFXIVPlugin()
+        private static readonly int[] WaitTime = { 5, 5, 10, 15, 25 };
+        public static IActPluginV1 Instance = null;
+        public static async Task<IActPluginV1> GetFFXIVPlugin()
         {
-            var plugin = ActGlobals.oFormActMain.ActPlugins.FirstOrDefault(x => x.cbEnabled.Checked && x.lblPluginTitle.Text == "FFXIV_ACT_Plugin.dll");
-            if (plugin != null)
+            for (int i = 0; i < WaitTime.Length; ++i)
             {
-                return plugin.pluginObj;
-            }
-            else
-            {
-                throw new Exception("Cannot find FFXIV_ACT_Plugin, Please load it first!");
-            }
-        }
+                var plugin = ActGlobals.oFormActMain.ActPlugins.FirstOrDefault(x => x.cbEnabled.Checked && x.lblPluginTitle.Text == "FFXIV_ACT_Plugin.dll");
+                if (plugin != null)
+                {
+                    return plugin.pluginObj;
+                }
 
-        public static Process GetFFXIVProcess()
-        {
-            var ffxivPlugin = (FFXIV_ACT_Plugin.FFXIV_ACT_Plugin)Helper.GetFFXIVPlugin();
+                await Task.Delay(WaitTime[i] * 1000);
+            }
 
-            Process FFXIV = ffxivPlugin.DataRepository.GetCurrentFFXIVProcess() ?? Process.GetProcessesByName("ffxiv_dx11").FirstOrDefault();
-            if (FFXIV != null)
-            {
-                return FFXIV;
-            }
-            else
-            {
-                throw new Exception("Could not find ffxiv_dx11.exe process. Make sure you are running the game and in DX11 mode.");
-            }
+            return null;
         }
 
         public static string GetDbPath()
@@ -49,6 +40,17 @@ namespace RouletteRecorder.Utils
 
         public static string GetPluginDir()
         {
+            if (Instance != null)
+            {
+                foreach (ActPluginData plugin in ActGlobals.oFormActMain.ActPlugins)
+                {
+                    if (plugin.pluginObj == Instance)
+                    {
+                        return plugin.pluginFile.Directory.FullName;
+                    }
+                }
+            }
+
             foreach (ActPluginData plugin in ActGlobals.oFormActMain.ActPlugins)
             {
                 if (plugin.pluginFile.Name == "RouletteRecorder.dll")

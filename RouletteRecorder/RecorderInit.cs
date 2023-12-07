@@ -4,6 +4,7 @@ using System.Reflection;
 using System.Windows.Forms;
 using System.Windows.Forms.Integration;
 using Advanced_Combat_Tracker;
+using RouletteRecorder.Utils;
 
 namespace RouletteRecorder
 {
@@ -48,6 +49,9 @@ namespace RouletteRecorder
             globalTabControl.SelectedTab = pluginsTabPage;
             pluginsTabControl.SelectedTab = pluginScreenSpace;
 #endif
+
+            Helper.Instance = this;
+
             lblStatus = pluginStatusText;
             lblStatus.Text = "RouletteRecorder Started.";
             pluginScreenSpace.Text = "日随记录器";

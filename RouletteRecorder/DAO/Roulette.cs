@@ -48,7 +48,7 @@ namespace RouletteRecorder.DAO
 
         public async void Finish()
         {
-            var ffxivPlugin = (FFXIV_ACT_Plugin.FFXIV_ACT_Plugin)Helper.GetFFXIVPlugin();
+            var ffxivPlugin = (FFXIV_ACT_Plugin.FFXIV_ACT_Plugin)await Helper.GetFFXIVPlugin();
             var jobId = ffxivPlugin.DataRepository.GetPlayer().JobID;
             if (Data.Instance.Jobs.TryGetValue(Convert.ToInt32(jobId), out var jobName))
             {
@@ -84,7 +84,7 @@ namespace RouletteRecorder.DAO
             }
             catch (Exception e)
             {
-                Log.Error(string.Format("[{0}]{1}\r\n{2}", e.GetType(), e.Message, e.StackTrace));
+                Log.Error(Constant.LogType.Database, $"[{e.GetType()}]{e.Message}\r\n{e.StackTrace}");
             }
         }
     }

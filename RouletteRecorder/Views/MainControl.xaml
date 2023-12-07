@@ -4,6 +4,8 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:roulette="clr-namespace:RouletteRecorder"
+             xmlns:System="clr-namespace:System;assembly=mscorlib"
+             xmlns:constant="clr-namespace:RouletteRecorder.Constant"
              xmlns:ViewModels="clr-namespace:RouletteRecorder.ViewModels"
              x:Name="_this" x:Class="RouletteRecorder.Views.MainControl" mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
@@ -11,6 +13,14 @@
     <UserControl.DataContext>
         <ViewModels:MainViewModel />
     </UserControl.DataContext>
+
+    <UserControl.Resources>
+        <ObjectDataProvider x:Key="logTypeEnum" MethodName="GetValues" ObjectType="{x:Type System:Enum}">
+            <ObjectDataProvider.MethodParameters>
+                <x:Type TypeName="constant:LogType"/>
+            </ObjectDataProvider.MethodParameters>
+        </ObjectDataProvider>
+    </UserControl.Resources>
 
     <Grid>
         <TabControl FontFamily="Microsoft YaHei UI">
@@ -98,10 +108,23 @@
             </TabItem>
 
             <TabItem Header="日志">
-                <Grid Background="#FFE5E5E5">
-                    <TextBox x:Name="tLogBox" TextWrapping="Wrap" IsReadOnly="True" IsUndoEnabled="False" Text="{Binding Log, Mode=OneWay}"
-                              ScrollViewer.HorizontalScrollBarVisibility="Disabled" ScrollViewer.VerticalScrollBarVisibility="Auto"/>
-                </Grid>
+                <DockPanel>
+                    <DockPanel DockPanel.Dock="Top" Margin="6,6,6,6" Height="24">
+                        <Button x:Name="bLogClear" Width="80" 
+                                HorizontalAlignment="Left" Click="BLogClear_Click">清空</Button>
+                        <Button x:Name="bLogPause" Width="80" Content="{Binding PauseText}"
+                                HorizontalAlignment="Left" Click="BLogPause_Click" Margin="6,0,0,0" />
+                        <CheckBox VerticalAlignment="Center" Margin="6,0,0,0" Content="过滤" IsChecked="{Binding LogTypeFilter}" />
+                        <Label Margin="6,0,0,0" Content="{Binding LogStatus}" Width="100" DockPanel.Dock="Right" HorizontalAlignment="Right" HorizontalContentAlignment="Right" />
+                        <ComboBox Margin="6,0,6,0"
+                            IsEnabled="{Binding LogTypeFilter}"
+                            ItemsSource="{Binding Source={StaticResource logTypeEnum}}"
+                            SelectedValue="{Binding LogTypeFilterValue}"
+                        />
+                    </DockPanel>
+                    <TextBox x:Name="tLogBox" Margin="0" TextWrapping="Wrap" IsReadOnly="True" IsUndoEnabled="False" Text="{Binding Log}"
+                              ScrollViewer.HorizontalScrollBarVisibility="Disabled" ScrollViewer.VerticalScrollBarVisibility="Auto" RenderTransformOrigin="0.5,0.5" />
+                </DockPanel>
             </TabItem>
 
             <TabItem Header="调试">
@@ -116,9 +139,6 @@
                             </Grid.ColumnDefinitions>
                             <Button Grid.Column="0" Height="34" Click="Button_Click" Margin="10">
                                 写入CSV测试
-                            </Button>
-                            <Button Grid.Column="1" Height="34" Click="Button_Click_1" Margin="10">
-                                RouletteTypes测试
                             </Button>
                         </Grid>
                     </GroupBox>

@@ -1,33 +1,62 @@
-﻿namespace RouletteRecorder.Utils
+﻿using RouletteRecorder.Constant;
+using System.Text;
+
+namespace RouletteRecorder.Utils
 {
     internal class Log
     {
-        public delegate void EventHandler(char type, string message);
+        public delegate void EventHandler(LogType type, char level, string message);
         public static event EventHandler Handler;
-        public static void Add(char type, string message)
+        public static void Add(LogType type, char level, string message)
         {
-            Handler?.Invoke(type, message);
+            Handler?.Invoke(type, level, message);
         }
 
-        public static void Error(string message)
+        public static void Error(LogType type, string message)
         {
-            Add('E', message);
+            Add(type, 'E', message);
         }
 
-        public static void Warn(string message)
+        public static void Warn(LogType type, string message)
         {
-            Add('W', message);
+            Add(type, 'W', message);
         }
 
-        public static void Info(string message)
+        public static void Info(LogType type, string message)
         {
-            Add('I', message);
+            Add(type, 'I', message);
         }
 
 #if DEBUG
-        public static void Debug(string message)
+        public static void Debug(LogType type, string message)
         {
-            Add('D', message);
+            Add(type, 'D', message);
+        }
+
+        public static void Packet(byte[] byteArray)
+        {
+            StringBuilder hexDump = new StringBuilder();
+            const int lineLength = 16;
+
+            for (int i = 0; i < byteArray.Length; i += lineLength)
+            {
+                hexDump.AppendFormat("{0:X8}: ", i);
+                for (int j = 0; j < lineLength; j++)
+                {
+                    if (i + j >= byteArray.Length)
+                    {
+                        break;
+                    }
+
+                    byte b = byteArray[i + j];
+                    hexDump.Append(b.ToString("X2"));
+                    hexDump.Append(" ");
+                }
+
+                hexDump.AppendLine();
+            }
+
+            Add(LogType.RawPacket, 'D', hexDump.ToString());
         }
 #endif
     }

@@ -1,4 +1,5 @@
 ﻿using Advanced_Combat_Tracker;
+using RouletteRecorder.Constant;
 using RouletteRecorder.DAO;
 using RouletteRecorder.Monitors;
 using RouletteRecorder.Utils;
@@ -33,7 +34,7 @@ namespace RouletteRecorder.Views
             }
         }
 
-        private void Init()
+        private async void Init()
         {
             Utils.Log.Handler += Log;
             Data.Instance.PropertyChanged += Data_PropertyChanged;
@@ -60,7 +61,9 @@ namespace RouletteRecorder.Views
             Database.InitDatabase();
 
             var network = new NetworkMonitor();
-            ffxivPlugin = Helper.GetFFXIVPlugin();
+            network.OnException += LogException;
+
+            ffxivPlugin = await Helper.GetFFXIVPlugin();
             ParsePlugin.Init(ffxivPlugin, network);
 
             if (Config.Instance.Language == null)
@@ -78,27 +81,48 @@ namespace RouletteRecorder.Views
         }
         public void DeInit()
         {
+            if (ParsePlugin.Instance != null)
+            {
+                ParsePlugin.Instance.Stop();
+            }
+
             Utils.Log.Handler -= Log;
             Data.Instance.PropertyChanged -= Data_PropertyChanged;
             Database.Release();
-            ParsePlugin.Instance.Stop();
         }
 
         private void LogException(Exception e)
         {
             try
             {
-                Log('E', string.Format("[{0}]{1}\r\n{2}", e.GetType(), e.Message, e.StackTrace));
+                Log(LogType.None, 'E', string.Format("[{0}]{1}\r\n{2}", e.GetType(), e.Message, e.StackTrace));
             }
             catch { }
         }
 
-        private void Log(char type, string message)
+        private Models.ConfigLogger ConfigLogger => Config.Instance.Logger;
+        private void Log(LogType type, char level, string message)
         {
-            Dispatcher.Invoke((Action)delegate ()
+            var vm = ViewModel;
+            ++vm.LogAllCount;
+
+            if (
+                !ConfigLogger.Enabled
+                || vm.LogPause
+                || (vm.LogTypeFilter && type != vm.LogTypeFilterValue)
+#if DEBUG
+                || (level == 'D' && !ConfigLogger.Debug)
+#else
+                || (level == 'I' && !ConfigLogger.Debug)
+#endif
+            )
             {
-                ViewModel.Log = string.Format("[{0}][{1}]{2}\r\n", DateTime.Now, type, message) + ViewModel.Log;
-            });
+                return;
+            }
+
+            string typeString = Enum.GetName(typeof(LogType), type);
+            vm.Log = string.Format("[{0}][{1}][{2}] {3}\r\n", DateTime.Now, level, typeString, message) + vm.Log;
+            ++vm.LogShowCount;
         }
 
         private void Data_PropertyChanged(object sender, PropertyChangedEventArgs e)
@@ -115,17 +139,23 @@ namespace RouletteRecorder.Views
             Database.InsertRoulette(Roulette.Instance);
         }
 
-        private void Button_Click_1(object sender, System.Windows.RoutedEventArgs e)
-        {
-            Utils.Log.Info(viewModel.SelectedMonitorIndex.ToString());
-            Utils.Log.Info(((int)Config.Instance.MonitorType).ToString());
-        }
-
         private void BDungeonSettingConfig_Click(object sender, RoutedEventArgs e)
         {
-            var dialog = new DungeonLoggerSetting();
-            dialog.WindowStartupLocation = WindowStartupLocation.CenterScreen;
+            var dialog = new DungeonLoggerSetting
+            {
+                WindowStartupLocation = WindowStartupLocation.CenterScreen
+            };
             dialog.ShowDialog();
+        }
+
+        private void BLogClear_Click(object sender, RoutedEventArgs e)
+        {
+            ViewModel.Log = "";
+        }
+
+        private void BLogPause_Click(object sender, RoutedEventArgs e)
+        {
+            ViewModel.LogPause = !ViewModel.LogPause;
         }
 
         private void RouletteTypeNode_PropertyChanged(object sender, PropertyChangedEventArgs e)

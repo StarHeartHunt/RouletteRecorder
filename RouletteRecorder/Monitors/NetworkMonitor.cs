@@ -36,7 +36,7 @@ namespace RouletteRecorder.Monitors
             {
                 try
                 {
-                    Log.Error(string.Format("[{0}]{1}\r\n{2}", e.GetType(), e.Message, e.StackTrace));
+                    FireException(e);
                 }
                 catch { }
             }
@@ -51,7 +51,17 @@ namespace RouletteRecorder.Monitors
                 return;
             }
 
-            HandleMessageByOpcode(message);
+            var processed = HandleMessageByOpcode(message);
+            if (!processed)
+            {
+#if DEBUG
+                if (ToInternalOpcode(BitConverter.ToUInt16(message, 18), out var opcode))
+                {
+                    LogIncorrectPacketSize(opcode, message.Length);
+                    Log.Packet(message);
+                }
+#endif
+            }
         }
 
         public static byte[] StringToByteArray(string hex)
@@ -99,7 +109,7 @@ namespace RouletteRecorder.Monitors
                 {
                     Roulette.Instance.RouletteName = "未知副本";
                 }
-                Log.Info($"[NetworkMonitor] Detected InitZone: serverId:{serverId}, zoneId:{zoneId}, instanceId:{instanceId}, contentId:{contentId}");
+                Log.Info(LogType.State, $"[NetworkMonitor] Detected InitZone: serverId:{serverId}, zoneId:{zoneId}, instanceId:{instanceId}, contentId:{contentId}");
             }
             else if (opcode == Opcode.ActorControlSelf)
             {
@@ -111,7 +121,7 @@ namespace RouletteRecorder.Monitors
                         BitConverter.ToInt32(param2, 0) == 0x40000003
                         || BitConverter.ToInt32(param2, 0) == 0x40000002) // Victory: 21:zone:40000003:00:00:00:00 行会令 40000002
                     {
-                        Log.Info($"[NetworkMonitor] Detected ActorControlSelf (Victory)");
+                        Log.Info(LogType.State, "[NetworkMonitor] Detected ActorControlSelf (Victory)");
                         if (Config.Instance.MonitorType == MonitorType.Network)
                         {
                             Roulette.Instance.IsCompleted = true;
@@ -131,7 +141,7 @@ namespace RouletteRecorder.Monitors
                 }
                 var roulette = BitConverter.ToUInt16(data, 2);
                 var instance = roulette == 0 ? BitConverter.ToUInt16(data, 0x1c) : 0;
-                Log.Info(string.Format("[NetworkMonitor] Detected ContentFinderNotifyPop: roulette:{0}, instance:{1}", roulette, instance));
+                Log.Info(Constant.LogType.State, $"[NetworkMonitor] Detected ContentFinderNotifyPop: roulette:{roulette}, instance:{instance}");
                 Roulette.Init();
                 if (roulette == 0) return false;
                 if (Data.Instance.Roulettes.TryGetValue(roulette, out var rouletteName))
@@ -148,8 +158,22 @@ namespace RouletteRecorder.Monitors
             return true;
         }
 
+        public delegate void ExceptionHandler(Exception e);
+        public event ExceptionHandler OnException;
+        private void FireException(Exception e)
+        {
+            OnException?.Invoke(e);
+        }
+
         public void HandleMessageSent(string connection, long epoch, byte[] message)
         {
         }
+
+#if DEBUG
+        private void LogIncorrectPacketSize(Opcode opcode, int size)
+        {
+            Log.Warn(LogType.InvalidPacket, $"{Enum.GetName(typeof(Opcode), opcode)} length {size}");
+        }
+#endif
     }
 }

@@ -1,4 +1,5 @@
 ﻿using FFXIV_ACT_Plugin.Common;
+using RouletteRecorder.Constant;
 using RouletteRecorder.Utils;
 using System.Collections.Generic;
 using System.Collections.Specialized;
@@ -142,6 +143,29 @@ namespace RouletteRecorder.ViewModels
         public int SelectedMonitorIndex { get; set; } = 0;
         public ListBindingTarget<RouletteTypeNode> RouletteTypes { get; set; } = RouletteTypeNodeList.Create(null);
 
+        // Logging
         public string Log { get; set; } = "";
+        public bool LogPause { get; set; } = false;
+        public bool LogTypeFilter { get; set; } = false;
+        public LogType LogTypeFilterValue { get; set; }
+
+        public uint LogShowCount { get; set; } = 0;
+        public uint LogAllCount { get; set; } = 0;
+
+        public string LogStatus
+        {
+            get
+            {
+                return $"({LogShowCount}/{LogAllCount})";
+            }
+        }
+
+        public string PauseText
+        {
+            get
+            {
+                return LogPause ? "恢复" : "暂停";
+            }
+        }
     }
 }
