@@ -52,16 +52,12 @@ namespace RouletteRecorder.Monitors
             }
 
             var processed = HandleMessageByOpcode(message);
-            if (!processed)
-            {
+            if (processed) return;
 #if DEBUG
-                if (ToInternalOpcode(BitConverter.ToUInt16(message, 18), out var opcode))
-                {
-                    LogIncorrectPacketSize(opcode, message.Length);
-                    Log.Packet(message);
-                }
+            if (!ToInternalOpcode(BitConverter.ToUInt16(message, 18), out var opcode)) return;
+            LogIncorrectPacketSize(opcode, message.Length);
+            Log.Packet(message);
 #endif
-            }
         }
 
         public static byte[] StringToByteArray(string hex)
@@ -82,7 +78,7 @@ namespace RouletteRecorder.Monitors
             var source = BitConverter.ToUInt32(message, 4);
             var target = BitConverter.ToUInt32(message, 8);
             var data = message.Skip(32).ToArray();
-            // Log.Debug($"[NetworkMonitor] source:{source}, target:{target}, data:{data}");
+            // Log.Debug(LogType.Event, $"[NetworkMonitor] source:{source}, target:{target}, data:{data}");
 
             if (opcode == Opcode.InitZone)
             {
