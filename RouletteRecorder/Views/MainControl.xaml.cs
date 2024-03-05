@@ -5,6 +5,7 @@ using RouletteRecorder.Monitors;
 using RouletteRecorder.Utils;
 using System;
 using System.ComponentModel;
+using System.Diagnostics;
 using System.Windows;
 using System.Windows.Controls;
 
@@ -156,6 +157,12 @@ namespace RouletteRecorder.Views
         private void BLogPause_Click(object sender, RoutedEventArgs e)
         {
             ViewModel.LogPause = !ViewModel.LogPause;
+        }
+
+        private void Image_MouseDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            Process.Start(new ProcessStartInfo("https://github.com/StarHeartHunt/RouletteRecorder"));
+            e.Handled = true;
         }
 
         private void RouletteTypeNode_PropertyChanged(object sender, PropertyChangedEventArgs e)
