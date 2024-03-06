@@ -123,15 +123,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="data\dynamic-event.json" />
-    <None Include="data\fate.json" />
     <None Include="data\instance.json" />
-    <None Include="data\patch.json" />
+    <None Include="data\job.json" />
     <None Include="data\roulette.json" />
-    <None Include="data\template.json" />
-    <None Include="data\territory.json" />
-    <None Include="data\type.json" />
-    <None Include="data\world.json" />
     <None Include="FodyWeavers.xsd">
       <SubType>Designer</SubType>
     </None>

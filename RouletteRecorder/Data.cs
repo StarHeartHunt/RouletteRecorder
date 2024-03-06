@@ -10,10 +10,6 @@ namespace RouletteRecorder
     public partial class Data : StaticBindingTarget<Data>
     {
         public Dictionary<int, Models.InstanceData> Instances;
-        public Dictionary<int, Models.ItemName> InstanceTypes;
-        public Dictionary<int, Models.ItemName> Territories;
-        public Dictionary<int, Models.ItemName> Patches;
-        public Dictionary<int, Models.WorldData> Worlds;
         public Dictionary<int, Models.ItemName> Roulettes { get; set; }
         public Dictionary<int, Models.JobName> Jobs;
 
@@ -38,10 +34,6 @@ namespace RouletteRecorder
             var dataRoot = Path.Combine(Helper.GetPluginDir(), "data");
 
             ReadData(dataRoot, "instance.json", out Instances);
-            ReadData(dataRoot, "type.json", out InstanceTypes);
-            ReadData(dataRoot, "territory.json", out Territories);
-            ReadData(dataRoot, "patch.json", out Patches);
-            ReadData(dataRoot, "world.json", out Worlds);
             ReadData(dataRoot, "job.json", out Jobs);
 
             ReadData(dataRoot, "roulette.json", out Dictionary<int, Models.ItemName> roulettes);
