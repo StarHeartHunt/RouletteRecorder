@@ -4,9 +4,11 @@ on:
   push:
     tags:
       - v*
-    branches: [ main ]
+    branches: [main]
+
   pull_request:
-    branches: [ main ]
+    branches: [main]
+
   workflow_dispatch:
 
 jobs:
@@ -16,59 +18,60 @@ jobs:
         configuration: [Release]
 
     runs-on: windows-latest
-    
+
     env:
       THIRDPARTY_ACT: https://github.com/EQAditu/AdvancedCombatTracker/releases/download/3.6.0.275/ACTv3.zip
       THIRDPARTY_FFXIV_ACT_PLUGIN: https://github.com/ravahn/FFXIV_ACT_Plugin/raw/master/Releases/FFXIV_ACT_Plugin_SDK_2.0.7.0.zip
       SOLUTION_NAME: RouletteRecorder.sln
 
     steps:
-    - name: Checkout
-      uses: actions/checkout@v3
+      - name: Checkout
+        uses: actions/checkout@v4
 
-    - uses: actions/cache@v3
-      with:
-        path: ~/.nuget/packages
-        key: ${{ runner.os }}-nuget-${{ hashFiles('**/*.csproj') }}
-        restore-keys: |
-          ${{ runner.os }}-nuget-
-        
-    - name: Setup NuGet.exe for use with actions
-      uses: nuget/setup-nuget@v1
-    - name: Setup MSBuild.exe
-      uses: microsoft/setup-msbuild@v1.1
+      - uses: actions/cache@v4
+        with:
+          path: ~/.nuget/packages
+          key: ${{ runner.os }}-nuget-${{ hashFiles('**/*.csproj') }}
+          restore-keys: |
+            ${{ runner.os }}-nuget-
 
-    - name: Setup thirdparty dependencies
-      run: |
-        nuget restore ${{ env.SOLUTION_NAME }}
+      - name: Setup NuGet.exe for use with actions
+        uses: nuget/setup-nuget@v2
 
-        New-Item -Name "thirdparty" -ItemType "directory" -Force
+      - name: Setup MSBuild.exe
+        uses: microsoft/setup-msbuild@v2
 
-        Invoke-WebRequest -Uri ${{ env.THIRDPARTY_ACT }} -OutFile thirdparty\ACT.zip
-        Expand-Archive thirdparty\ACT.zip -DestinationPath thirdparty\ACT -Force
+      - name: Setup thirdparty dependencies
+        run: |
+          nuget restore ${{ env.SOLUTION_NAME }}
 
-        Invoke-WebRequest -Uri ${{ env.THIRDPARTY_FFXIV_ACT_PLUGIN }} -OutFile thirdparty\FFXIV_ACT_Plugin.zip
-        Expand-Archive thirdparty\FFXIV_ACT_Plugin.zip -DestinationPath thirdparty\FFXIV_ACT_Plugin -Force
+          New-Item -Name "thirdparty" -ItemType "directory" -Force
 
-        Get-ChildItem .\thirdparty
-        Get-ChildItem .\thirdparty\ACT
-        Get-ChildItem .\thirdparty\FFXIV_ACT_Plugin
+          Invoke-WebRequest -Uri ${{ env.THIRDPARTY_ACT }} -OutFile thirdparty\ACT.zip
+          Expand-Archive thirdparty\ACT.zip -DestinationPath thirdparty\ACT -Force
 
-    - name: Build
-      run: msbuild $env:SOLUTION_NAME /p:Configuration=$env:Configuration
-      env:
-        Configuration: ${{ matrix.configuration }}
+          Invoke-WebRequest -Uri ${{ env.THIRDPARTY_FFXIV_ACT_PLUGIN }} -OutFile thirdparty\FFXIV_ACT_Plugin.zip
+          Expand-Archive thirdparty\FFXIV_ACT_Plugin.zip -DestinationPath thirdparty\FFXIV_ACT_Plugin -Force
 
-    - name: Upload build artifacts
-      uses: actions/upload-artifact@v3
-      with:
-        name: Bundle
-        path: bin\*.zip
-        
-    - name: Release
-      uses: softprops/action-gh-release@v1
-      if: startsWith(github.ref, 'refs/tags/v')
-      with:
-        files: bin/*.zip
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          Get-ChildItem .\thirdparty
+          Get-ChildItem .\thirdparty\ACT
+          Get-ChildItem .\thirdparty\FFXIV_ACT_Plugin
+
+      - name: Build
+        run: msbuild $env:SOLUTION_NAME /p:Configuration=$env:Configuration
+        env:
+          Configuration: ${{ matrix.configuration }}
+
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: Bundle
+          path: bin\*.zip
+
+      - name: Release
+        uses: softprops/action-gh-release@v1
+        if: startsWith(github.ref, 'refs/tags/v')
+        with:
+          files: bin/*.zip
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
