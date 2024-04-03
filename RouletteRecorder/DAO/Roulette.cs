@@ -48,11 +48,13 @@ namespace RouletteRecorder.DAO
 
         public async void Finish()
         {
+            if (Instance == null) return;
+
             var isSubscribedRouletteType = Config.Instance
                                                  .RouletteTypes
                                                  .Select(type => Data.Instance.Roulettes[type].Chinese)
                                                  .Contains(Instance.RouletteType);
-            if (Instance?.RouletteType == null || Instance?.RouletteName == null || !isSubscribedRouletteType) return;
+            if (Instance.RouletteType == null || Instance.RouletteName == null || !isSubscribedRouletteType) return;
 
             var ffxivPlugin = (FFXIV_ACT_Plugin.FFXIV_ACT_Plugin)await Helper.GetFFXIVPlugin();
             var jobId = ffxivPlugin.DataRepository.GetPlayer().JobID;
