@@ -92,12 +92,9 @@ namespace RouletteRecorder.Monitors
                 var instanceId = BitConverter.ToUInt16(data, 4);
                 var contentId = BitConverter.ToUInt16(data, 6);
 
-                Roulette.Instance?.Finish();
-                Roulette.Init();
                 if (Roulette.Instance == null)
                 {
-                    Log.Error(LogType.State, "roulette instance is null after init");
-                    return false;
+                    Roulette.Init();
                 }
                 Roulette.Instance.RouletteName = Data.Instance.Instances.TryGetValue(contentId, out var instanceData)
                                                     ? instanceData.Name.ToString()
@@ -133,11 +130,17 @@ namespace RouletteRecorder.Monitors
                 var roulette = BitConverter.ToUInt16(data, 2);
                 var instance = roulette == 0 ? BitConverter.ToUInt16(data, 0x1c) : 0;
                 Log.Info(Constant.LogType.State, $"[NetworkMonitor] Detected ContentFinderNotifyPop: roulette:{roulette}, instance:{instance}");
-                Roulette.Init();
+
                 if (roulette == 0) return false;
-                Roulette.Instance.RouletteType = Data.Instance.Roulettes.TryGetValue(roulette, out var rouletteName)
-                                                    ? rouletteName.ToString()
-                                                    : "未知随机任务";
+
+                Roulette.Instance?.Finish();
+                Roulette.Init();
+                if (Roulette.Instance != null)
+                {
+                    Roulette.Instance.RouletteType = Data.Instance.Roulettes.TryGetValue(roulette, out var rouletteName)
+                        ? rouletteName.ToString()
+                        : "未知随机任务";
+                }
             }
 
             return true;

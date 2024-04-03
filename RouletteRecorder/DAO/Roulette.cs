@@ -48,16 +48,16 @@ namespace RouletteRecorder.DAO
 
         public async void Finish()
         {
-            var ffxivPlugin = (FFXIV_ACT_Plugin.FFXIV_ACT_Plugin)await Helper.GetFFXIVPlugin();
-            var jobId = ffxivPlugin.DataRepository.GetPlayer().JobID;
-            Instance.JobName = Data.Instance.Jobs.TryGetValue(Convert.ToInt32(jobId), out var jobName) ? jobName.Name : "未知职业";
-            Instance.EndedAt = DateTime.Now.ToString("T");
-
             var isSubscribedRouletteType = Config.Instance
                                                  .RouletteTypes
                                                  .Select(type => Data.Instance.Roulettes[type].Chinese)
                                                  .Contains(Instance.RouletteType);
             if (Instance?.RouletteType == null || !isSubscribedRouletteType) return;
+
+            var ffxivPlugin = (FFXIV_ACT_Plugin.FFXIV_ACT_Plugin)await Helper.GetFFXIVPlugin();
+            var jobId = ffxivPlugin.DataRepository.GetPlayer().JobID;
+            Instance.JobName = Data.Instance.Jobs.TryGetValue(Convert.ToInt32(jobId), out var jobName) ? jobName.Name : "未知职业";
+            Instance.EndedAt = DateTime.Now.ToString("T");
 
             Database.InsertRoulette(Instance);
             UploadDungeonLogger();
