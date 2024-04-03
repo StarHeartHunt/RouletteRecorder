@@ -1,9 +1,10 @@
-﻿using System;
-using System.Linq;
-using CsvHelper.Configuration.Attributes;
+﻿using CsvHelper.Configuration.Attributes;
 using RouletteRecorder.Constant;
 using RouletteRecorder.Network.DungeonLogger;
 using RouletteRecorder.Utils;
+using System;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace RouletteRecorder.DAO
 {
@@ -62,14 +63,14 @@ namespace RouletteRecorder.DAO
             Instance.EndedAt = DateTime.Now.ToString("T");
 
             Database.InsertRoulette(Instance);
-            UploadDungeonLogger();
+            await UploadDungeonLogger();
 
             Instance = null;
         }
 
-        public async void UploadDungeonLogger()
+        public async Task<bool> UploadDungeonLogger()
         {
-            if (!Config.Instance.DungeonLogger.Enabled) return;
+            if (!Config.Instance.DungeonLogger.Enabled) return false;
             try
             {
                 using (var client = new DungeonLoggerClient())
@@ -88,7 +89,9 @@ namespace RouletteRecorder.DAO
             catch (Exception e)
             {
                 Log.Error(LogType.DungeonLogger, $"[{e.GetType()}]{e.Message}\r\n{e.StackTrace}");
+                return false;
             }
+            return true;
         }
     }
 }
