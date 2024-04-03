@@ -75,5 +75,19 @@
     "ja": "コンテンツルーレット：ノーマルレイド",
     "de": "Zufallsinhalt: Normaler Raid",
     "fr": "Mission aléatoire : raids normaux"
+  },
+  "40": {
+    "chs": "水晶冲突（练习赛）",
+    "en": "Crystalline Conflict (Casual Match)",
+    "ja": "クリスタルコンフリクト(カジュアルマッチ)",
+    "de": "Crystalline Conflict: Freies Spiel",
+    "fr": "Crystalline Conflict (partie non classée)"
+  },
+  "41": {
+    "chs": "水晶冲突（段位赛）",
+    "en": "Crystalline Conflict (Ranked Match)",
+    "ja": "クリスタルコンフリクト(ランクマッチ)",
+    "de": "Crystalline Conflict: Gewertetes Spiel",
+    "fr": "Crystalline Conflict (partie classée)"
   }
 }
