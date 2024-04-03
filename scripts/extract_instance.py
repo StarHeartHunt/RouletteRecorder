@@ -1,8 +1,8 @@
 import csv
 import json
+from pathlib import Path
 
 import httpx
-
 from utils import extract_header
 
 if __name__ == "__main__":
@@ -78,5 +78,7 @@ if __name__ == "__main__":
 
             data[id_]["name"]["chs"] = row["Name"]
 
-    with open("output/instance.json", "w", encoding="utf-8") as f:
-        json.dump(data, f, ensure_ascii=False, indent=2)
+    dest = Path(__file__).parent.parent.joinpath(
+        "RouletteRecorder", "data", "instance.json"
+    )
+    dest.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
