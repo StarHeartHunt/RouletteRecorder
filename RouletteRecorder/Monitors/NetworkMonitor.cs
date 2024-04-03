@@ -99,10 +99,17 @@ namespace RouletteRecorder.Monitors
 
                 if (Roulette.Instance != null)
                 {
-                    Roulette.Instance.RouletteName =
-                        Data.Instance.Instances.TryGetValue(contentId, out var instanceData)
-                            ? instanceData.Name.ToString()
-                            : "未知副本";
+                    if (Roulette.Instance.RouletteName == null)
+                    {
+                        Roulette.Instance.RouletteName =
+                            Data.Instance.Instances.TryGetValue(contentId, out var instanceData)
+                                ? instanceData.Name.ToString()
+                                : "未知副本";
+                    }
+                    else
+                    {
+                        if (Roulette.Instance.RouletteType != null) Roulette.Instance.Finish();
+                    }
                 }
                 Log.Info(LogType.State, $"[NetworkMonitor] Detected InitZone: serverId:{serverId}, zoneId:{zoneId}, instanceId:{instanceId}, contentId:{contentId}");
             }
@@ -138,7 +145,6 @@ namespace RouletteRecorder.Monitors
 
                 if (roulette == 0) return false;
 
-                Roulette.Instance?.Finish();
                 Roulette.Init();
                 if (Roulette.Instance != null)
                 {
