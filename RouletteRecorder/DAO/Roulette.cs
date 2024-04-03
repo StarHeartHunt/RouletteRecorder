@@ -52,7 +52,7 @@ namespace RouletteRecorder.DAO
                                                  .RouletteTypes
                                                  .Select(type => Data.Instance.Roulettes[type].Chinese)
                                                  .Contains(Instance.RouletteType);
-            if (Instance?.RouletteType == null || !isSubscribedRouletteType) return;
+            if (Instance?.RouletteType == null || Instance?.RouletteName == null || !isSubscribedRouletteType) return;
 
             var ffxivPlugin = (FFXIV_ACT_Plugin.FFXIV_ACT_Plugin)await Helper.GetFFXIVPlugin();
             var jobId = ffxivPlugin.DataRepository.GetPlayer().JobID;

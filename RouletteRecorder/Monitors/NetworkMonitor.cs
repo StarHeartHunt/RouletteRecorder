@@ -99,7 +99,7 @@ namespace RouletteRecorder.Monitors
                 Roulette.Instance.RouletteName = Data.Instance.Instances.TryGetValue(contentId, out var instanceData)
                                                     ? instanceData.Name.ToString()
                                                     : "未知副本";
-                Log.Info(LogType.State, "[NetworkMonitor] Detected InitZone: serverId:{serverId}, zoneId:{zoneId}, instanceId:{instanceId}, contentId:{contentId}");
+                Log.Info(LogType.State, $"[NetworkMonitor] Detected InitZone: serverId:{serverId}, zoneId:{zoneId}, instanceId:{instanceId}, contentId:{contentId}");
             }
             else if (opcode == Opcode.ActorControlSelf)
             {
