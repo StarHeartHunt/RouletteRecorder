@@ -9,7 +9,7 @@ namespace RouletteRecorder.Monitors
 {
     public class NetworkMonitor
     {
-        private bool ToInternalOpcode(ushort opcode, out Opcode internalOpcode)
+        private static bool ToInternalOpcode(ushort opcode, out Opcode internalOpcode)
         {
             var region = Config.Instance.Region;
             switch (region)
@@ -92,20 +92,17 @@ namespace RouletteRecorder.Monitors
                 var instanceId = BitConverter.ToUInt16(data, 4);
                 var contentId = BitConverter.ToUInt16(data, 6);
 
+                Roulette.Instance?.Finish();
+                Roulette.Init();
                 if (Roulette.Instance == null)
                 {
-                    Roulette.Init();
+                    Log.Error(LogType.State, "roulette instance is null after init");
+                    return false;
                 }
-
-                if (Data.Instance.Instances.TryGetValue(contentId, out var instanceData))
-                {
-                    Roulette.Instance.RouletteName = instanceData.Name.ToString();
-                }
-                else
-                {
-                    Roulette.Instance.RouletteName = "未知副本";
-                }
-                Log.Info(LogType.State, $"[NetworkMonitor] Detected InitZone: serverId:{serverId}, zoneId:{zoneId}, instanceId:{instanceId}, contentId:{contentId}");
+                Roulette.Instance.RouletteName = Data.Instance.Instances.TryGetValue(contentId, out var instanceData)
+                                                    ? instanceData.Name.ToString()
+                                                    : "未知副本";
+                Log.Info(LogType.State, "[NetworkMonitor] Detected InitZone: serverId:{serverId}, zoneId:{zoneId}, instanceId:{instanceId}, contentId:{contentId}");
             }
             else if (opcode == Opcode.ActorControlSelf)
             {
@@ -118,13 +115,11 @@ namespace RouletteRecorder.Monitors
                         || BitConverter.ToInt32(param2, 0) == 0x40000002) // Victory: 21:zone:40000003:00:00:00:00 行会令 40000002
                     {
                         Log.Info(LogType.State, "[NetworkMonitor] Detected ActorControlSelf (Victory)");
-                        if (Config.Instance.MonitorType == MonitorType.Network)
+
+                        Roulette.Instance.IsCompleted = true;
+                        if (Roulette.Instance.RouletteType != null)
                         {
-                            Roulette.Instance.IsCompleted = true;
-                            if (Roulette.Instance.RouletteType != null)
-                            {
-                                Task.Run(() => Roulette.Instance.Finish());
-                            }
+                            Task.Run(() => Roulette.Instance.Finish());
                         }
                     }
                 }
@@ -140,15 +135,9 @@ namespace RouletteRecorder.Monitors
                 Log.Info(Constant.LogType.State, $"[NetworkMonitor] Detected ContentFinderNotifyPop: roulette:{roulette}, instance:{instance}");
                 Roulette.Init();
                 if (roulette == 0) return false;
-                if (Data.Instance.Roulettes.TryGetValue(roulette, out var rouletteName))
-                {
-                    Roulette.Instance.RouletteType = rouletteName.ToString();
-                }
-                else
-                {
-                    Roulette.Instance.RouletteType = "未知随机任务";
-                }
-
+                Roulette.Instance.RouletteType = Data.Instance.Roulettes.TryGetValue(roulette, out var rouletteName)
+                                                    ? rouletteName.ToString()
+                                                    : "未知随机任务";
             }
 
             return true;

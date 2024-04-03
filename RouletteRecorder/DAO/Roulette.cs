@@ -1,20 +1,14 @@
-﻿using CsvHelper.Configuration.Attributes;
+﻿using System;
+using System.Linq;
+using CsvHelper.Configuration.Attributes;
+using RouletteRecorder.Constant;
 using RouletteRecorder.Network.DungeonLogger;
 using RouletteRecorder.Utils;
-using System;
-using System.Linq;
 
 namespace RouletteRecorder.DAO
 {
     public class Roulette
     {
-        public static Roulette Instance { get; private set; } = null;
-
-        public static void Init(string rouletteName = null, string rouletteType = null, bool isCompleted = false)
-        {
-            Instance = new Roulette(rouletteName, rouletteType, isCompleted);
-        }
-
         [Name("任务类型")]
         public string RouletteType { get; set; }
 
@@ -45,27 +39,34 @@ namespace RouletteRecorder.DAO
             RouletteType = rouletteType;
             IsCompleted = isCompleted;
         }
+        public static Roulette Instance { get; private set; }
+
+        public static void Init(string rouletteName = null, string rouletteType = null, bool isCompleted = false)
+        {
+            Instance = new Roulette(rouletteName, rouletteType, isCompleted);
+        }
 
         public async void Finish()
         {
             var ffxivPlugin = (FFXIV_ACT_Plugin.FFXIV_ACT_Plugin)await Helper.GetFFXIVPlugin();
             var jobId = ffxivPlugin.DataRepository.GetPlayer().JobID;
-            if (Data.Instance.Jobs.TryGetValue(Convert.ToInt32(jobId), out var jobName))
-            {
-                Instance.JobName = jobName.Name;
-            }
-            else
-            {
-                Instance.JobName = "未知职业";
-            }
+            Instance.JobName = Data.Instance.Jobs.TryGetValue(Convert.ToInt32(jobId), out var jobName) ? jobName.Name : "未知职业";
             Instance.EndedAt = DateTime.Now.ToString("T");
 
-            if (Instance.RouletteType == null
-                || !Config.Instance.RouletteTypes
-                .Select(type => Data.Instance.Roulettes[type].Chinese)
-                .Contains(Instance.RouletteType)) return;
-            Database.InsertRoulette(Instance);
+            var isSubscribedRouletteType = Config.Instance
+                                                 .RouletteTypes
+                                                 .Select(type => Data.Instance.Roulettes[type].Chinese)
+                                                 .Contains(Instance.RouletteType);
+            if (Instance?.RouletteType == null || !isSubscribedRouletteType) return;
 
+            Database.InsertRoulette(Instance);
+            UploadDungeonLogger();
+
+            Instance = null;
+        }
+
+        public async void UploadDungeonLogger()
+        {
             if (!Config.Instance.DungeonLogger.Enabled) return;
             try
             {
@@ -76,15 +77,15 @@ namespace RouletteRecorder.DAO
                     var maze = await client.GetStatMaze();
                     var job = await client.GetStatProf();
 
-                    var mazeId = maze.Data.Find((ele) => ele.Name.Equals(Instance.RouletteName)).Id;
-                    var profKey = job.Data.Find((ele) => ele.NameCn.Equals(Instance.JobName)).Key;
+                    var mazeId = maze.Data.Find(ele => ele.Name.Equals(Instance.RouletteName)).Id;
+                    var profKey = job.Data.Find(ele => ele.NameCn.Equals(Instance.JobName)).Key;
 
                     await client.PostRecord(mazeId, profKey);
                 }
             }
             catch (Exception e)
             {
-                Log.Error(Constant.LogType.DungeonLogger, $"[{e.GetType()}]{e.Message}\r\n{e.StackTrace}");
+                Log.Error(LogType.DungeonLogger, $"[{e.GetType()}]{e.Message}\r\n{e.StackTrace}");
             }
         }
     }
