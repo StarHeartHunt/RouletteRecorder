@@ -63,7 +63,7 @@ namespace RouletteRecorder.DAO
             Instance.EndedAt = DateTime.Now.ToString("T");
 
             Database.InsertRoulette(Instance);
-            await UploadDungeonLogger();
+            if (Instance.IsCompleted) await UploadDungeonLogger();
 
             Instance = null;
         }
