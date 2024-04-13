@@ -49,7 +49,14 @@ if __name__ == "__main__":
             "memberType": result["ContentMemberType"]["ID"],
         }
 
-    with open("data/ContentFinderCondition.csv", encoding="utf-8") as f:
+    dest = Path("data") / "ContentFinderCondition.csv"
+    dest.write_bytes(
+        httpx.get(
+            "https://raw.githubusercontent.com/thewakingsands/ffxiv-datamining-cn/master/ContentFinderCondition.csv"
+        ).read()
+    )
+
+    with open(dest.resolve(), encoding="utf-8") as f:
         headers = extract_header(f)
         reader = csv.DictReader(f, fieldnames=headers)
         for row in reader:

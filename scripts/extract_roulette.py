@@ -36,7 +36,14 @@ if __name__ == "__main__":
             "fr": result["Name_fr"],
         }
 
-    with open("data/ContentRoulette.csv", encoding="utf-8") as f:
+    dest = Path("data") / "ContentRoulette.csv"
+    dest.write_bytes(
+        httpx.get(
+            "https://raw.githubusercontent.com/thewakingsands/ffxiv-datamining-cn/master/ContentRoulette.csv"
+        ).read()
+    )
+
+    with open(dest.resolve(), encoding="utf-8") as f:
         headers = extract_header(f)
         reader = csv.DictReader(f, fieldnames=headers)
         for row in reader:
