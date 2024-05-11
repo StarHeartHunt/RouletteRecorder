@@ -2,13 +2,9 @@
 
 on:
   push:
-    tags:
-      - v*
     branches: [main]
-
   pull_request:
     branches: [main]
-
   workflow_dispatch:
 
 jobs:
@@ -69,8 +65,8 @@ jobs:
           path: bin\*.zip
 
       - name: Release
-        uses: softprops/action-gh-release@v1
-        if: startsWith(github.ref, 'refs/tags/v')
+        uses: softprops/action-gh-release@v2
+        if: ${{ github.event_name != 'pull_request' }}
         with:
           files: bin/*.zip
         env:
