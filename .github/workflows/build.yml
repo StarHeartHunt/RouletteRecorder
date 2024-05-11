@@ -2,8 +2,12 @@
 
 on:
   push:
+    paths:
+      - 'RouletteRecorder/**'
     branches: [main]
   pull_request:
+    paths:
+      - 'RouletteRecorder/**'
     branches: [main]
   workflow_dispatch:
 
