@@ -3,11 +3,11 @@
 on:
   push:
     paths:
-      - 'RouletteRecorder/**'
+      - "RouletteRecorder/**"
     branches: [main]
   pull_request:
     paths:
-      - 'RouletteRecorder/**'
+      - "RouletteRecorder/**"
     branches: [main]
   workflow_dispatch:
 
@@ -68,10 +68,17 @@ jobs:
           name: Bundle
           path: bin\*.zip
 
+      - name: Extract version name
+        id: version
+        run: |
+          $version = [System.Version]::Parse((Get-Content -Path "RouletteRecorder\Properties\AssemblyInfo.cs" | Select-String -Pattern "^\[assembly: AssemblyVersion\(""(.*)""\)\]").Matches.Groups[1].Value)
+          echo "VERSION=$version" >> $env:GITHUB_OUTPUT
+
       - name: Release
         uses: softprops/action-gh-release@v2
         if: ${{ github.event_name != 'pull_request' }}
         with:
+          tag_name: v${{ steps.version.outputs.VERSION }}
           files: bin/*.zip
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
