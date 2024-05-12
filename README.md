@@ -4,9 +4,11 @@
 
 ## 下载方式
 
-1. [NGA 帖子主楼](https://nga.178.com/read.php?tid=34277964)更新
+1. 前往[本仓库 Releases](https://github.com/StarHeartHunt/RouletteRecorder/releases)下载
 
-2. 前往[本仓库 Actions 构建](https://github.com/StarHeartHunt/RouletteRecorder/actions/workflows/build.yml)，点击上方最新 commit 的构建记录，下拉找到 Artifacts 点击 Bundle 下载
+2. [NGA 帖子主楼](https://nga.178.com/read.php?tid=34277964)更新
+
+3. 前往[本仓库 Actions 构建](https://github.com/StarHeartHunt/RouletteRecorder/actions/workflows/build.yml)，点击上方最新 commit 的构建记录，下拉找到 Artifacts 点击 Bundle 下载
 
 ## 使用方法
 
