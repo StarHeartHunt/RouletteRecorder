@@ -3,6 +3,7 @@
 
 # Project
 thirdparty/
+scripts/opcode/*
 
 ### Csharp ###
 ## Ignore Visual Studio temporary files, build results, and
