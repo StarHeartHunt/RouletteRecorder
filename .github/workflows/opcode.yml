@@ -1,0 +1,45 @@
+name: Build
+
+on:
+  schedule:
+    # At minute 0 past every 4th hour.
+    - cron: "0 */4 * * *"
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Checkout opcode repo
+        uses: actions/checkout@v4
+        with:
+          repository: "moewcorp/FFXIVNetworkOpcodes"
+          path: scripts/opcode
+          sparse-checkout: output
+
+      - name: Install poetry
+        run: pipx install poetry
+        shell: bash
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "poetry"
+
+      - run: poetry install
+        shell: bash
+
+      - run: poetry run python scripts/update_opcode.py
+        shell: bash
+
+      - run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add .
+          git commit -m "chore(opcode): update opcodes"
+          git push
+        shell: bash

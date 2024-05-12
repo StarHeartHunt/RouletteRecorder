@@ -3,7 +3,7 @@ from pathlib import Path
 
 FILE_PATH = Path(__file__).parent
 
-OPCODE_PATH = FILE_PATH / "opcode"
+OPCODE_PATH = FILE_PATH / "opcode" / "output"
 
 DEST_PATH = FILE_PATH.parent / "RouletteRecorder" / "Constant"
 GLOBAL_DEST_PATH = DEST_PATH / "OpcodeGlobal.cs"

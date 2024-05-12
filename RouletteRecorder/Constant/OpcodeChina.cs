@@ -3,14 +3,14 @@ namespace FFXIVOpcodes.CN
 {
     public enum ServerLobbyIpcType : ushort
     {
-
+    
     };
-
+    
     public enum ClientLobbyIpcType : ushort
     {
-
+    
     };
-
+    
     public enum ServerZoneIpcType : ushort
     {
         PlayerSpawn = 0x031B,
@@ -141,7 +141,7 @@ namespace FFXIVOpcodes.CN
         RSV = 0x0333,
         RSF = 0x02E2,
     };
-
+    
     public enum ClientZoneIpcType : ushort
     {
         ActionRequest = 0x0136,
@@ -157,15 +157,15 @@ namespace FFXIVOpcodes.CN
         WorldTravel = 0x0147,
         ClientCountdownInitiate = 0x01C9,
     };
-
+    
     public enum ServerChatIpcType : ushort
     {
-
+    
     };
-
+    
     public enum ClientChatIpcType : ushort
     {
-
+    
     };
-
+    
 }
