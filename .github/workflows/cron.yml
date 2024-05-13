@@ -62,6 +62,6 @@ jobs:
           git add .
           git diff-index --quiet HEAD || git commit -m "chore(data): update data"
 
-      - name: push
+      - name: Push commits
         run: git push
         shell: bash
