@@ -49,7 +49,7 @@ if __name__ == "__main__":
             "memberType": result["ContentMemberType"]["ID"],
         }
 
-    dest = Path("data") / "ContentFinderCondition.csv"
+    dest = Path(__file__).parent / "data" / "ContentFinderCondition.csv"
     dest.write_bytes(
         httpx.get(
             "https://raw.githubusercontent.com/thewakingsands/ffxiv-datamining-cn/master/ContentFinderCondition.csv"

@@ -36,7 +36,7 @@ if __name__ == "__main__":
             "fr": result["Name_fr"],
         }
 
-    dest = Path("data") / "ContentRoulette.csv"
+    dest = Path(__file__).parent / "data" / "ContentRoulette.csv"
     dest.write_bytes(
         httpx.get(
             "https://raw.githubusercontent.com/thewakingsands/ffxiv-datamining-cn/master/ContentRoulette.csv"
