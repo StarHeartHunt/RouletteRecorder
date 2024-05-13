@@ -1,4 +1,4 @@
-name: Update opcodes
+name: Update data and opcode
 
 on:
   schedule:
@@ -35,12 +35,33 @@ jobs:
       - run: poetry install
         shell: bash
 
-      - run: poetry run python scripts/update_opcode.py
+      - name: Update opcodes
+        run: poetry run python scripts/update_opcode.py
         shell: bash
 
-      - run: |
+      - name: Setup git user
+        run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Commit opcode
+        run: |
           git add .
-          git diff-index --quiet HEAD || git commit -m "chore(opcode): update opcodes"
-          git push
+          git diff-index --quiet HEAD || git commit -m "chore(opcode): update opcode"
+
+      - name: Update instance data
+        run: poetry run python scripts/extract_instance.py
+        shell: bash
+
+      - name: Update roulette data
+        run: poetry run python scripts/extract_roulette.py
+        shell: bash
+
+      - name: Commit data
+        run: |
+          git add .
+          git diff-index --quiet HEAD || git commit -m "chore(data): update data"
+
+      - name: push
+        run: git push
+        shell: bash
