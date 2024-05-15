@@ -53,7 +53,7 @@ namespace RouletteRecorder.DAO
 
             var isSubscribedRouletteType = Config.Instance
                                                  .RouletteTypes
-                                                 .Select(type => Data.Instance.Roulettes[type].Chinese)
+                                                 .Select(type => Data.Instance.Roulettes[type].ToString())
                                                  .Contains(Instance.RouletteType);
             if (Instance.RouletteType == null || Instance.RouletteName == null || !isSubscribedRouletteType) return;
 

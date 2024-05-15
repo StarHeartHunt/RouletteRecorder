@@ -17,7 +17,21 @@ namespace RouletteRecorder.Models
 
         public override string ToString()
         {
-            return Chinese ?? English;
+            switch (Config.Instance.Language)
+            {
+                case FFXIV_ACT_Plugin.Common.Language.Chinese:
+                    return Chinese;
+                case FFXIV_ACT_Plugin.Common.Language.English:
+                    return English;
+                case FFXIV_ACT_Plugin.Common.Language.French:
+                    return French;
+                case FFXIV_ACT_Plugin.Common.Language.German:
+                    return German;
+                case FFXIV_ACT_Plugin.Common.Language.Japanese:
+                    return Japanese;
+                default:
+                    return Chinese ?? English;
+            }
         }
     }
 }
