@@ -141,7 +141,7 @@ namespace RouletteRecorder.Monitors
                 }
                 var roulette = BitConverter.ToUInt16(data, 2);
                 var instance = roulette == 0 ? BitConverter.ToUInt16(data, 0x1c) : 0;
-                Log.Info(Constant.LogType.State, $"[NetworkMonitor] Detected ContentFinderNotifyPop: roulette:{roulette}, instance:{instance}");
+                Log.Info(LogType.State, $"[NetworkMonitor] Detected ContentFinderNotifyPop: roulette:{roulette}, instance:{instance}");
 
                 if (roulette == 0) return false;
 
