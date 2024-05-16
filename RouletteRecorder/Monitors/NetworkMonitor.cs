@@ -103,8 +103,8 @@ namespace RouletteRecorder.Monitors
                     {
                         Roulette.Instance.RouletteName =
                             Data.Instance.Instances.TryGetValue(contentId, out var instanceData)
-                                ? instanceData.Name.ToString()
-                                : "未知副本";
+                                ? instanceData.Name
+                                : null;
                     }
                     else
                     {
@@ -150,7 +150,7 @@ namespace RouletteRecorder.Monitors
                 {
                     Roulette.Instance.RouletteType = Data.Instance.Roulettes.TryGetValue(roulette, out var rouletteName)
                         ? rouletteName.ToString()
-                        : "未知随机任务";
+                        : null;
                 }
             }
 

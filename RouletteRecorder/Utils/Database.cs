@@ -1,5 +1,6 @@
 ﻿using CsvHelper;
 using CsvHelper.Configuration;
+using CsvHelper.TypeConversion;
 using RouletteRecorder.DAO;
 using System;
 using System.Collections.Generic;
@@ -56,6 +57,14 @@ namespace RouletteRecorder.Utils
             fs.Dispose();
 
             return true;
+        }
+    }
+
+    public class ItemNameConverter : DefaultTypeConverter
+    {
+        public override string ConvertToString(object value, IWriterRow row, MemberMapData memberMapData)
+        {
+            return value.ToString();
         }
     }
 }

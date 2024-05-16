@@ -23,7 +23,8 @@ namespace RouletteRecorder.DAO
         public string EndedAt { get; set; }
 
         [Name("副本名称")]
-        public string RouletteName { get; set; }
+        [TypeConverter(typeof(ItemNameConverter))]
+        public Models.ItemName RouletteName { get; set; }
 
         [Name("职业")]
         public string JobName { get; set; }
@@ -31,7 +32,7 @@ namespace RouletteRecorder.DAO
         [Name("完成情况")]
         public bool IsCompleted { get; set; }
 
-        public Roulette(string rouletteName = null, string rouletteType = null, bool isCompleted = false)
+        public Roulette(Models.ItemName rouletteName = null, string rouletteType = null, bool isCompleted = false)
         {
             Date = DateTime.Now.ToString("yyyy-MM-dd");
             StartedAt = DateTime.Now.ToString("T");
@@ -42,7 +43,7 @@ namespace RouletteRecorder.DAO
         }
         public static Roulette Instance { get; private set; }
 
-        public static void Init(string rouletteName = null, string rouletteType = null, bool isCompleted = false)
+        public static void Init(Models.ItemName rouletteName = null, string rouletteType = null, bool isCompleted = false)
         {
             Instance = new Roulette(rouletteName, rouletteType, isCompleted);
         }
@@ -80,7 +81,7 @@ namespace RouletteRecorder.DAO
                     var maze = await client.GetStatMaze();
                     var job = await client.GetStatProf();
 
-                    var mazeId = maze.Data.Find(ele => ele.Name.Equals(Instance.RouletteName)).Id;
+                    var mazeId = maze.Data.Find(ele => ele.Name.Equals(Instance.RouletteName.Chinese)).Id;
                     var profKey = job.Data.Find(ele => ele.NameCn.Equals(Instance.JobName)).Key;
 
                     await client.PostRecord(mazeId, profKey);
