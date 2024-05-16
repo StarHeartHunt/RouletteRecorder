@@ -96,7 +96,7 @@ namespace RouletteRecorder.Views
         {
             try
             {
-                Log(LogType.None, 'E', string.Format("[{0}]{1}\r\n{2}", e.GetType(), e.Message, e.StackTrace));
+                Log(LogType.None, 'E', $"[{e.GetType()}]{e.Message}\r\n{e.StackTrace}");
             }
             catch { }
         }
@@ -121,8 +121,8 @@ namespace RouletteRecorder.Views
                 return;
             }
 
-            string typeString = Enum.GetName(typeof(LogType), type);
-            vm.Log = string.Format("[{0}][{1}][{2}] {3}\r\n", DateTime.Now, level, typeString, message) + vm.Log;
+            var typeString = Enum.GetName(typeof(LogType), type);
+            vm.Log = $"[{DateTime.Now}][{level}][{typeString}] {message}\r\n" + vm.Log;
             ++vm.LogShowCount;
         }
 
@@ -132,12 +132,6 @@ namespace RouletteRecorder.Views
             {
                 ViewModel.RouletteTypes = ViewModels.RouletteTypeNodeList.Create(Data.Instance.Roulettes);
             }
-        }
-
-        private void Button_Click(object sender, System.Windows.RoutedEventArgs e)
-        {
-            Roulette.Init("test", "test2", true);
-            Database.InsertRoulette(Roulette.Instance);
         }
 
         private void BDungeonSettingConfig_Click(object sender, RoutedEventArgs e)
