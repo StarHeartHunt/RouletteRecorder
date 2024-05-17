@@ -140,17 +140,6 @@
             <TabItem Header="调试">
                 <DockPanel LastChildFill="True">
                     <GroupBox Header="动作" VerticalAlignment="Top" Margin="0,6,0,0" DockPanel.Dock="Top">
-                        <Grid>
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="1*"/>
-                                <ColumnDefinition Width="1*"/>
-                                <ColumnDefinition Width="1*"/>
-                                <ColumnDefinition Width="1*"/>
-                            </Grid.ColumnDefinitions>
-                            <Button Grid.Column="0" Height="34" Margin="10">
-                                写入CSV测试
-                            </Button>
-                        </Grid>
                     </GroupBox>
                 </DockPanel>
             </TabItem>
