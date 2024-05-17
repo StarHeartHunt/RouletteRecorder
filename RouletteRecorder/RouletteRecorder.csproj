@@ -37,7 +37,8 @@
     <SignAssembly>false</SignAssembly>
   </PropertyGroup>
   <PropertyGroup>
-    <AssemblyOriginatorKeyFile>roulette.pfx</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
@@ -129,7 +130,6 @@
     <None Include="FodyWeavers.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="roulette.pfx" />
   </ItemGroup>
   <ItemGroup>
     <Page Include="Views\DugeonLoggerSetting.xaml">
@@ -148,6 +148,7 @@
   <ItemGroup>
     <PackageReference Include="Costura.Fody">
       <Version>5.7.0</Version>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
     <PackageReference Include="CsvHelper">
@@ -163,7 +164,6 @@
     </PackageReference>
     <PackageReference Include="PropertyChanged.Fody">
       <Version>4.1.0</Version>
-      <PrivateAssets>all</PrivateAssets>
     </PackageReference>
     <PackageReference Include="RecursiveChangeNotifier">
       <Version>0.4.0</Version>
