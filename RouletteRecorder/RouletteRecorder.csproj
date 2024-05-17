@@ -10,6 +10,7 @@
     <RootNamespace>RouletteRecorder</RootNamespace>
     <AssemblyName>RouletteRecorder</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetPlatformVersion>10.0.10240.0</TargetPlatformVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
     <NuGetPackageImportStamp>
@@ -23,15 +24,21 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>pdbonly</DebugType>
-    <Optimize>true</Optimize>
+    <DebugType>full</DebugType>
     <OutputPath>..\bin\Release\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DefineConstants>
+    </DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <DebugSymbols>true</DebugSymbols>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
   </PropertyGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
@@ -141,13 +148,14 @@
   <ItemGroup>
     <PackageReference Include="Costura.Fody">
       <Version>5.7.0</Version>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
     <PackageReference Include="CsvHelper">
-      <Version>27.2.1</Version>
+      <Version>32.0.3</Version>
     </PackageReference>
     <PackageReference Include="Fody">
-      <Version>6.8.0</Version>
+      <Version>6.6.4</Version>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
@@ -171,15 +179,6 @@
     </ItemGroup>
     <Copy SourceFiles="@(DataFiles)" DestinationFolder="$(TargetDir)data" />
     <Message Text="Copied files: '@(CopiedFiles)'" />
-  </Target>
-  <Target Name="DeleteXMLFiles" AfterTargets="AfterBuild">
-    <ItemGroup>
-      <XMLFiles Include="$(TargetDir)*.xml" />
-    </ItemGroup>
-    <Delete Files="@(XMLFiles)">
-      <Output TaskParameter="DeletedFiles" ItemName="DeletedList" />
-    </Delete>
-    <Message Text="Deleted files: '@(DeletedList)'" />
   </Target>
   <PropertyGroup>
     <PreBuildEvent Condition=" '$(Configuration)' == 'Release' ">$(TargetDir)..\RouletteRecorder.Packer Assembly</PreBuildEvent>
