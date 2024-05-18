@@ -23,7 +23,6 @@ namespace RouletteRecorder.DAO
         public string EndedAt { get; set; }
 
         [Name("副本名称")]
-        [TypeConverter(typeof(ItemNameConverter))]
         public Models.ItemName RouletteName { get; set; }
 
         [Name("职业")]
