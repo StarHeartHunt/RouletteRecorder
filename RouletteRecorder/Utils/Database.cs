@@ -13,8 +13,7 @@ namespace RouletteRecorder.Utils
     {
         private static readonly string path = Helper.GetDbPath();
 
-        private static readonly FileStream fs = new FileStream(path, FileMode.OpenOrCreate, FileAccess.ReadWrite,
-            FileShare.Read);
+        private static readonly FileStream fs = new FileStream(path, FileMode.OpenOrCreate, FileAccess.ReadWrite, FileShare.Read);
 
         public static bool InitDatabase()
         {
