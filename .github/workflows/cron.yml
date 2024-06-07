@@ -14,15 +14,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Download opcodes
-        run: |
-          wget -O ./scripts/opcodes/FFXIVNetworkOpcodes.zip https://github.com/moewcorp/FFXIVNetworkOpcodes/archive/refs/heads/master.zip
-          cd ./scripts/opcodes
-          unzip FFXIVNetworkOpcodes.zip
-          cp -r FFXIVNetworkOpcodes-master/output .
-          rm -rf FFXIVNetworkOpcodes.zip FFXIVNetworkOpcodes-master
-        shell: bash
-
       - name: Install poetry
         run: pipx install poetry
         shell: bash
@@ -35,19 +26,34 @@ jobs:
       - run: poetry install
         shell: bash
 
-      - name: Update opcodes
-        run: poetry run python scripts/update_opcode.py
-        shell: bash
-
       - name: Setup git user
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
+      - name: Download opcodes
+        run: |
+          wget -O ./scripts/opcodes/FFXIVNetworkOpcodes.zip https://github.com/moewcorp/FFXIVNetworkOpcodes/archive/refs/heads/master.zip
+          cd ./scripts/opcodes
+          unzip FFXIVNetworkOpcodes.zip
+          cp -r FFXIVNetworkOpcodes-master/output .
+          rm -rf FFXIVNetworkOpcodes.zip FFXIVNetworkOpcodes-master
+        shell: bash
+
+      - name: Update opcodes
+        run: poetry run python scripts/update_opcode.py
+        shell: bash
+
+      - name: Check opcode diff
+        id: opcode-diff
+        run: |
+          git diff-index --quiet HEAD || echo "DIFF=true" >> $GITHUB_OUTPUT
+
       - name: Commit opcode
+        if: ${{ steps.opcode-diff.outputs.DIFF == 'true' }}
         run: |
           git add .
-          git diff-index --quiet HEAD || git commit -m "chore(opcode): update opcode"
+          git commit -m "chore(opcode): update opcode"
 
       - name: Update instance data
         run: poetry run python scripts/extract_instance.py
@@ -57,11 +63,22 @@ jobs:
         run: poetry run python scripts/extract_roulette.py
         shell: bash
 
+      - name: Check data diff
+        id: data-diff
+        run: |
+          git diff-index --quiet HEAD || echo "DIFF=true" >> $GITHUB_OUTPUT
+
       - name: Commit data
+        if: ${{ steps.data-diff.outputs.DIFF == 'true' }}
         run: |
           git add .
-          git diff-index --quiet HEAD || git commit -m "chore(data): update data"
+          git commit -m "chore(data): update data"
 
       - name: Push commits
         run: git push
+        shell: bash
+
+      - name: Trigger build
+        if: ${{ steps.opcode-diff.outputs.DIFF == 'true' || steps.data-diff.outputs.DIFF == 'true' }}
+        run: gh workflow run build.yml
         shell: bash
