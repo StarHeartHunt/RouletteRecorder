@@ -72,10 +72,10 @@ if __name__ == "__main__":
                             "fr": "",
                         },
                         "type": row["ContentType"],
-                        "level": row["ClassJobLevelRequired"],
-                        "levelSync": row["ClassJobLevelSync"],
-                        "item": row["ItemLevelRequired"],
-                        "itemSync": row["ItemLevelSync"],
+                        "level": row["ClassJobLevel{Required}"],
+                        "levelSync": row["ClassJobLevel{Sync}"],
+                        "item": row["ItemLevel{Required}"],
+                        "itemSync": row["ItemLevel{Sync}"],
                         "memberType": row["ContentMemberType"],
                     }
                 else:
