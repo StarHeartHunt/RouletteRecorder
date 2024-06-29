@@ -16,7 +16,6 @@ jobs:
 
       - name: Install poetry
         run: pipx install poetry
-        shell: bash
 
       - uses: actions/setup-python@v5
         with:
@@ -24,7 +23,6 @@ jobs:
           cache: "poetry"
 
       - run: poetry install
-        shell: bash
 
       - name: Setup git user
         run: |
@@ -38,11 +36,9 @@ jobs:
           unzip FFXIVNetworkOpcodes.zip
           cp -r FFXIVNetworkOpcodes-master/output .
           rm -rf FFXIVNetworkOpcodes.zip FFXIVNetworkOpcodes-master
-        shell: bash
 
       - name: Update opcodes
         run: poetry run python scripts/update_opcode.py
-        shell: bash
 
       - name: Commit opcode
         id: opcode-commit
@@ -53,11 +49,9 @@ jobs:
 
       - name: Update instance data
         run: poetry run python scripts/extract_instance.py
-        shell: bash
 
       - name: Update roulette data
         run: poetry run python scripts/extract_roulette.py
-        shell: bash
 
       - name: Commit data
         id: data-commit
@@ -68,9 +62,9 @@ jobs:
 
       - name: Push commits
         run: git push
-        shell: bash
 
       - name: Trigger build
         if: ${{ steps.opcode-commit.outputs.DIFF == 'true' || steps.data-commit.outputs.DIFF == 'true' }}
         run: gh workflow run build.yml
-        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
