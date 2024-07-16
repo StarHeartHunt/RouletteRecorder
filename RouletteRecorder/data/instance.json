@@ -11099,6 +11099,66 @@
     "itemSync": 700,
     "memberType": 3
   },
+  "985": {
+    "name": {
+      "chs": "",
+      "en": "AAC Light-heavyweight M1",
+      "ja": "至天の座アルカディア：ライトヘビー級1",
+      "de": "Arkadion - Halbschwergewicht R1",
+      "fr": "Poids mi-lourds CCA - match 1"
+    },
+    "type": 5,
+    "level": 100,
+    "levelSync": 100,
+    "item": 685,
+    "itemSync": 0,
+    "memberType": 3
+  },
+  "987": {
+    "name": {
+      "chs": "",
+      "en": "AAC Light-heavyweight M2",
+      "ja": "至天の座アルカディア：ライトヘビー級2",
+      "de": "Arkadion - Halbschwergewicht R2",
+      "fr": "Poids mi-lourds CCA - match 2"
+    },
+    "type": 5,
+    "level": 100,
+    "levelSync": 100,
+    "item": 685,
+    "itemSync": 0,
+    "memberType": 3
+  },
+  "989": {
+    "name": {
+      "chs": "",
+      "en": "AAC Light-heavyweight M3",
+      "ja": "至天の座アルカディア：ライトヘビー級3",
+      "de": "Arkadion - Halbschwergewicht R3",
+      "fr": "Poids mi-lourds CCA - match 3"
+    },
+    "type": 5,
+    "level": 100,
+    "levelSync": 100,
+    "item": 685,
+    "itemSync": 0,
+    "memberType": 3
+  },
+  "991": {
+    "name": {
+      "chs": "",
+      "en": "AAC Light-heavyweight M4",
+      "ja": "至天の座アルカディア：ライトヘビー級4",
+      "de": "Arkadion - Halbschwergewicht R4",
+      "fr": "Poids mi-lourds CCA - match 4"
+    },
+    "type": 5,
+    "level": 100,
+    "levelSync": 100,
+    "item": 685,
+    "itemSync": 0,
+    "memberType": 3
+  },
   "994": {
     "name": {
       "chs": "",
