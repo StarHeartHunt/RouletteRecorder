@@ -30,7 +30,9 @@ def main():
     update_opcode("CN_*", "Ipcs_cn.cs", DEST_PATH.joinpath("OpcodeChina.cs"))
 
     resp = httpx.get(GLOBAL_OPCODE_URL).raise_for_status()
-    GLOBAL_DEST_PATH.write_text(resp.text, encoding="utf-8")
+    print("[INFO]", "Global opcode downloaded")
+    status = GLOBAL_DEST_PATH.write_text(resp.text, encoding="utf-8")
+    print("[INFO]", "Global opcode written to file with ret:", status)
 
 
 if __name__ == "__main__":
