@@ -13,7 +13,7 @@ namespace RouletteRecorder.Constant
         public static Dictionary<ushort, Opcode> Global = new Dictionary<ushort, Opcode>
         {
             { (ushort)FFXIVOpcodes.Global.ServerZoneIpcType.ActorControlSelf, Opcode.ActorControlSelf },
-            { (ushort)FFXIVOpcodes.Global.ServerZoneIpcType.ContentFinderNotifyPop, Opcode.ContentFinderNotifyPop },
+            { (ushort)FFXIVOpcodes.Global.ServerZoneIpcType.CFNotify, Opcode.ContentFinderNotifyPop },
             { (ushort)FFXIVOpcodes.Global.ServerZoneIpcType.InitZone, Opcode.InitZone },
         };
 
