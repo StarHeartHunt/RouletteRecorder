@@ -1,6 +1,8 @@
 import shutil
 from pathlib import Path
 
+import httpx
+
 FILE_PATH = Path(__file__).parent
 
 OPCODES_PATH = FILE_PATH / "opcodes" / "output"
@@ -8,6 +10,8 @@ OPCODES_PATH = FILE_PATH / "opcodes" / "output"
 DEST_PATH = FILE_PATH.parent / "RouletteRecorder" / "Constant"
 GLOBAL_DEST_PATH = DEST_PATH / "OpcodeGlobal.cs"
 CN_DEST_PATH = DEST_PATH / "OpcodeChina.cs"
+
+GLOBAL_OPCODE_URL = "https://raw.githubusercontent.com/karashiiro/FFXIVOpcodes/master/FFXIVOpcodes/Ipcs.cs"
 
 
 def update_opcode(pattern, src_name, dest):
@@ -23,8 +27,10 @@ def update_opcode(pattern, src_name, dest):
 
 
 def main():
-    update_opcode("Global_*", "Ipcs.cs", DEST_PATH.joinpath("OpcodeGlobal.cs"))
     update_opcode("CN_*", "Ipcs_cn.cs", DEST_PATH.joinpath("OpcodeChina.cs"))
+
+    resp = httpx.get(GLOBAL_OPCODE_URL).raise_for_status()
+    GLOBAL_DEST_PATH.write_text(resp.text, encoding="utf-8")
 
 
 if __name__ == "__main__":
