@@ -11114,6 +11114,21 @@
     "itemSync": 0,
     "memberType": 3
   },
+  "986": {
+    "name": {
+      "chs": "",
+      "en": "AAC Light-heavyweight M1 (Savage)",
+      "ja": "至天の座アルカディア零式：ライトヘビー級1",
+      "de": "Arkadion - Halbschwergewicht R1 (episch)",
+      "fr": "Poids mi-lourds CCA - match 1 (sadique)"
+    },
+    "type": 5,
+    "level": 100,
+    "levelSync": 100,
+    "item": 700,
+    "itemSync": 0,
+    "memberType": 3
+  },
   "987": {
     "name": {
       "chs": "",
@@ -11126,6 +11141,21 @@
     "level": 100,
     "levelSync": 100,
     "item": 685,
+    "itemSync": 0,
+    "memberType": 3
+  },
+  "988": {
+    "name": {
+      "chs": "",
+      "en": "AAC Light-heavyweight M2 (Savage)",
+      "ja": "至天の座アルカディア零式：ライトヘビー級2",
+      "de": "Arkadion - Halbschwergewicht R2 (episch)",
+      "fr": "Poids mi-lourds CCA - match 2 (sadique)"
+    },
+    "type": 5,
+    "level": 100,
+    "levelSync": 100,
+    "item": 705,
     "itemSync": 0,
     "memberType": 3
   },
@@ -11144,6 +11174,21 @@
     "itemSync": 0,
     "memberType": 3
   },
+  "990": {
+    "name": {
+      "chs": "",
+      "en": "AAC Light-heavyweight M3 (Savage)",
+      "ja": "至天の座アルカディア零式：ライトヘビー級3",
+      "de": "Arkadion - Halbschwergewicht R3 (episch)",
+      "fr": "Poids mi-lourds CCA - match 3 (sadique)"
+    },
+    "type": 5,
+    "level": 100,
+    "levelSync": 100,
+    "item": 710,
+    "itemSync": 0,
+    "memberType": 3
+  },
   "991": {
     "name": {
       "chs": "",
@@ -11156,6 +11201,36 @@
     "level": 100,
     "levelSync": 100,
     "item": 685,
+    "itemSync": 0,
+    "memberType": 3
+  },
+  "992": {
+    "name": {
+      "chs": "",
+      "en": "AAC Light-heavyweight M4 (Savage)",
+      "ja": "至天の座アルカディア零式：ライトヘビー級4",
+      "de": "Arkadion - Halbschwergewicht R4 (episch)",
+      "fr": "Poids mi-lourds CCA - match 4 (sadique)"
+    },
+    "type": 5,
+    "level": 100,
+    "levelSync": 100,
+    "item": 710,
+    "itemSync": 0,
+    "memberType": 3
+  },
+  "993": {
+    "name": {
+      "chs": "",
+      "en": "Cenote Ja Ja Gural",
+      "ja": "宝物庫 セノーテ・ジャジャグラル",
+      "de": "Cenote Ja Ja Gural",
+      "fr": "Cénote Ja Ja Gural"
+    },
+    "type": 9,
+    "level": 1,
+    "levelSync": 100,
+    "item": 0,
     "itemSync": 0,
     "memberType": 3
   },
