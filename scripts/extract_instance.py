@@ -5,53 +5,72 @@ from pathlib import Path
 import httpx
 from utils import extract_header
 
+PAGE_LIMIT = 500
+FIELDS = ",".join(
+    [
+        "Name",
+        "Name@lang(ja)",
+        "Name@lang(de)",
+        "Name@lang(fr)",
+        "ClassJobLevelSync",
+        "ClassJobLevelRequired",
+        "ContentType.value",
+        "ItemLevelRequired",
+        "ItemLevelSync",
+        "ContentMemberType.value",
+    ]
+)
+client = httpx.Client()
+
 if __name__ == "__main__":
     data = {}
+    all_parsed_rows = []
 
-    resp = httpx.get(
-        "https://xivapi.com/ContentFinderCondition",
-        params={
-            "columns": ",".join(
-                [
-                    "ID",
-                    "Name",
-                    "Name_ja",
-                    "Name_de",
-                    "Name_fr",
-                    "ClassJobLevelSync",
-                    "ClassJobLevelRequired",
-                    "ContentType.ID",
-                    "ItemLevelRequired",
-                    "ItemLevelSync",
-                    "ContentMemberType.ID",
-                ]
-            ),
-            "limit": "3000",  # need to implement pagination, 980 total (2024/3/6)
-        },
-    ).json()
-    for result in resp["Results"]:
-        if not result["Name"]:
+    while True:
+        params = {
+            "fields": FIELDS,
+            "limit": PAGE_LIMIT,
+        }
+        if len(all_parsed_rows) > 0:
+            params["after"] = all_parsed_rows[-1]["row_id"]
+
+        resp = client.get(
+            "https://beta.xivapi.com/api/1/sheet/ContentFinderCondition",
+            params=params,
+        )
+        resp.raise_for_status()
+
+        parsed = resp.json()
+        all_parsed_rows.extend(parsed["rows"])
+        if len(parsed["rows"]) == PAGE_LIMIT:
+            continue
+        else:
+            break
+
+    for row in all_parsed_rows:
+        fields = row["fields"]
+        if not fields["Name"]:
             continue
 
-        data[result["ID"]] = {
+        data[int(row["row_id"])] = {
             "name": {
                 "chs": "",
-                "en": result["Name"],
-                "ja": result["Name_ja"],
-                "de": result["Name_de"],
-                "fr": result["Name_fr"],
+                "en": fields["Name"],
+                "ja": fields["Name@lang(ja)"],
+                "de": fields["Name@lang(de)"],
+                "fr": fields["Name@lang(fr)"],
             },
-            "type": result["ContentType"]["ID"],
-            "level": result["ClassJobLevelRequired"],
-            "levelSync": result["ClassJobLevelSync"],
-            "item": result["ItemLevelRequired"],
-            "itemSync": result["ItemLevelSync"],
-            "memberType": result["ContentMemberType"]["ID"],
+            "type": int(fields["ContentType"]["value"]),
+            "level": int(fields["ClassJobLevelRequired"]),
+            "levelSync": int(fields["ClassJobLevelSync"]),
+            "item": int(fields["ItemLevelRequired"]),
+            "itemSync": int(fields["ItemLevelSync"]),
+            "memberType": int(fields["ContentMemberType"]["value"]),
         }
 
     dest = Path(__file__).parent / "data" / "ContentFinderCondition.csv"
     dest.write_bytes(
-        httpx.get(
+        client.get(
             "https://raw.githubusercontent.com/thewakingsands/ffxiv-datamining-cn/master/ContentFinderCondition.csv"
         ).read()
     )
@@ -71,12 +90,12 @@ if __name__ == "__main__":
                             "de": "",
                             "fr": "",
                         },
-                        "type": row["ContentType"],
-                        "level": row["ClassJobLevel{Required}"],
-                        "levelSync": row["ClassJobLevel{Sync}"],
-                        "item": row["ItemLevel{Required}"],
-                        "itemSync": row["ItemLevel{Sync}"],
-                        "memberType": row["ContentMemberType"],
+                        "type": int(row["ContentType"]),
+                        "level": int(row["ClassJobLevel{Required}"]),
+                        "levelSync": int(row["ClassJobLevel{Sync}"]),
+                        "item": int(row["ItemLevel{Required}"]),
+                        "itemSync": int(row["ItemLevel{Sync}"]),
+                        "memberType": int(row["ContentMemberType"]),
                     }
                 else:
                     print(f"Skipping {id_}")
