@@ -559,7 +559,7 @@
       "chs": "血战苍穹魔科学研究所",
       "en": "the Aetherochemical Research Facility",
       "ja": "蒼天聖戦 魔科学研究所",
-      "de": "Ätherochemisches Forschungslabor",
+      "de": "Ätherochemisches For­schungs­labor",
       "fr": "le Laboratoire de magismologie"
     },
     "type": 2,
@@ -620,7 +620,7 @@
       "en": "Basic Training: Enemy Parties",
       "ja": "集団戦訓練をくぐり抜けろ！",
       "de": "Einer für alle, alle für einen",
-      "fr": "Entraînement: groupes d'ennemis"
+      "fr": "Entraînement : groupes d'ennemis"
     },
     "type": 3,
     "level": 10,
@@ -650,7 +650,7 @@
       "en": "Basic Training: Enemy Strongholds",
       "ja": "全関門を突破し、最深部の敵を討て！",
       "de": "Sturmkommando",
-      "fr": "Entraînement: infiltration en base ennemie"
+      "fr": "Entraînement : in­fil­tra­tion en base ennemie"
     },
     "type": 3,
     "level": 15,
@@ -2359,7 +2359,7 @@
       "chs": "雷古拉·范·休著斯追击战",
       "en": "a Bloody Reunion",
       "ja": "レグラ・ヴァン・ヒュドルス追撃戦",
-      "de": "Blutiges Wiedersehen",
+      "de": "Blutiges Wieder­sehen",
       "fr": "Course-poursuite dans le laboratoire"
     },
     "type": 7,
@@ -2750,7 +2750,7 @@
       "en": "the Diadem Hunting Grounds (Easy)",
       "ja": "雲海探索 ディアデム諸島：狩猟限定 (Easy)",
       "de": "Das Diadem - Jagdgründe (leicht)",
-      "fr": "Le Diadème: terrains de chasse (facile)"
+      "fr": "Le Diadème : terrains de chasse (facile)"
     },
     "type": 23,
     "level": 60,
@@ -2765,7 +2765,7 @@
       "en": "the Diadem Hunting Grounds",
       "ja": "雲海探索 ディアデム諸島：狩猟限定",
       "de": "Das Diadem - Jagdgründe",
-      "fr": "Le Diadème: terrains de chasse"
+      "fr": "Le Diadème : terrains de chasse"
     },
     "type": 23,
     "level": 60,
@@ -3320,7 +3320,7 @@
       "en": "Blood on the Deck",
       "ja": "海都を震わす人斬りの宴！",
       "de": "Mord ist sein Hobby",
-      "fr": "La légende de Musosai: l'assassin de Limsa Lominsa"
+      "fr": "La légende de Musosai : l'assassin de Limsa Lominsa"
     },
     "type": 7,
     "level": 54,
@@ -3364,8 +3364,8 @@
       "chs": "决战龟甲岛",
       "en": "The Battle on Bekko",
       "ja": "ベッコウ島の決闘",
-      "de": "Entscheidungsschlacht auf Bekko",
-      "fr": "L'affrontement de deux justices"
+      "de": "Ent­schei­dungs­schlacht auf Bekko",
+      "fr": "L'af­fron­te­ment de deux justices"
     },
     "type": 7,
     "level": 70,
@@ -4100,7 +4100,7 @@
       "en": "Race 1 - Hugging the Inside",
       "ja": "第1節：インコースを狙え",
       "de": "1: Immer schön innen",
-      "fr": "CP1 - Toujours à la corde!"
+      "fr": "CP1 - Toujours à la corde !"
     },
     "type": 19,
     "level": 1,
@@ -4115,7 +4115,7 @@
       "en": "Race 2 - Keep Away",
       "ja": "第2節：範囲攻撃を避けろ",
       "de": "2: Vorsicht, Flächenangriff",
-      "fr": "CP2 - Gare aux attaques à aires d'effet!"
+      "fr": "CP2 - Gare aux attaques à aires d'effet !"
     },
     "type": 19,
     "level": 1,
@@ -4129,8 +4129,8 @@
       "chs": "第3关：能力不是万能的",
       "en": "Race 3 - Inability",
       "ja": "第3節：アビリティに頼るな",
-      "de": "3: Fähigkeiten sind nicht alles",
-      "fr": "CP3 - En avant même sans aptitudes!"
+      "de": "3: Fä­hig­kei­ten sind nicht alles",
+      "fr": "CP3 - En avant même sans aptitudes !"
     },
     "type": 19,
     "level": 1,
@@ -4145,7 +4145,7 @@
       "en": "Race 4 - Heavy Hooves",
       "ja": "第4節：ヘヴィなレース",
       "de": "4: Ein gewichtiges Rennen",
-      "fr": "CP4 - Une course très très pesante!"
+      "fr": "CP4 - Une course très très pesante !"
     },
     "type": 19,
     "level": 1,
@@ -4160,7 +4160,7 @@
       "en": "Race 5 - Defending the Rush",
       "ja": "第5節：とんずらを阻止せよ",
       "de": "5: Hiergeblieben!",
-      "fr": "CP5 - Attention aux départs rapides!"
+      "fr": "CP5 - Attention aux départs rapides !"
     },
     "type": 19,
     "level": 1,
@@ -4175,7 +4175,7 @@
       "en": "Race 6 - Road Rivals",
       "ja": "第6節：ライバルを叩け",
       "de": "6: Rivale auf Trab",
-      "fr": "CP6 - Pas de pitié pour les rivaux!"
+      "fr": "CP6 - Pas de pitié pour les rivaux !"
     },
     "type": 19,
     "level": 1,
@@ -4190,7 +4190,7 @@
       "en": "Race 7 - Field of Dreams",
       "ja": "第7節：フィールド・オブ・ドリームズ",
       "de": "7: Feld der Träume",
-      "fr": "CP7 - Prendre du champ avec les champs!"
+      "fr": "CP7 - Prendre du champ avec les champs !"
     },
     "type": 19,
     "level": 1,
@@ -4205,7 +4205,7 @@
       "en": "Race 8 - Playing Both Ends",
       "ja": "第8節：漁夫の利を狙え",
       "de": "8: Der lachende Dritte",
-      "fr": "CP8 - Laissons les rivaux s'éliminer!"
+      "fr": "CP8 - Laissons les rivaux s'éliminer !"
     },
     "type": 19,
     "level": 1,
@@ -4220,7 +4220,7 @@
       "en": "Race 9 - Stamina",
       "ja": "第9節：スタミナの戦い",
       "de": "9: Der längere Atem",
-      "fr": "CP9 - Une bataille d'endurance!"
+      "fr": "CP9 - Une bataille d'endurance !"
     },
     "type": 19,
     "level": 1,
@@ -4235,7 +4235,7 @@
       "en": "Race 10 - Cat and Mouse",
       "ja": "第10節：逃げる者と追う者と",
       "de": "10: Zwei Temperamente",
-      "fr": "CP10 - Course poursuite!"
+      "fr": "CP10 - Course poursuite !"
     },
     "type": 19,
     "level": 1,
@@ -4250,7 +4250,7 @@
       "en": "Race 11 - Mad Dash",
       "ja": "第11節：全速で駆け抜けろ",
       "de": "11: Volle Kraft voraus",
-      "fr": "CP11 - À bride abattue!"
+      "fr": "CP11 - À bride abattue !"
     },
     "type": 19,
     "level": 1,
@@ -4264,8 +4264,8 @@
       "chs": "第12关：活用竞赛能力",
       "en": "Race 12 - Bag of Tricks",
       "ja": "第12節：アビリティを駆使せよ",
-      "de": "12: Fähigkeiten ohne Wenn und Extra",
-      "fr": "CP12 - Une épreuve d'aptitude!"
+      "de": "12: Fä­hig­kei­ten ohne Wenn und Extra",
+      "fr": "CP12 - Une épreuve d'aptitude !"
     },
     "type": 19,
     "level": 1,
@@ -4280,7 +4280,7 @@
       "en": "Race 13 - Tag Team",
       "ja": "第13節：連携プレイに勝利せよ",
       "de": "13: Ein unschlagbares Gespann",
-      "fr": "CP13 - Un travail d'équipe!"
+      "fr": "CP13 - Un travail d'équipe !"
     },
     "type": 19,
     "level": 1,
@@ -4295,7 +4295,7 @@
       "en": "Race 14 - Heavier Hooves",
       "ja": "第14節：続ヘヴィなレース",
       "de": "14: Ein äußerst gewichtiges Rennen",
-      "fr": "CP14 - Une course encore plus pesante!"
+      "fr": "CP14 - Une course encore plus pesante !"
     },
     "type": 19,
     "level": 1,
@@ -4310,7 +4310,7 @@
       "en": "Race 15 - Ultimatum",
       "ja": "第15節：究極のレース",
       "de": "15: Rennen der Superlative",
-      "fr": "CP15 - La course des extrêmes!"
+      "fr": "CP15 - La course des extrêmes !"
     },
     "type": 19,
     "level": 1,
@@ -4325,7 +4325,7 @@
       "en": "Chocobo Race: Sagolii Road",
       "ja": "チョコボレース：サゴリーロード",
       "de": "Chocobo-Rennen: Sagolii-Straße",
-      "fr": "Course de chocobos: Route de Sagolii"
+      "fr": "Course de chocobos : Route de Sagolii"
     },
     "type": 19,
     "level": 1,
@@ -4340,7 +4340,7 @@
       "en": "Chocobo Race: Costa del Sol",
       "ja": "チョコボレース：コスタ・デル・ソル",
       "de": "Chocobo-Rennen: Sonnenküste",
-      "fr": "Course de chocobos: Costa del Sol"
+      "fr": "Course de chocobos : Costa del Sol"
     },
     "type": 19,
     "level": 1,
@@ -4355,7 +4355,7 @@
       "en": "Chocobo Race: Tranquil Paths",
       "ja": "チョコボレース：トランキルパス",
       "de": "Chocobo-Rennen: Pfad der Seelenruhe",
-      "fr": "Course de chocobos: Sentes tranquilles"
+      "fr": "Course de chocobos : Sentes tranquilles"
     },
     "type": 19,
     "level": 1,
@@ -4370,7 +4370,7 @@
       "en": "Chocobo Race: Sagolii Road",
       "ja": "チョコボレース：サゴリーロード",
       "de": "Chocobo-Rennen: Sagolii-Straße",
-      "fr": "Course de chocobos: Route de Sagolii"
+      "fr": "Course de chocobos : Route de Sagolii"
     },
     "type": 19,
     "level": 1,
@@ -4385,7 +4385,7 @@
       "en": "Chocobo Race: Costa del Sol",
       "ja": "チョコボレース：コスタ・デル・ソル",
       "de": "Chocobo-Rennen: Sonnenküste",
-      "fr": "Course de chocobos: Costa del Sol"
+      "fr": "Course de chocobos : Costa del Sol"
     },
     "type": 19,
     "level": 1,
@@ -4400,7 +4400,7 @@
       "en": "Chocobo Race: Tranquil Paths",
       "ja": "チョコボレース：トランキルパス",
       "de": "Chocobo-Rennen: Pfad der Seelenruhe",
-      "fr": "Course de chocobos: Sentes tranquilles"
+      "fr": "Course de chocobos : Sentes tranquilles"
     },
     "type": 19,
     "level": 1,
@@ -4415,7 +4415,7 @@
       "en": "Chocobo Race: Sagolii Road",
       "ja": "チョコボレース：サゴリーロード",
       "de": "Chocobo-Rennen: Sagolii-Straße",
-      "fr": "Course de chocobos: Route de Sagolii"
+      "fr": "Course de chocobos : Route de Sagolii"
     },
     "type": 19,
     "level": 1,
@@ -4430,7 +4430,7 @@
       "en": "Chocobo Race: Costa del Sol",
       "ja": "チョコボレース：コスタ・デル・ソル",
       "de": "Chocobo-Rennen: Sonnenküste",
-      "fr": "Course de chocobos: Costa del Sol"
+      "fr": "Course de chocobos : Costa del Sol"
     },
     "type": 19,
     "level": 1,
@@ -4445,7 +4445,7 @@
       "en": "Chocobo Race: Tranquil Paths",
       "ja": "チョコボレース：トランキルパス",
       "de": "Chocobo-Rennen: Pfad der Seelenruhe",
-      "fr": "Course de chocobos: Sentes tranquilles"
+      "fr": "Course de chocobos : Sentes tranquilles"
     },
     "type": 19,
     "level": 1,
@@ -4460,7 +4460,7 @@
       "en": "Chocobo Race: Sagolii Road",
       "ja": "チョコボレース：サゴリーロード",
       "de": "Chocobo-Rennen: Sagolii-Straße",
-      "fr": "Course de chocobos: Route de Sagolii"
+      "fr": "Course de chocobos : Route de Sagolii"
     },
     "type": 19,
     "level": 1,
@@ -4475,7 +4475,7 @@
       "en": "Chocobo Race: Costa del Sol",
       "ja": "チョコボレース：コスタ・デル・ソル",
       "de": "Chocobo-Rennen: Sonnenküste",
-      "fr": "Course de chocobos: Costa del Sol"
+      "fr": "Course de chocobos : Costa del Sol"
     },
     "type": 19,
     "level": 1,
@@ -4490,7 +4490,7 @@
       "en": "Chocobo Race: Tranquil Paths",
       "ja": "チョコボレース：トランキルパス",
       "de": "Chocobo-Rennen: Pfad der Seelenruhe",
-      "fr": "Course de chocobos: Sentes tranquilles"
+      "fr": "Course de chocobos : Sentes tranquilles"
     },
     "type": 19,
     "level": 1,
@@ -4505,7 +4505,7 @@
       "en": "Chocobo Race: Sagolii Road",
       "ja": "チョコボレース：サゴリーロード",
       "de": "Chocobo-Rennen: Sagolii-Straße",
-      "fr": "Course de chocobos: Route de Sagolii"
+      "fr": "Course de chocobos : Route de Sagolii"
     },
     "type": 19,
     "level": 1,
@@ -4520,7 +4520,7 @@
       "en": "Chocobo Race: Costa del Sol",
       "ja": "チョコボレース：コスタ・デル・ソル",
       "de": "Chocobo-Rennen: Sonnenküste",
-      "fr": "Course de chocobos: Costa del Sol"
+      "fr": "Course de chocobos : Costa del Sol"
     },
     "type": 19,
     "level": 1,
@@ -4535,7 +4535,7 @@
       "en": "Chocobo Race: Tranquil Paths",
       "ja": "チョコボレース：トランキルパス",
       "de": "Chocobo-Rennen: Pfad der Seelenruhe",
-      "fr": "Course de chocobos: Sentes tranquilles"
+      "fr": "Course de chocobos : Sentes tranquilles"
     },
     "type": 19,
     "level": 1,
@@ -4550,7 +4550,7 @@
       "en": "Chocobo Race: Sagolii Road",
       "ja": "チョコボレース：サゴリーロード",
       "de": "Chocobo-Rennen: Sagolii-Straße",
-      "fr": "Course de chocobos: Route de Sagolii"
+      "fr": "Course de chocobos : Route de Sagolii"
     },
     "type": 19,
     "level": 1,
@@ -4565,7 +4565,7 @@
       "en": "Chocobo Race: Costa del Sol",
       "ja": "チョコボレース：コスタ・デル・ソル",
       "de": "Chocobo-Rennen: Sonnenküste",
-      "fr": "Course de chocobos: Costa del Sol"
+      "fr": "Course de chocobos : Costa del Sol"
     },
     "type": 19,
     "level": 1,
@@ -4580,7 +4580,7 @@
       "en": "Chocobo Race: Tranquil Paths",
       "ja": "チョコボレース：トランキルパス",
       "de": "Chocobo-Rennen: Pfad der Seelenruhe",
-      "fr": "Course de chocobos: Sentes tranquilles"
+      "fr": "Course de chocobos : Sentes tranquilles"
     },
     "type": 19,
     "level": 1,
@@ -4595,7 +4595,7 @@
       "en": "Chocobo Race: Sagolii Road",
       "ja": "チョコボレース：サゴリーロード",
       "de": "Chocobo-Rennen: Sagolii-Straße",
-      "fr": "Course de chocobos: Route de Sagolii"
+      "fr": "Course de chocobos : Route de Sagolii"
     },
     "type": 19,
     "level": 1,
@@ -4610,7 +4610,7 @@
       "en": "Chocobo Race: Costa del Sol",
       "ja": "チョコボレース：コスタ・デル・ソル",
       "de": "Chocobo-Rennen: Sonnenküste",
-      "fr": "Course de chocobos: Costa del Sol"
+      "fr": "Course de chocobos : Costa del Sol"
     },
     "type": 19,
     "level": 1,
@@ -4625,7 +4625,7 @@
       "en": "Chocobo Race: Tranquil Paths",
       "ja": "チョコボレース：トランキルパス",
       "de": "Chocobo-Rennen: Pfad der Seelenruhe",
-      "fr": "Course de chocobos: Sentes tranquilles"
+      "fr": "Course de chocobos : Sentes tranquilles"
     },
     "type": 19,
     "level": 1,
@@ -4640,7 +4640,7 @@
       "en": "Chocobo Race: Sagolii Road",
       "ja": "チョコボレース：サゴリーロード",
       "de": "Chocobo-Rennen: Sagolii-Straße",
-      "fr": "Course de chocobos: Route de Sagolii"
+      "fr": "Course de chocobos : Route de Sagolii"
     },
     "type": 19,
     "level": 1,
@@ -4655,7 +4655,7 @@
       "en": "Chocobo Race: Costa del Sol",
       "ja": "チョコボレース：コスタ・デル・ソル",
       "de": "Chocobo-Rennen: Sonnenküste",
-      "fr": "Course de chocobos: Costa del Sol"
+      "fr": "Course de chocobos : Costa del Sol"
     },
     "type": 19,
     "level": 1,
@@ -4670,7 +4670,7 @@
       "en": "Chocobo Race: Tranquil Paths",
       "ja": "チョコボレース：トランキルパス",
       "de": "Chocobo-Rennen: Pfad der Seelenruhe",
-      "fr": "Course de chocobos: Sentes tranquilles"
+      "fr": "Course de chocobos : Sentes tranquilles"
     },
     "type": 19,
     "level": 1,
@@ -4685,7 +4685,7 @@
       "en": "Chocobo Race: Sagolii Road",
       "ja": "チョコボレース：サゴリーロード",
       "de": "Chocobo-Rennen: Sagolii-Straße",
-      "fr": "Course de chocobos: Route de Sagolii"
+      "fr": "Course de chocobos : Route de Sagolii"
     },
     "type": 19,
     "level": 1,
@@ -4700,7 +4700,7 @@
       "en": "Chocobo Race: Costa del Sol",
       "ja": "チョコボレース：コスタ・デル・ソル",
       "de": "Chocobo-Rennen: Sonnenküste",
-      "fr": "Course de chocobos: Costa del Sol"
+      "fr": "Course de chocobos : Costa del Sol"
     },
     "type": 19,
     "level": 1,
@@ -4715,7 +4715,7 @@
       "en": "Chocobo Race: Tranquil Paths",
       "ja": "チョコボレース：トランキルパス",
       "de": "Chocobo-Rennen: Pfad der Seelenruhe",
-      "fr": "Course de chocobos: Sentes tranquilles"
+      "fr": "Course de chocobos : Sentes tranquilles"
     },
     "type": 19,
     "level": 1,
@@ -4730,7 +4730,7 @@
       "en": "Chocobo Race: Sagolii Road",
       "ja": "チョコボレース：サゴリーロード",
       "de": "Chocobo-Rennen: Sagolii-Straße",
-      "fr": "Course de chocobos: Route de Sagolii"
+      "fr": "Course de chocobos : Route de Sagolii"
     },
     "type": 19,
     "level": 1,
@@ -4745,7 +4745,7 @@
       "en": "Chocobo Race: Costa del Sol",
       "ja": "チョコボレース：コスタ・デル・ソル",
       "de": "Chocobo-Rennen: Sonnenküste",
-      "fr": "Course de chocobos: Costa del Sol"
+      "fr": "Course de chocobos : Costa del Sol"
     },
     "type": 19,
     "level": 1,
@@ -4760,7 +4760,7 @@
       "en": "Chocobo Race: Tranquil Paths",
       "ja": "チョコボレース：トランキルパス",
       "de": "Chocobo-Rennen: Pfad der Seelenruhe",
-      "fr": "Course de chocobos: Sentes tranquilles"
+      "fr": "Course de chocobos : Sentes tranquilles"
     },
     "type": 19,
     "level": 1,
@@ -4775,7 +4775,7 @@
       "en": "Chocobo Race: Sagolii Road",
       "ja": "チョコボレース：サゴリーロード",
       "de": "Chocobo-Rennen: Sagolii-Straße",
-      "fr": "Course de chocobos: Route de Sagolii"
+      "fr": "Course de chocobos : Route de Sagolii"
     },
     "type": 19,
     "level": 1,
@@ -4790,7 +4790,7 @@
       "en": "Chocobo Race: Costa del Sol",
       "ja": "チョコボレース：コスタ・デル・ソル",
       "de": "Chocobo-Rennen: Sonnenküste",
-      "fr": "Course de chocobos: Costa del Sol"
+      "fr": "Course de chocobos : Costa del Sol"
     },
     "type": 19,
     "level": 1,
@@ -4805,7 +4805,7 @@
       "en": "Chocobo Race: Tranquil Paths",
       "ja": "チョコボレース：トランキルパス",
       "de": "Chocobo-Rennen: Pfad der Seelenruhe",
-      "fr": "Course de chocobos: Sentes tranquilles"
+      "fr": "Course de chocobos : Sentes tranquilles"
     },
     "type": 19,
     "level": 1,
@@ -4820,7 +4820,7 @@
       "en": "Chocobo Race: Sagolii Road",
       "ja": "チョコボレース：サゴリーロード",
       "de": "Chocobo-Rennen: Sagolii-Straße",
-      "fr": "Course de chocobos: Route de Sagolii"
+      "fr": "Course de chocobos : Route de Sagolii"
     },
     "type": 19,
     "level": 1,
@@ -4835,7 +4835,7 @@
       "en": "Chocobo Race: Costa del Sol",
       "ja": "チョコボレース：コスタ・デル・ソル",
       "de": "Chocobo-Rennen: Sonnenküste",
-      "fr": "Course de chocobos: Costa del Sol"
+      "fr": "Course de chocobos : Costa del Sol"
     },
     "type": 19,
     "level": 1,
@@ -4850,7 +4850,7 @@
       "en": "Chocobo Race: Tranquil Paths",
       "ja": "チョコボレース：トランキルパス",
       "de": "Chocobo-Rennen: Pfad der Seelenruhe",
-      "fr": "Course de chocobos: Sentes tranquilles"
+      "fr": "Course de chocobos : Sentes tranquilles"
     },
     "type": 19,
     "level": 1,
@@ -4865,7 +4865,7 @@
       "en": "Chocobo Race: Sagolii Road",
       "ja": "チョコボレース：サゴリーロード",
       "de": "Chocobo-Rennen: Sagolii-Straße",
-      "fr": "Course de chocobos: Route de Sagolii"
+      "fr": "Course de chocobos : Route de Sagolii"
     },
     "type": 19,
     "level": 1,
@@ -4880,7 +4880,7 @@
       "en": "Chocobo Race: Costa del Sol",
       "ja": "チョコボレース：コスタ・デル・ソル",
       "de": "Chocobo-Rennen: Sonnenküste",
-      "fr": "Course de chocobos: Costa del Sol"
+      "fr": "Course de chocobos : Costa del Sol"
     },
     "type": 19,
     "level": 1,
@@ -4895,7 +4895,7 @@
       "en": "Chocobo Race: Tranquil Paths",
       "ja": "チョコボレース：トランキルパス",
       "de": "Chocobo-Rennen: Pfad der Seelenruhe",
-      "fr": "Course de chocobos: Sentes tranquilles"
+      "fr": "Course de chocobos : Sentes tranquilles"
     },
     "type": 19,
     "level": 1,
@@ -5135,7 +5135,7 @@
       "en": "Stage 1: Tutorial",
       "ja": "第1節：チュートリアル",
       "de": "Stufe 1: Einführung",
-      "fr": "Bataille 1: Tutoriel"
+      "fr": "Bataille 1 : Tutoriel"
     },
     "type": 19,
     "level": 1,
@@ -5150,7 +5150,7 @@
       "en": "Stage 2: Hatching a Plan",
       "ja": "第2節：チョコチョコチョコチョコボ",
       "de": "Stufe 2: Federn lassen",
-      "fr": "Bataille 2: Ô beaux chocobos"
+      "fr": "Bataille 2 : Ô beaux chocobos"
     },
     "type": 19,
     "level": 1,
@@ -5165,7 +5165,7 @@
       "en": "Stage 3: The First Move",
       "ja": "第3節：序盤にありそうな戦い",
       "de": "Stufe 3: Angriff der Ungeziefer",
-      "fr": "Bataille 3: Des ouvertures"
+      "fr": "Bataille 3 : Des ouvertures"
     },
     "type": 19,
     "level": 1,
@@ -5180,7 +5180,7 @@
       "en": "Stage 4: Little Big Beast",
       "ja": "第4節：小さな巨獣",
       "de": "Stufe 4: Riesenbaby-Goobbue",
-      "fr": "Bataille 4: Grosses petites bestioles"
+      "fr": "Bataille 4 : Grosses petites bestioles"
     },
     "type": 19,
     "level": 1,
@@ -5195,7 +5195,7 @@
       "en": "Stage 5: Turning Tribes",
       "ja": "第5節：蛮族たちの反乱",
       "de": "Stufe 5: Aufstand der Wilden",
-      "fr": "Bataille 5: Hommes-bêtes révoltés"
+      "fr": "Bataille 5 : Hommes-bêtes révoltés"
     },
     "type": 19,
     "level": 1,
@@ -5210,7 +5210,7 @@
       "en": "Stage 6: Off the Deepcroft",
       "ja": "第6節：恐怖、タラタラの墓所",
       "de": "Stufe 6: Gedankenspiele",
-      "fr": "Bataille 6: Hypogée de Tam-Tam"
+      "fr": "Bataille 6 : Hypogée de Tam-Tam"
     },
     "type": 19,
     "level": 1,
@@ -5225,7 +5225,7 @@
       "en": "Stage 7: Rivals",
       "ja": "第7節：ライバルたちの共闘",
       "de": "Stufe 7: Vierbeinige Feinde",
-      "fr": "Bataille 7: Comme chien et chat"
+      "fr": "Bataille 7 : Comme chien et chat"
     },
     "type": 19,
     "level": 1,
@@ -5240,7 +5240,7 @@
       "en": "Stage 8: Always Darkest",
       "ja": "第8節：暁は光と闇とを分かつ",
       "de": "Stufe 8: Das Bündchen der Morgenröte",
-      "fr": "Bataille 8: Héritiers miniatures"
+      "fr": "Bataille 8 : Héritiers miniatures"
     },
     "type": 19,
     "level": 1,
@@ -5255,7 +5255,7 @@
       "en": "Stage 9: Mine Your Minions",
       "ja": "第9節：爆破、カパカパベル銅山",
       "de": "Stufe 9: Auf den Schleim gegangen",
-      "fr": "Bataille 9: Déflagration à Clochecuivre"
+      "fr": "Bataille 9 : Déflagration à Clochecuivre"
     },
     "type": 19,
     "level": 1,
@@ -5270,7 +5270,7 @@
       "en": "Stage 10: Children of Mandragora",
       "ja": "第10節：マンドラ帝国の逆襲",
       "de": "Stufe 10: Mandragora-Salat",
-      "fr": "Bataille 10: Invasion de mandragores"
+      "fr": "Bataille 10 : Invasion de mandragores"
     },
     "type": 19,
     "level": 1,
@@ -5285,7 +5285,7 @@
       "en": "Stage 11: The Queen and I",
       "ja": "第11節：女王陛下万歳！",
       "de": "Stufe 11: Die trabantäische Allianz",
-      "fr": "Bataille 11: Longue vie aux Sultanes!"
+      "fr": "Bataille 11 : Longue vie aux Sultanes !"
     },
     "type": 19,
     "level": 1,
@@ -5300,7 +5300,7 @@
       "en": "Stage 12: Breakout",
       "ja": "第12節：デモンズブロック崩し",
       "de": "Stufe 12: Alea iacta est",
-      "fr": "Bataille 12: Château d'Amdapeur"
+      "fr": "Bataille 12 : Château d'Amdapeur"
     },
     "type": 19,
     "level": 1,
@@ -5315,7 +5315,7 @@
       "en": "Stage 13: My Name Is Cid",
       "ja": "第13節：筆頭機工師ガーロンド",
       "de": "Stufe 13: Luftadmiral Garlond",
-      "fr": "Bataille 13: Épreuve des Forges"
+      "fr": "Bataille 13 : Épreuve des Forges"
     },
     "type": 19,
     "level": 1,
@@ -5330,7 +5330,7 @@
       "en": "Stage 14: Like a Nut",
       "ja": "第14節：ナッツの味にはもう飽きた",
       "de": "Stufe 14: Eins auf die Nuss",
-      "fr": "Bataille 14: Casse-noisette"
+      "fr": "Bataille 14 : Casse-noisette"
     },
     "type": 19,
     "level": 1,
@@ -5345,7 +5345,7 @@
       "en": "Stage 15: Urth's Spout",
       "ja": "第15節：極小オーディン討滅戦",
       "de": "Stufe 15: Der Dunkle Reiter",
-      "fr": "Bataille 15: Mini-fontaine d'Urth"
+      "fr": "Bataille 15 : Mini-fontaine d'Urth"
     },
     "type": 19,
     "level": 1,
@@ -5360,7 +5360,7 @@
       "en": "Stage 16: Exodus",
       "ja": "第16節：チョコボ大行進",
       "de": "Stufe 16: Chocobo-Mania",
-      "fr": "Bataille 16: Parade des chocobos"
+      "fr": "Bataille 16 : Parade des chocobos"
     },
     "type": 19,
     "level": 1,
@@ -5375,7 +5375,7 @@
       "en": "Stage 17: Over the Wall",
       "ja": "第17節：融解、スノークローク小氷壁",
       "de": "Stufe 17: Jenseits des Schneekleids",
-      "fr": "Bataille 17: Bonhommes de Manteneige"
+      "fr": "Bataille 17 : Bonhommes de Manteneige"
     },
     "type": 19,
     "level": 1,
@@ -5390,7 +5390,7 @@
       "en": "Stage 18: The Hunt",
       "ja": "第18節：小さなモブハント",
       "de": "Stufe 18: Die Trabanten-Jagd",
-      "fr": "Bataille 18: Mini-contrat de chasse"
+      "fr": "Bataille 18 : Mini-contrat de chasse"
     },
     "type": 19,
     "level": 1,
@@ -5405,7 +5405,7 @@
       "en": "Stage 19: Battle on the Bitty Bridge",
       "ja": "第19節：極小ギルガメッシュ討滅戦",
       "de": "Stufe 19: Gilgameschs Hühnerstall",
-      "fr": "Bataille 19: Revanche de Gilgamini"
+      "fr": "Bataille 19 : Revanche de Gilgamini"
     },
     "type": 19,
     "level": 1,
@@ -5420,7 +5420,7 @@
       "en": "Stage 20: Guiding Light",
       "ja": "第20節：汝にクリスタルの導きあれ",
       "de": "Stufe 20: Trabanten des Lichts",
-      "fr": "Bataille 20: Pouvoir de la Lumière"
+      "fr": "Bataille 20 : Pouvoir de la Lumière"
     },
     "type": 19,
     "level": 1,
@@ -5435,7 +5435,7 @@
       "en": "Stage 21: Wise Words",
       "ja": "第21節：賢人ルイゾワの試練",
       "de": "Stufe 21: Die Leveilleurs",
-      "fr": "Bataille 21: Louisoix et petits fils"
+      "fr": "Bataille 21 : Louisoix et petits fils"
     },
     "type": 19,
     "level": 1,
@@ -5450,7 +5450,7 @@
       "en": "Stage 22: World of Poor Lighting",
       "ja": "第22節：薄闇の世界",
       "de": "Stufe 22: Kleine Welt der Dunkelheit",
-      "fr": "Bataille 22: Monde des Quasi-ténèbres"
+      "fr": "Bataille 22 : Monde des Quasi-ténèbres"
     },
     "type": 19,
     "level": 1,
@@ -5465,7 +5465,7 @@
       "en": "Stage 23: The Binding Coil",
       "ja": "第23節：大迷惑バハムート邂逅編",
       "de": "Stufe 23: In die Verschlungenen Schatten",
-      "fr": "Bataille 23: Labyrinthe de Basta-mut"
+      "fr": "Bataille 23 : Labyrinthe de Basta-mut"
     },
     "type": 19,
     "level": 1,
@@ -5480,7 +5480,7 @@
       "en": "Stage 24: The Final Coil",
       "ja": "第24節：大迷惑バハムート真成編",
       "de": "Stufe 24: Bahamut, der Aufzieh-Primae",
-      "fr": "Bataille 24: Abîme de Basta-mut"
+      "fr": "Bataille 24 : Abîme de Basta-mut"
     },
     "type": 19,
     "level": 1,
@@ -6290,7 +6290,7 @@
       "en": "Miss Typhon",
       "ja": "名コンビ「オルトロス＆テュポーン」",
       "de": "Ultros & Typhon - Zwei wie Rotz und Wasser",
-      "fr": "Duo de choc: Orthros et maître Typhon"
+      "fr": "Duo de choc : Orthros et maître Typhon"
     },
     "type": 27,
     "level": 50,
@@ -6485,7 +6485,7 @@
       "en": "Novice Mahjong (Full Ranked Match)",
       "ja": "ドマ式麻雀：半荘戦一般卓（段位変動有り）",
       "de": "Anfänger-Mahjong (komplette Partie, gewertet)",
-      "fr": "Mahjong domien: tous rangs (partie classée)"
+      "fr": "Mahjong domien : tous rangs (partie classée)"
     },
     "type": 19,
     "level": 1,
@@ -6500,7 +6500,7 @@
       "en": "Advanced Mahjong (Full Ranked Match)",
       "ja": "ドマ式麻雀：半荘戦有段卓（段位変動有り）",
       "de": "Fortgeschrittenen-Mahjong (komplette Partie, gewertet)",
-      "fr": "Mahjong domien: dan seulement (partie classée)"
+      "fr": "Mahjong domien : dan seulement (partie classée)"
     },
     "type": 19,
     "level": 1,
@@ -6515,7 +6515,7 @@
       "en": "Four-player Mahjong (Full Match, Kuitan Enabled)",
       "ja": "ドマ式麻雀：半荘戦4人セット卓（クイタン有り）",
       "de": "4-Spieler-Mahjong (komplette Partie, Kuitan aktiviert)",
-      "fr": "Mahjong domien: 4 joueurs (partie avec kuitan)"
+      "fr": "Mahjong domien : 4 joueurs (partie avec kuitan)"
     },
     "type": 19,
     "level": 1,
@@ -6575,7 +6575,7 @@
       "en": "Four-player Mahjong (Full Match, Kuitan Disabled)",
       "ja": "ドマ式麻雀：半荘戦4人セット卓（クイタン無し）",
       "de": "4-Spieler-Mahjong (komplette Partie, Kuitan deaktiviert)",
-      "fr": "Mahjong domien: 4 joueurs (partie sans kuitan)"
+      "fr": "Mahjong domien : 4 joueurs (partie sans kuitan)"
     },
     "type": 19,
     "level": 1,
@@ -7055,7 +7055,7 @@
       "en": "Lock up Your Snorters",
       "ja": "はないき爆破デスマッチ",
       "de": "Explosives Schnaufen",
-      "fr": "Fungaaah! Et boum!"
+      "fr": "Fungaaah ! Et boum !"
     },
     "type": 27,
     "level": 60,
@@ -8060,7 +8060,7 @@
       "en": "Novice Mahjong (Quick Ranked Match)",
       "ja": "ドマ式麻雀：東風戦一般卓（段位変動有り）",
       "de": "Anfänger-Mahjong (schnelle Partie, gewertet)",
-      "fr": "Mahjong domien: tous rangs (partie rapide classée)"
+      "fr": "Mahjong domien : tous rangs (partie rapide classée)"
     },
     "type": 19,
     "level": 1,
@@ -8075,7 +8075,7 @@
       "en": "Advanced Mahjong (Quick Ranked Match)",
       "ja": "ドマ式麻雀：東風戦有段卓（段位変動有り）",
       "de": "Fortgeschrittenen-Mahjong (schnelle Partie, gewertet)",
-      "fr": "Mahjong domien: dan seulement (partie rapide classée)"
+      "fr": "Mahjong domien : dan seulement (partie rapide classée)"
     },
     "type": 19,
     "level": 1,
@@ -8090,7 +8090,7 @@
       "en": "Four-player Mahjong (Quick Match, Kuitan Enabled)",
       "ja": "ドマ式麻雀：東風戦4人セット卓（クイタン有り）",
       "de": "4-Spieler-Mahjong (schnelle Partie, Kuitan aktiviert)",
-      "fr": "Mahjong domien: 4 joueurs (partie rapide avec kuitan)"
+      "fr": "Mahjong domien : 4 joueurs (partie rapide avec kuitan)"
     },
     "type": 19,
     "level": 1,
@@ -8105,7 +8105,7 @@
       "en": "Four-player Mahjong (Quick Match, Kuitan Disabled)",
       "ja": "ドマ式麻雀：東風戦4人セット卓（クイタン無し）",
       "de": "4-Spieler-Mahjong (schnelle Partie, Kuitan deaktiviert)",
-      "fr": "Mahjong domien: 4 joueurs (partie rapide sans kuitan)"
+      "fr": "Mahjong domien : 4 joueurs (partie rapide sans kuitan)"
     },
     "type": 19,
     "level": 1,
@@ -11374,7 +11374,7 @@
       "chs": "不论酣睡还是无眠",
       "en": "Dreams of a New Day",
       "ja": "寝ても覚めても",
-      "de": "Neue Bande der Freundschaft",
+      "de": "Neue Bande der Freund­schaft",
       "fr": "Rêves éveillés"
     },
     "type": 7,
