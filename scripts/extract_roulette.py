@@ -16,7 +16,7 @@ FIELDS = ",".join(
         "IsGoldSaucer",
     ]
 )
-client = httpx.Client(verify=False, proxies="http://127.0.0.1:8888")
+client = httpx.Client()
 
 if __name__ == "__main__":
     data = {}
