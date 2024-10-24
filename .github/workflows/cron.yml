@@ -29,14 +29,6 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-      - name: Download opcodes
-        run: |
-          wget -O ./scripts/opcodes/FFXIVNetworkOpcodes.zip https://github.com/moewcorp/FFXIVNetworkOpcodes/archive/refs/heads/master.zip
-          cd ./scripts/opcodes
-          unzip FFXIVNetworkOpcodes.zip
-          cp -r FFXIVNetworkOpcodes-master/output .
-          rm -rf FFXIVNetworkOpcodes.zip FFXIVNetworkOpcodes-master
-
       - name: Update opcodes
         run: poetry run python scripts/update_opcode.py
 
