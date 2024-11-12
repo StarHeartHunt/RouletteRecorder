@@ -11383,5 +11383,125 @@
     "item": 0,
     "itemSync": 680,
     "memberType": 1
+  },
+  "1007": {
+    "name": {
+      "chs": "",
+      "en": "The Jade Stoa (Unreal)",
+      "ja": "幻白虎征魂戦",
+      "de": "Traumprüfung - Byakko",
+      "fr": "La Clairière de Jade (irréel)"
+    },
+    "type": 4,
+    "level": 100,
+    "levelSync": 100,
+    "item": 690,
+    "itemSync": 695,
+    "memberType": 3
+  },
+  "1008": {
+    "name": {
+      "chs": "",
+      "en": "Yuweyawata Field Station",
+      "ja": "廃地討究 ユウェヤーワータ",
+      "de": "Forschungsstation Yuweyawata",
+      "fr": "Le centre de recherche de Yuweyawata"
+    },
+    "type": 2,
+    "level": 100,
+    "levelSync": 100,
+    "item": 690,
+    "itemSync": 0,
+    "memberType": 2
+  },
+  "1009": {
+    "name": {
+      "chs": "",
+      "en": "The Warmth of Family",
+      "ja": "王の家族",
+      "de": "Ein Land, eine Familie",
+      "fr": "La famille de l'Aurarque"
+    },
+    "type": 7,
+    "level": 100,
+    "levelSync": 100,
+    "item": 0,
+    "itemSync": 730,
+    "memberType": 1
+  },
+  "1012": {
+    "name": {
+      "chs": "",
+      "en": "React to Attack Markers",
+      "ja": "マーカーが出る攻撃に対処しよう！",
+      "de": "Achte auf Attackenmarkierungen!",
+      "fr": "Réagir à des marquages"
+    },
+    "type": 20,
+    "level": 49,
+    "levelSync": 49,
+    "item": 0,
+    "itemSync": 0,
+    "memberType": 1
+  },
+  "1013": {
+    "name": {
+      "chs": "",
+      "en": "React to Floor Markers",
+      "ja": "地面に予兆が出る攻撃に対処しよう！",
+      "de": "Achte auf Geländemarkierungen!",
+      "fr": "Réagir à des indications au sol"
+    },
+    "type": 20,
+    "level": 49,
+    "levelSync": 49,
+    "item": 0,
+    "itemSync": 0,
+    "memberType": 1
+  },
+  "1014": {
+    "name": {
+      "chs": "",
+      "en": "React to Advanced Visual Indicators",
+      "ja": "さまざまな攻撃に対処しよう！",
+      "de": "Stelle dich allerlei Angriffsmanövern!",
+      "fr": "Réagir à des mécaniques variées"
+    },
+    "type": 20,
+    "level": 49,
+    "levelSync": 49,
+    "item": 0,
+    "itemSync": 0,
+    "memberType": 1
+  },
+  "1015": {
+    "name": {
+      "chs": "",
+      "en": "Jeuno: The First Walk",
+      "ja": "ジュノ：ザ・ファーストウォーク",
+      "de": "Jeuno: Die erste Etappe",
+      "fr": "Jeuno - La première perambulation"
+    },
+    "type": 5,
+    "level": 100,
+    "levelSync": 100,
+    "item": 695,
+    "itemSync": 0,
+    "memberType": 4
+  },
+  "1017": {
+    "name": {
+      "chs": "",
+      "en": "The Minstrel’s Ballad: Sphene's Burden",
+      "ja": "極エターナルクイーン討滅戦",
+      "de": "Gok Tajaal - Ewige Königin",
+      "fr": "Interphos (extrême)"
+    },
+    "type": 4,
+    "level": 100,
+    "levelSync": 100,
+    "item": 710,
+    "itemSync": 0,
+    "memberType": 3
   }
 }
