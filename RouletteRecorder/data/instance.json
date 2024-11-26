@@ -11384,6 +11384,21 @@
     "itemSync": 680,
     "memberType": 1
   },
+  "1006": {
+    "name": {
+      "chs": "",
+      "en": "Futures Rewritten (Ultimate)",
+      "ja": "絶もうひとつの未来",
+      "de": "Eine zweite Zukunft (fatal)",
+      "fr": "Avenirs réécrits (fatal)"
+    },
+    "type": 28,
+    "level": 100,
+    "levelSync": 100,
+    "item": 0,
+    "itemSync": 0,
+    "memberType": 3
+  },
   "1007": {
     "name": {
       "chs": "",
