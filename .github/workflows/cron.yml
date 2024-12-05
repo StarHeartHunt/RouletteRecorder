@@ -42,6 +42,9 @@ jobs:
       - name: Update instance data
         run: poetry run python scripts/extract_instance.py
 
+      - name: Update job data
+        run: poetry run python scripts/extract_job.py
+
       - name: Update roulette data
         run: poetry run python scripts/extract_roulette.py
 
