@@ -8,10 +8,10 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.12"
-httpx = ">=0.20.0,<1.0.0"
+httpx = ">=0.20.0,<1.0.0,!=0.28.0"
 
 [tool.poetry.group.dev.dependencies]
-ruff = "^0.7.0"
+ruff = "^0.8.0"
 isort = "^5.10.1"
 black = "^24.0.0"
 
