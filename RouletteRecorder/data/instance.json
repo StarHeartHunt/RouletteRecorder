@@ -11444,6 +11444,21 @@
     "itemSync": 730,
     "memberType": 1
   },
+  "1010": {
+    "name": {
+      "chs": "",
+      "en": "The Cloud of Darkness (Chaotic)",
+      "ja": "滅暗闇の雲激闘戦",
+      "de": "Die Wolke der Dunkelheit (chaotisch)",
+      "fr": "La Tour de Ténèbres (chaotique)"
+    },
+    "type": 37,
+    "level": 100,
+    "levelSync": 100,
+    "item": 710,
+    "itemSync": 735,
+    "memberType": 33
+  },
   "1012": {
     "name": {
       "chs": "",
@@ -11507,7 +11522,7 @@
   "1017": {
     "name": {
       "chs": "",
-      "en": "The Minstrel’s Ballad: Sphene's Burden",
+      "en": "The Minstrel's Ballad: Sphene's Burden",
       "ja": "極エターナルクイーン討滅戦",
       "de": "Gok Tajaal - Ewige Königin",
       "fr": "Interphos (extrême)"
