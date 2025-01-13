@@ -11,9 +11,9 @@ dependencies = ["httpx>=0.20.0,<1.0.0,!=0.28.0"]
 dev = ["ruff>=0.8.0"]
 
 [tool.pdm.scripts]
-dump-instance = { cmd = "python scripts/extract_instance.py" }
+dump-instance = { cmd = "python scripts/dump_instance.py" }
 dump-job = { cmd = "python scripts/dump_job.py" }
-dump-roulette = { cmd = "python scripts/extract_roulette.py" }
+dump-roulette = { cmd = "python scripts/dump_roulette.py" }
 update-opcode = { cmd = "python scripts/update_opcode.py" }
 
 [tool.ruff]
