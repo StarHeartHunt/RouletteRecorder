@@ -1,49 +1,45 @@
-[tool.poetry]
+[project]
 name = "roulette"
 version = "0.1.0"
+authors = [{ name = "StarHeartHunt", email = "starheart233@gmail.com" }]
 description = ""
-authors = ["StarHeartHunt <starheart233@gmail.com>"]
-license = "MIT"
 readme = "README.md"
+requires-python = ">=3.12"
+dependencies = ["httpx>=0.20.0,<1.0.0,!=0.28.0"]
 
-[tool.poetry.dependencies]
-python = "^3.12"
-httpx = ">=0.20.0,<1.0.0,!=0.28.0"
+[dependency-groups]
+dev = ["ruff>=0.8.0"]
 
-[tool.poetry.group.dev.dependencies]
-ruff = "^0.8.0"
-isort = "^5.10.1"
-black = "^24.0.0"
-
-[tool.black]
-line-length = 88
-include = '\.pyi?$'
-extend-exclude = '''
-'''
-
-[tool.isort]
-profile = "black"
-line_length = 88
-length_sort = true
-skip_gitignore = true
-force_sort_within_sections = true
+[tool.pdm.scripts]
+dump-instance = { cmd = "python scripts/extract_instance.py" }
+dump-job = { cmd = "python scripts/dump_job.py" }
+dump-roulette = { cmd = "python scripts/extract_roulette.py" }
+update-opcode = { cmd = "python scripts/update_opcode.py" }
 
 [tool.ruff]
 line-length = 88
+target-version = "py312"
+
+[tool.ruff.format]
+line-ending = "lf"
 
 [tool.ruff.lint]
 select = [
-    "F",     # Pyflakes
+    "F",     # pyflakes
     "W",     # pycodestyle warnings
     "E",     # pycodestyle errors
+    "I",     # isort
     "UP",    # pyupgrade
     "ASYNC", # flake8-async
     "C4",    # flake8-comprehensions
+    "DTZ",   # flake8-datetimez
     "T10",   # flake8-debugger
     "T20",   # flake8-print
     "PYI",   # flake8-pyi
     "PT",    # flake8-pytest-style
     "Q",     # flake8-quotes
+    "TC",    # flake8-type-checking
+    "TID",   # flake8-tidy-imports
     "RUF",   # Ruff-specific rules
 ]
 ignore = [
@@ -54,6 +50,12 @@ ignore = [
     "RUF003", # ambiguous-unicode-character-comment
 ]
 
+[tool.ruff.lint.isort]
+force-sort-within-sections = true
+
+[tool.ruff.lint.pyupgrade]
+keep-runtime-typing = true
+
 [tool.pyright]
 pythonPlatform = "All"
 
@@ -61,6 +63,5 @@ typeCheckingMode = "standard"
 reportShadowedImports = false
 disableBytesTypePromotions = true
 
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+[tool.setuptools]
+py-modules = []

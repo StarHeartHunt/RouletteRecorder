@@ -11,18 +11,20 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Install poetry
-        run: pipx install poetry
+      - uses: actions/checkout@v4
 
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-          cache: "poetry"
 
-      - run: poetry install
+      - name: Setup PDM
+        uses: pdm-project/setup-pdm@v4
+        with:
+          python-version: "3.12"
+          cache: true
+
+      - name: Install dependencies
+        run: pdm install
 
       - name: Setup git user
         run: |
@@ -30,7 +32,7 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
       - name: Update opcodes
-        run: poetry run python scripts/update_opcode.py
+        run: pdm update-opcode
 
       - name: Commit opcode
         id: opcode-commit
@@ -39,14 +41,8 @@ jobs:
           git diff-index --quiet HEAD || echo "DIFF=true" >> $GITHUB_OUTPUT
           git diff-index --quiet HEAD || git commit -m "chore(opcode): update opcode"
 
-      - name: Update instance data
-        run: poetry run python scripts/extract_instance.py
-
-      - name: Update job data
-        run: poetry run python scripts/extract_job.py
-
-      - name: Update roulette data
-        run: poetry run python scripts/extract_roulette.py
+      - name: Update misc data
+        run: pdm dump-instance && pdm dump-job && pdm dump-roulette
 
       - name: Commit data
         id: data-commit
