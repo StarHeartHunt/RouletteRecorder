@@ -3,6 +3,7 @@
 
 # Project
 thirdparty/
+.pdm-python
 
 ### Csharp ###
 ## Ignore Visual Studio temporary files, build results, and
