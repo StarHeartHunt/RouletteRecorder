@@ -11519,6 +11519,21 @@
     "itemSync": 0,
     "memberType": 4
   },
+  "1016": {
+    "name": {
+      "chs": "",
+      "en": "Bar the Passage",
+      "ja": "決戦、ゾーゴー永結橋",
+      "de": "Kampf an Zorgor der Weiten",
+      "fr": "Pour s'affranchir de la tyrannie, tout s'appelle vertu"
+    },
+    "type": 7,
+    "level": 100,
+    "levelSync": 100,
+    "item": 0,
+    "itemSync": 730,
+    "memberType": 1
+  },
   "1017": {
     "name": {
       "chs": "",
