@@ -20,11 +20,6 @@ def main():
     status = GLOBAL_DEST_PATH.write_text(resp.text, encoding="utf-8")
     print("[INFO]", "Global opcode written to file with ret:", status)
 
-    resp = httpx.get(CN_OPCODE_URL).raise_for_status()
-    print("[INFO]", "CN opcode downloaded")
-    status = CN_DEST_PATH.write_text(resp.text, encoding="utf-8")
-    print("[INFO]", "CN opcode written to file with ret:", status)
-
 
 if __name__ == "__main__":
     main()
