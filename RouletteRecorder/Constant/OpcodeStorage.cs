@@ -20,7 +20,7 @@ namespace RouletteRecorder.Constant
         public static Dictionary<ushort, Opcode> China = new Dictionary<ushort, Opcode>
         {
             { (ushort)FFXIVOpcodes.CN.ServerZoneIpcType.ActorControlSelf, Opcode.ActorControlSelf },
-            { (ushort)FFXIVOpcodes.CN.ServerZoneIpcType.CFNotify, Opcode.ContentFinderNotifyPop },
+            { (ushort)FFXIVOpcodes.CN.ServerZoneIpcType.ContentFinderNotifyPop, Opcode.ContentFinderNotifyPop },
             { (ushort)FFXIVOpcodes.CN.ServerZoneIpcType.InitZone, Opcode.InitZone },
         };
     }
