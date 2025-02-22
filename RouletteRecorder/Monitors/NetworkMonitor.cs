@@ -78,11 +78,10 @@ namespace RouletteRecorder.Monitors
             var source = BitConverter.ToUInt32(message, 4);
             var target = BitConverter.ToUInt32(message, 8);
             var data = message.Skip(32).ToArray();
-            // Log.Debug(LogType.Event, $"[NetworkMonitor] source:{source}, target:{target}, data:{data}");
 
             if (opcode == Opcode.InitZone)
             {
-                if (message.Length != 136)
+                if (message.Length != 144)
                 {
                     return false;
                 }
