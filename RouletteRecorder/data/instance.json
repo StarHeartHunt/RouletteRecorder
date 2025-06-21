@@ -5431,7 +5431,7 @@
   },
   "572": {
     "name": {
-      "chs": "第21关：贤者的试炼",
+      "chs": "第21关：贤人的试炼",
       "en": "Stage 21: Wise Words",
       "ja": "第21節：賢人ルイゾワの試練",
       "de": "Stufe 21: Die Leveilleurs",
@@ -11551,7 +11551,7 @@
   },
   "1019": {
     "name": {
-      "chs": "",
+      "chs": "阿卡狄亚登天斗技场 中量级1",
       "en": "AAC Cruiserweight M1",
       "ja": "至天の座アルカディア：クルーザー級1",
       "de": "Arkadion - Schwergewicht R1",
@@ -11566,7 +11566,7 @@
   },
   "1020": {
     "name": {
-      "chs": "",
+      "chs": "阿卡狄亚零式登天斗技场 中量级1",
       "en": "AAC Cruiserweight M1 (Savage)",
       "ja": "至天の座アルカディア零式：クルーザー級1",
       "de": "Arkadion - Schwergewicht R1 (episch)",
@@ -11581,7 +11581,7 @@
   },
   "1021": {
     "name": {
-      "chs": "",
+      "chs": "阿卡狄亚登天斗技场 中量级2",
       "en": "AAC Cruiserweight M2",
       "ja": "至天の座アルカディア：クルーザー級2",
       "de": "Arkadion - Schwergewicht R2",
@@ -11596,7 +11596,7 @@
   },
   "1022": {
     "name": {
-      "chs": "",
+      "chs": "阿卡狄亚零式登天斗技场 中量级2",
       "en": "AAC Cruiserweight M2 (Savage)",
       "ja": "至天の座アルカディア零式：クルーザー級2",
       "de": "Arkadion - Schwergewicht R2 (episch)",
@@ -11611,7 +11611,7 @@
   },
   "1023": {
     "name": {
-      "chs": "",
+      "chs": "阿卡狄亚登天斗技场 中量级3",
       "en": "AAC Cruiserweight M3",
       "ja": "至天の座アルカディア：クルーザー級3",
       "de": "Arkadion - Schwergewicht R3",
@@ -11626,7 +11626,7 @@
   },
   "1024": {
     "name": {
-      "chs": "",
+      "chs": "阿卡狄亚零式登天斗技场 中量级3",
       "en": "AAC Cruiserweight M3 (Savage)",
       "ja": "至天の座アルカディア零式：クルーザー級3",
       "de": "Arkadion - Schwergewicht R3 (episch)",
@@ -11641,7 +11641,7 @@
   },
   "1025": {
     "name": {
-      "chs": "",
+      "chs": "阿卡狄亚登天斗技场 中量级4",
       "en": "AAC Cruiserweight M4",
       "ja": "至天の座アルカディア：クルーザー級4",
       "de": "Arkadion - Schwergewicht R4",
@@ -11656,7 +11656,7 @@
   },
   "1026": {
     "name": {
-      "chs": "",
+      "chs": "阿卡狄亚零式登天斗技场 中量级4",
       "en": "AAC Cruiserweight M4 (Savage)",
       "ja": "至天の座アルカディア零式：クルーザー級4",
       "de": "Arkadion - Schwergewicht R4 (episch)",
@@ -11671,7 +11671,7 @@
   },
   "1027": {
     "name": {
-      "chs": "",
+      "chs": "王城古迹永护塔底",
       "en": "the Underkeep",
       "ja": "王城旧跡 アンダーキープ",
       "de": "Unterfried-Ruinen",
@@ -11686,7 +11686,7 @@
   },
   "1029": {
     "name": {
-      "chs": "",
+      "chs": "朱雀幻巧战",
       "en": "Hells' Kier (Unreal)",
       "ja": "幻朱雀征魂戦",
       "de": "Traumprüfung - Suzaku",
@@ -11701,7 +11701,7 @@
   },
   "1030": {
     "name": {
-      "chs": "",
+      "chs": "泽莲尼娅歼灭战",
       "en": "Recollection",
       "ja": "ゼレニア討滅戦",
       "de": "Zel Tajaal - Zelenia",
@@ -11716,7 +11716,7 @@
   },
   "1031": {
     "name": {
-      "chs": "",
+      "chs": "泽莲尼娅歼殛战",
       "en": "Recollection (Extreme)",
       "ja": "極ゼレニア討滅戦",
       "de": "Gok Tajaal - Zelenia",
@@ -11727,21 +11727,6 @@
     "levelSync": 100,
     "item": 730,
     "itemSync": 0,
-    "memberType": 3
-  },
-  "1007": {
-    "name": {
-      "chs": "白虎幻巧战",
-      "en": "",
-      "ja": "",
-      "de": "",
-      "fr": ""
-    },
-    "type": 4,
-    "level": 100,
-    "levelSync": 100,
-    "item": 690,
-    "itemSync": 695,
     "memberType": 3
   }
 }
