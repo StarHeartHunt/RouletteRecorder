@@ -15,6 +15,7 @@ dump-instance = { cmd = "python scripts/dump_instance.py" }
 dump-job = { cmd = "python scripts/dump_job.py" }
 dump-roulette = { cmd = "python scripts/dump_roulette.py" }
 update-opcode = { cmd = "python scripts/update_opcode.py" }
+update-opcode-cn = { cmd = "python scripts/update_opcode_cn.py" }
 
 [tool.ruff]
 line-length = 88
