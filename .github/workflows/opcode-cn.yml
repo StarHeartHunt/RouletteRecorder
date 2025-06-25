@@ -1,4 +1,4 @@
-name: Update data and opcode
+name: Update CN Opcode
 
 on:
   workflow_dispatch:
