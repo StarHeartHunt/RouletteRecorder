@@ -11,11 +11,11 @@ dependencies = ["httpx>=0.20.0,<1.0.0,!=0.28.0"]
 dev = ["ruff>=0.8.0"]
 
 [tool.pdm.scripts]
-dump-instance = { cmd = "python scripts/dump_instance.py" }
-dump-job = { cmd = "python scripts/dump_job.py" }
-dump-roulette = { cmd = "python scripts/dump_roulette.py" }
-update-opcode = { cmd = "python scripts/update_opcode.py" }
-update-opcode-cn = { cmd = "python scripts/update_opcode_cn.py" }
+instance = { cmd = "python scripts/dump_instance.py" }
+job = { cmd = "python scripts/dump_job.py" }
+roulette = { cmd = "python scripts/dump_roulette.py" }
+opcode = { cmd = "python scripts/update_opcode.py" }
+opcode-cn = { cmd = "python scripts/update_opcode_cn.py" }
 
 [tool.ruff]
 line-length = 88

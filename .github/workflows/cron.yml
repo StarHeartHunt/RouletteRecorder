@@ -32,7 +32,7 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
       - name: Update opcodes
-        run: pdm update-opcode
+        run: pdm opcode
 
       - name: Commit opcode
         id: opcode-commit
@@ -42,7 +42,7 @@ jobs:
           git diff-index --quiet HEAD || git commit -m "chore(opcode): update opcode"
 
       - name: Update misc data
-        run: pdm dump-instance && pdm dump-job && pdm dump-roulette
+        run: pdm instance && pdm job && pdm roulette
 
       - name: Commit data
         id: data-commit
