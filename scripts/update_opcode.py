@@ -1,17 +1,5 @@
-from pathlib import Path
-
+from consts import GLOBAL_DEST_PATH, GLOBAL_OPCODE_URL
 import httpx
-
-FILE_PATH = Path(__file__).parent
-
-OPCODES_PATH = FILE_PATH / "opcodes" / "output"
-
-DEST_PATH = FILE_PATH.parent / "RouletteRecorder" / "Constant"
-GLOBAL_DEST_PATH = DEST_PATH / "OpcodeGlobal.cs"
-CN_DEST_PATH = DEST_PATH / "OpcodeChina.cs"
-
-GLOBAL_OPCODE_URL = "https://raw.githubusercontent.com/karashiiro/FFXIVOpcodes/refs/heads/master/FFXIVOpcodes/Ipcs.cs"
-CN_OPCODE_URL = "https://raw.githubusercontent.com/karashiiro/FFXIVOpcodes/refs/heads/master/FFXIVOpcodes/Ipcs_cn.cs"
 
 
 def main():
