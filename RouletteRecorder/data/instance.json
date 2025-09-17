@@ -11686,7 +11686,7 @@
   },
   "1028": {
     "name": {
-      "chs": "",
+      "chs": "永久幽界中央终端",
       "en": "the Meso Terminal",
       "ja": "永久幽界 メインターミナル",
       "de": "Das Meso-System",
@@ -11731,7 +11731,7 @@
   },
   "1042": {
     "name": {
-      "chs": "",
+      "chs": "青龙幻巧战",
       "en": "the Wreath of Snakes (Unreal)",
       "ja": "幻青龍征魂戦",
       "de": "Traumprüfung - Seiryu",
@@ -11746,7 +11746,7 @@
   },
   "1046": {
     "name": {
-      "chs": "",
+      "chs": "海岸斗场",
       "en": "the Bayside Battleground",
       "ja": "ベイサイド・バトルグラウンド",
       "de": "Der Küstenkampf",
@@ -11761,7 +11761,7 @@
   },
   "1047": {
     "name": {
-      "chs": "",
+      "chs": "海岸斗场",
       "en": "the Bayside Battleground",
       "ja": "ベイサイド・バトルグラウンド",
       "de": "Der Küstenkampf",
@@ -11776,7 +11776,7 @@
   },
   "1048": {
     "name": {
-      "chs": "",
+      "chs": "海岸斗场",
       "en": "the Bayside Battleground",
       "ja": "ベイサイド・バトルグラウンド",
       "de": "Der Küstenkampf",
@@ -11791,7 +11791,7 @@
   },
   "1049": {
     "name": {
-      "chs": "",
+      "chs": "海岸斗场",
       "en": "the Bayside Battleground",
       "ja": "ベイサイド・バトルグラウンド",
       "de": "Der Küstenkampf",
@@ -11806,7 +11806,7 @@
   },
   "1050": {
     "name": {
-      "chs": "",
+      "chs": "海岸斗场",
       "en": "the Bayside Battleground",
       "ja": "ベイサイド・バトルグラウンド",
       "de": "Der Küstenkampf",
@@ -11821,7 +11821,7 @@
   },
   "1051": {
     "name": {
-      "chs": "",
+      "chs": "海岸斗场",
       "en": "the Bayside Battleground",
       "ja": "ベイサイド・バトルグラウンド",
       "de": "Der Küstenkampf",
@@ -11836,7 +11836,7 @@
   },
   "1052": {
     "name": {
-      "chs": "",
+      "chs": "海岸斗场",
       "en": "the Bayside Battleground",
       "ja": "ベイサイド・バトルグラウンド",
       "de": "Der Küstenkampf",
@@ -11851,7 +11851,7 @@
   },
   "1053": {
     "name": {
-      "chs": "",
+      "chs": "海岸斗场",
       "en": "the Bayside Battleground",
       "ja": "ベイサイド・バトルグラウンド",
       "de": "Der Küstenkampf",
@@ -11866,7 +11866,7 @@
   },
   "1054": {
     "name": {
-      "chs": "",
+      "chs": "海岸斗场",
       "en": "the Bayside Battleground",
       "ja": "ベイサイド・バトルグラウンド",
       "de": "Der Küstenkampf",
@@ -11881,7 +11881,7 @@
   },
   "1055": {
     "name": {
-      "chs": "",
+      "chs": "海岸斗场",
       "en": "the Bayside Battleground",
       "ja": "ベイサイド・バトルグラウンド",
       "de": "Der Küstenkampf",
@@ -11896,7 +11896,7 @@
   },
   "1056": {
     "name": {
-      "chs": "",
+      "chs": "海岸斗场",
       "en": "the Bayside Battleground",
       "ja": "ベイサイド・バトルグラウンド",
       "de": "Der Küstenkampf",
@@ -11911,7 +11911,7 @@
   },
   "1057": {
     "name": {
-      "chs": "",
+      "chs": "水晶冲突（海岸斗场：自定赛）",
       "en": "Crystalline Conflict (Custom Match - The Bayside Battleground)",
       "ja": "クリスタルコンフリクト(ベイサイド・バトルグラウンド：カスタムマッチ)",
       "de": "Crystalline Conflict: Der Küstenkampf (Schaukampf)",
@@ -11926,7 +11926,7 @@
   },
   "1058": {
     "name": {
-      "chs": "",
+      "chs": "桑多利亚：第二巡行",
       "en": "San d'Oria: The Second Walk",
       "ja": "サンドリア：ザ・セカンドウォーク",
       "de": "San d'Oria: Die zweite Etappe",
@@ -11941,7 +11941,7 @@
   },
   "1060": {
     "name": {
-      "chs": "",
+      "chs": "巡梦金库",
       "en": "Vault Oneiron",
       "ja": "宝物庫 ボルト・オネイロン",
       "de": "Tresor Oneiron",
@@ -11956,7 +11956,7 @@
   },
   "1061": {
     "name": {
-      "chs": "",
+      "chs": "永远之暗歼灭战",
       "en": "the Ageless Necropolis",
       "ja": "永遠の闇討滅戦",
       "de": "Zel Tajaal - Das Ewige Dunkel",
@@ -11971,7 +11971,7 @@
   },
   "1062": {
     "name": {
-      "chs": "",
+      "chs": "永远之暗悲惶歼灭战",
       "en": "the Minstrel's Ballad: Necron's Embrace",
       "ja": "極永遠の闇討滅戦",
       "de": "Gok Tajaal - Das Ewige Dunkel",
@@ -11982,21 +11982,6 @@
     "levelSync": 100,
     "item": 740,
     "itemSync": 0,
-    "memberType": 3
-  },
-  "1029": {
-    "name": {
-      "chs": "朱雀幻巧战",
-      "en": "",
-      "ja": "",
-      "de": "",
-      "fr": ""
-    },
-    "type": 4,
-    "level": 100,
-    "levelSync": 100,
-    "item": 690,
-    "itemSync": 695,
     "memberType": 3
   }
 }
