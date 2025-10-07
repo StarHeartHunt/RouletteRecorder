@@ -11729,6 +11729,156 @@
     "itemSync": 0,
     "memberType": 3
   },
+  "1032": {
+    "name": {
+      "chs": "",
+      "en": "Pilgrim's Traverse (Stones 1-10)",
+      "ja": "ピルグリム・トラバース 第1～10巡礼路",
+      "de": "Pilgers Pfad (Ebenen 1-10)",
+      "fr": "Le Sanctuaire des pèlerins (zones 1-10)"
+    },
+    "type": 21,
+    "level": 91,
+    "levelSync": 0,
+    "item": 0,
+    "itemSync": 0,
+    "memberType": 11
+  },
+  "1033": {
+    "name": {
+      "chs": "",
+      "en": "Pilgrim's Traverse (Stones 11-20)",
+      "ja": "ピルグリム・トラバース 第11～20巡礼路",
+      "de": "Pilgers Pfad (Ebenen 11-20)",
+      "fr": "Le Sanctuaire des pèlerins (zones 11-20)"
+    },
+    "type": 21,
+    "level": 91,
+    "levelSync": 0,
+    "item": 0,
+    "itemSync": 0,
+    "memberType": 11
+  },
+  "1034": {
+    "name": {
+      "chs": "",
+      "en": "Pilgrim's Traverse (Stones 21-30)",
+      "ja": "ピルグリム・トラバース 第21～30巡礼路",
+      "de": "Pilgers Pfad (Ebenen 21-30)",
+      "fr": "Le Sanctuaire des pèlerins (zones 21-30)"
+    },
+    "type": 21,
+    "level": 91,
+    "levelSync": 0,
+    "item": 0,
+    "itemSync": 0,
+    "memberType": 11
+  },
+  "1035": {
+    "name": {
+      "chs": "",
+      "en": "Pilgrim's Traverse (Stones 31-40)",
+      "ja": "ピルグリム・トラバース 第31～40巡礼路",
+      "de": "Pilgers Pfad (Ebenen 31-40)",
+      "fr": "Le Sanctuaire des pèlerins (zones 31-40)"
+    },
+    "type": 21,
+    "level": 91,
+    "levelSync": 0,
+    "item": 0,
+    "itemSync": 0,
+    "memberType": 11
+  },
+  "1036": {
+    "name": {
+      "chs": "",
+      "en": "Pilgrim's Traverse (Stones 41-50)",
+      "ja": "ピルグリム・トラバース 第41～50巡礼路",
+      "de": "Pilgers Pfad (Ebenen 41-50)",
+      "fr": "Le Sanctuaire des pèlerins (zones 41-50)"
+    },
+    "type": 21,
+    "level": 91,
+    "levelSync": 0,
+    "item": 0,
+    "itemSync": 0,
+    "memberType": 11
+  },
+  "1037": {
+    "name": {
+      "chs": "",
+      "en": "Pilgrim's Traverse (Stones 51-60)",
+      "ja": "ピルグリム・トラバース 第51～60巡礼路",
+      "de": "Pilgers Pfad (Ebenen 51-60)",
+      "fr": "Le Sanctuaire des pèlerins (zones 51-60)"
+    },
+    "type": 21,
+    "level": 91,
+    "levelSync": 0,
+    "item": 0,
+    "itemSync": 0,
+    "memberType": 11
+  },
+  "1038": {
+    "name": {
+      "chs": "",
+      "en": "Pilgrim's Traverse (Stones 61-70)",
+      "ja": "ピルグリム・トラバース 第61～70巡礼路",
+      "de": "Pilgers Pfad (Ebenen 61-70)",
+      "fr": "Le Sanctuaire des pèlerins (zones 61-70)"
+    },
+    "type": 21,
+    "level": 91,
+    "levelSync": 0,
+    "item": 0,
+    "itemSync": 0,
+    "memberType": 11
+  },
+  "1039": {
+    "name": {
+      "chs": "",
+      "en": "Pilgrim's Traverse (Stones 71-80)",
+      "ja": "ピルグリム・トラバース 第71～80巡礼路",
+      "de": "Pilgers Pfad (Ebenen 71-80)",
+      "fr": "Le Sanctuaire des pèlerins (zones 71-80)"
+    },
+    "type": 21,
+    "level": 91,
+    "levelSync": 0,
+    "item": 0,
+    "itemSync": 0,
+    "memberType": 11
+  },
+  "1040": {
+    "name": {
+      "chs": "",
+      "en": "Pilgrim's Traverse (Stones 81-90)",
+      "ja": "ピルグリム・トラバース 第81～90巡礼路",
+      "de": "Pilgers Pfad (Ebenen 81-90)",
+      "fr": "Le Sanctuaire des pèlerins (zones 81-90)"
+    },
+    "type": 21,
+    "level": 91,
+    "levelSync": 0,
+    "item": 0,
+    "itemSync": 0,
+    "memberType": 11
+  },
+  "1041": {
+    "name": {
+      "chs": "",
+      "en": "Pilgrim's Traverse (Stones 91-100)",
+      "ja": "ピルグリム・トラバース 第91～100巡礼路",
+      "de": "Pilgers Pfad (Ebenen 91-100)",
+      "fr": "Le Sanctuaire des pèlerins (zones 91-100)"
+    },
+    "type": 21,
+    "level": 91,
+    "levelSync": 0,
+    "item": 0,
+    "itemSync": 0,
+    "memberType": 11
+  },
   "1042": {
     "name": {
       "chs": "青龙幻巧战",
@@ -11742,6 +11892,36 @@
     "levelSync": 100,
     "item": 690,
     "itemSync": 695,
+    "memberType": 3
+  },
+  "1043": {
+    "name": {
+      "chs": "",
+      "en": "the Windward Wilds",
+      "ja": "護竜アルシュベルド狩猟戦",
+      "de": "Jagd auf Wächter-Arkveld",
+      "fr": "Chasse à l'Arkveld Gardien"
+    },
+    "type": 4,
+    "level": 100,
+    "levelSync": 100,
+    "item": 725,
+    "itemSync": 0,
+    "memberType": 3
+  },
+  "1044": {
+    "name": {
+      "chs": "",
+      "en": "the Windward Wilds (Extreme)",
+      "ja": "極護竜アルシュベルド狩猟戦",
+      "de": "Jagd auf Wächter-Arkveld (schwer)",
+      "fr": "Chasse à l'Arkveld Gardien (extrême)"
+    },
+    "type": 4,
+    "level": 100,
+    "levelSync": 100,
+    "item": 740,
+    "itemSync": 0,
     "memberType": 3
   },
   "1046": {
@@ -11983,5 +12163,35 @@
     "item": 740,
     "itemSync": 0,
     "memberType": 3
+  },
+  "1063": {
+    "name": {
+      "chs": "",
+      "en": "the Final Verse (Quantum)",
+      "ja": "詩想エミネントグリーフ討滅戦",
+      "de": "Eminente Trauer (variabel)",
+      "fr": "Le Verset final (quantique)"
+    },
+    "type": 39,
+    "level": 100,
+    "levelSync": 0,
+    "item": 0,
+    "itemSync": 0,
+    "memberType": 11
+  },
+  "1065": {
+    "name": {
+      "chs": "",
+      "en": "the Final Verse",
+      "ja": "エミネントグリーフ討滅戦",
+      "de": "Eminente Trauer",
+      "fr": "Le Verset final"
+    },
+    "type": 39,
+    "level": 91,
+    "levelSync": 0,
+    "item": 0,
+    "itemSync": 0,
+    "memberType": 11
   }
 }
