@@ -1,5 +1,9 @@
 # RouletteRecorder
 
+FF14 日随记录器，支持导随。
+
+卫月版本见[RouletteRecorder.Dalamud](https://github.com/StarHeartHunt/RouletteRecorder.Dalamud)，适合不想更新 ACT 插件的懒人使用。
+
 [NGA 原帖](https://nga.178.com/read.php?tid=34277964)
 
 ## 下载方式
