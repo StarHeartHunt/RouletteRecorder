@@ -22,7 +22,7 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
       - name: Update opcodes
-        run: python scripts/update_opcode_cn.py
+        run: uv run --no-sync scripts/update_opcode_cn.py
 
       - name: Commit opcode
         id: opcode-commit

@@ -10,13 +10,6 @@ dependencies = ["httpx>=0.20.0,<1.0.0,!=0.28.0"]
 [dependency-groups]
 dev = ["ruff>=0.8.0"]
 
-[tool.pdm.scripts]
-instance = { cmd = "python scripts/dump_instance.py" }
-job = { cmd = "python scripts/dump_job.py" }
-roulette = { cmd = "python scripts/dump_roulette.py" }
-opcode = { cmd = "python scripts/update_opcode.py" }
-opcode-cn = { cmd = "python scripts/update_opcode_cn.py" }
-
 [tool.ruff]
 line-length = 88
 target-version = "py312"
@@ -63,6 +56,3 @@ pythonPlatform = "All"
 typeCheckingMode = "standard"
 reportShadowedImports = false
 disableBytesTypePromotions = true
-
-[tool.setuptools]
-py-modules = []
