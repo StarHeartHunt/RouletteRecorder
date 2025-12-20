@@ -3,7 +3,6 @@ using RouletteRecorder.DAO;
 using RouletteRecorder.Utils;
 using System;
 using System.Linq;
-using System.Threading.Tasks;
 
 namespace RouletteRecorder.Monitors
 {
@@ -81,7 +80,7 @@ namespace RouletteRecorder.Monitors
 
             if (opcode == Opcode.InitZone)
             {
-                if (message.Length != 144)
+                if (message.Length != 168)
                 {
                     return false;
                 }
@@ -127,7 +126,7 @@ namespace RouletteRecorder.Monitors
                         Roulette.Instance.IsCompleted = true;
                         if (Roulette.Instance.RouletteType != null)
                         {
-                            Task.Run(() => Roulette.Instance.Finish());
+                            Roulette.Instance.Finish();
                         }
                     }
                 }
@@ -142,7 +141,7 @@ namespace RouletteRecorder.Monitors
                 var instance = roulette == 0 ? BitConverter.ToUInt16(data, 0x1c) : 0;
                 Log.Info(LogType.State, $"[NetworkMonitor] Detected ContentFinderNotifyPop: roulette:{roulette}, instance:{instance}");
 
-                if (roulette == 0) return false;
+                if (roulette == 0) return true;
 
                 Roulette.Init();
                 if (Roulette.Instance != null)
