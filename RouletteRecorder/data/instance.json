@@ -12209,6 +12209,21 @@
     "itemSync": 0,
     "memberType": 11
   },
+  "1066": {
+    "name": {
+      "chs": "",
+      "en": "The Merchant's Tale",
+      "ja": "ヴァリアントダンジョン 商客物語",
+      "de": "Des Händlers Liebesmüh",
+      "fr": "Contes du Camelot - Donjon à embranchements"
+    },
+    "type": 30,
+    "level": 90,
+    "levelSync": 100,
+    "item": 0,
+    "itemSync": 765,
+    "memberType": 11
+  },
   "1067": {
     "name": {
       "chs": "月读幻巧战",
@@ -12374,6 +12389,21 @@
     "itemSync": 0,
     "memberType": 3
   },
+  "1079": {
+    "name": {
+      "chs": "",
+      "en": "Another Merchant's Tale",
+      "ja": "アナザーダンジョン 異聞商客物語",
+      "de": "Des Händlers kuriose Liebesmüh",
+      "fr": "Contes du Camelot annexes - Donjon alternatif"
+    },
+    "type": 30,
+    "level": 100,
+    "levelSync": 100,
+    "item": 770,
+    "itemSync": 795,
+    "memberType": 31
+  },
   "1080": {
     "name": {
       "chs": "沃刻其特（演习战）",
@@ -12433,6 +12463,21 @@
     "item": 0,
     "itemSync": 0,
     "memberType": 1
+  },
+  "1084": {
+    "name": {
+      "chs": "",
+      "en": "The Merchant's Tale (Advanced)",
+      "ja": "アドバンスド・ヴァリアントダンジョン 商客物語",
+      "de": "Des Händlers Liebesmüh (fortgeschritten)",
+      "fr": "Contes du Camelot - Donjon à embranchements (avancé)"
+    },
+    "type": 30,
+    "level": 100,
+    "levelSync": 100,
+    "item": 760,
+    "itemSync": 785,
+    "memberType": 34
   },
   "1085": {
     "name": {
