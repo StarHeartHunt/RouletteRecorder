@@ -12226,7 +12226,7 @@
   },
   "1067": {
     "name": {
-      "chs": "月读幻巧战",
+      "chs": "",
       "en": "Tsukuyomi's Pain (Unreal)",
       "ja": "幻ツクヨミ討滅戦",
       "de": "Traumprüfung - Tsukuyomi",
@@ -12493,5 +12493,305 @@
     "item": 0,
     "itemSync": 735,
     "memberType": 1
+  },
+  "1011": {
+    "name": {
+      "chs": "军工要地克吕提俄斯魔导工厂",
+      "en": "",
+      "ja": "",
+      "de": "",
+      "fr": ""
+    },
+    "type": 2,
+    "level": 100,
+    "levelSync": 100,
+    "item": 750,
+    "itemSync": 0,
+    "memberType": 2
+  },
+  "1098": {
+    "name": {
+      "chs": "出海垂钓",
+      "en": "",
+      "ja": "",
+      "de": "",
+      "fr": ""
+    },
+    "type": 16,
+    "level": 1,
+    "levelSync": 0,
+    "item": 0,
+    "itemSync": 0,
+    "memberType": 25
+  },
+  "1099": {
+    "name": {
+      "chs": "出海垂钓",
+      "en": "",
+      "ja": "",
+      "de": "",
+      "fr": ""
+    },
+    "type": 16,
+    "level": 1,
+    "levelSync": 0,
+    "item": 0,
+    "itemSync": 0,
+    "memberType": 25
+  },
+  "1100": {
+    "name": {
+      "chs": "出海垂钓",
+      "en": "",
+      "ja": "",
+      "de": "",
+      "fr": ""
+    },
+    "type": 16,
+    "level": 1,
+    "levelSync": 0,
+    "item": 0,
+    "itemSync": 0,
+    "memberType": 25
+  },
+  "1102": {
+    "name": {
+      "chs": "休兵书库",
+      "en": "",
+      "ja": "",
+      "de": "",
+      "fr": ""
+    },
+    "type": 6,
+    "level": 30,
+    "levelSync": 0,
+    "item": 0,
+    "itemSync": 0,
+    "memberType": 29
+  },
+  "1103": {
+    "name": {
+      "chs": "休兵书库",
+      "en": "",
+      "ja": "",
+      "de": "",
+      "fr": ""
+    },
+    "type": 6,
+    "level": 30,
+    "levelSync": 0,
+    "item": 0,
+    "itemSync": 0,
+    "memberType": 29
+  },
+  "1104": {
+    "name": {
+      "chs": "休兵书库",
+      "en": "",
+      "ja": "",
+      "de": "",
+      "fr": ""
+    },
+    "type": 6,
+    "level": 30,
+    "levelSync": 0,
+    "item": 0,
+    "itemSync": 0,
+    "memberType": 29
+  },
+  "1105": {
+    "name": {
+      "chs": "休兵书库",
+      "en": "",
+      "ja": "",
+      "de": "",
+      "fr": ""
+    },
+    "type": 6,
+    "level": 30,
+    "levelSync": 0,
+    "item": 0,
+    "itemSync": 0,
+    "memberType": 29
+  },
+  "1106": {
+    "name": {
+      "chs": "休兵书库",
+      "en": "",
+      "ja": "",
+      "de": "",
+      "fr": ""
+    },
+    "type": 6,
+    "level": 30,
+    "levelSync": 0,
+    "item": 0,
+    "itemSync": 0,
+    "memberType": 29
+  },
+  "1107": {
+    "name": {
+      "chs": "休兵书库",
+      "en": "",
+      "ja": "",
+      "de": "",
+      "fr": ""
+    },
+    "type": 6,
+    "level": 30,
+    "levelSync": 0,
+    "item": 0,
+    "itemSync": 0,
+    "memberType": 29
+  },
+  "1108": {
+    "name": {
+      "chs": "休兵书库",
+      "en": "",
+      "ja": "",
+      "de": "",
+      "fr": ""
+    },
+    "type": 6,
+    "level": 30,
+    "levelSync": 0,
+    "item": 0,
+    "itemSync": 0,
+    "memberType": 29
+  },
+  "1109": {
+    "name": {
+      "chs": "休兵书库",
+      "en": "",
+      "ja": "",
+      "de": "",
+      "fr": ""
+    },
+    "type": 6,
+    "level": 30,
+    "levelSync": 0,
+    "item": 0,
+    "itemSync": 0,
+    "memberType": 29
+  },
+  "1110": {
+    "name": {
+      "chs": "休兵书库",
+      "en": "",
+      "ja": "",
+      "de": "",
+      "fr": ""
+    },
+    "type": 6,
+    "level": 30,
+    "levelSync": 0,
+    "item": 0,
+    "itemSync": 0,
+    "memberType": 29
+  },
+  "1111": {
+    "name": {
+      "chs": "休兵书库",
+      "en": "",
+      "ja": "",
+      "de": "",
+      "fr": ""
+    },
+    "type": 6,
+    "level": 30,
+    "levelSync": 0,
+    "item": 0,
+    "itemSync": 0,
+    "memberType": 29
+  },
+  "1112": {
+    "name": {
+      "chs": "休兵书库",
+      "en": "",
+      "ja": "",
+      "de": "",
+      "fr": ""
+    },
+    "type": 6,
+    "level": 30,
+    "levelSync": 0,
+    "item": 0,
+    "itemSync": 0,
+    "memberType": 29
+  },
+  "1113": {
+    "name": {
+      "chs": "水晶冲突（休兵书库：自定赛）",
+      "en": "",
+      "ja": "",
+      "de": "",
+      "fr": ""
+    },
+    "type": 6,
+    "level": 30,
+    "levelSync": 0,
+    "item": 0,
+    "itemSync": 0,
+    "memberType": 30
+  },
+  "1115": {
+    "name": {
+      "chs": "恩欧歼灭战",
+      "en": "",
+      "ja": "",
+      "de": "",
+      "fr": ""
+    },
+    "type": 4,
+    "level": 100,
+    "levelSync": 100,
+    "item": 755,
+    "itemSync": 0,
+    "memberType": 3
+  },
+  "1116": {
+    "name": {
+      "chs": "恩欧歼殛战",
+      "en": "",
+      "ja": "",
+      "de": "",
+      "fr": ""
+    },
+    "type": 4,
+    "level": 100,
+    "levelSync": 100,
+    "item": 770,
+    "itemSync": 0,
+    "memberType": 3
+  },
+  "1117": {
+    "name": {
+      "chs": "温达斯：第三巡行",
+      "en": "",
+      "ja": "",
+      "de": "",
+      "fr": ""
+    },
+    "type": 5,
+    "level": 100,
+    "levelSync": 100,
+    "item": 755,
+    "itemSync": 0,
+    "memberType": 4
+  },
+  "1118": {
+    "name": {
+      "chs": "神龙幻巧战",
+      "en": "",
+      "ja": "",
+      "de": "",
+      "fr": ""
+    },
+    "type": 4,
+    "level": 100,
+    "levelSync": 100,
+    "item": 690,
+    "itemSync": 695,
+    "memberType": 3
   }
 }
