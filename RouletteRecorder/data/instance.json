@@ -11444,6 +11444,21 @@
     "itemSync": 735,
     "memberType": 33
   },
+  "1011": {
+    "name": {
+      "chs": "军工要地克吕提俄斯魔导工厂",
+      "en": "the Clyteum",
+      "ja": "妖異侵攻 クルティウス魔導工廠",
+      "de": "Das Klyteum",
+      "fr": "Le Clyteum"
+    },
+    "type": 2,
+    "level": 100,
+    "levelSync": 100,
+    "item": 750,
+    "itemSync": 0,
+    "memberType": 2
+  },
   "1012": {
     "name": {
       "chs": "处理显示标记的攻击",
@@ -12224,21 +12239,6 @@
     "itemSync": 765,
     "memberType": 11
   },
-  "1067": {
-    "name": {
-      "chs": "",
-      "en": "Tsukuyomi's Pain (Unreal)",
-      "ja": "幻ツクヨミ討滅戦",
-      "de": "Traumprüfung - Tsukuyomi",
-      "fr": "Castrum Fluminis (irréel)"
-    },
-    "type": 4,
-    "level": 100,
-    "levelSync": 100,
-    "item": 690,
-    "itemSync": 695,
-    "memberType": 3
-  },
   "1068": {
     "name": {
       "chs": "阿卡狄亚登天斗技场 重量级1",
@@ -12494,28 +12494,13 @@
     "itemSync": 735,
     "memberType": 1
   },
-  "1011": {
-    "name": {
-      "chs": "军工要地克吕提俄斯魔导工厂",
-      "en": "",
-      "ja": "",
-      "de": "",
-      "fr": ""
-    },
-    "type": 2,
-    "level": 100,
-    "levelSync": 100,
-    "item": 750,
-    "itemSync": 0,
-    "memberType": 2
-  },
   "1098": {
     "name": {
       "chs": "出海垂钓",
-      "en": "",
-      "ja": "",
-      "de": "",
-      "fr": ""
+      "en": "Ocean Fishing",
+      "ja": "オーシャンフィッシング",
+      "de": "Auf großer Fahrt",
+      "fr": "Pêche en mer"
     },
     "type": 16,
     "level": 1,
@@ -12527,10 +12512,10 @@
   "1099": {
     "name": {
       "chs": "出海垂钓",
-      "en": "",
-      "ja": "",
-      "de": "",
-      "fr": ""
+      "en": "Ocean Fishing",
+      "ja": "オーシャンフィッシング",
+      "de": "Auf großer Fahrt",
+      "fr": "Pêche en mer"
     },
     "type": 16,
     "level": 1,
@@ -12542,10 +12527,10 @@
   "1100": {
     "name": {
       "chs": "出海垂钓",
-      "en": "",
-      "ja": "",
-      "de": "",
-      "fr": ""
+      "en": "Ocean Fishing",
+      "ja": "オーシャンフィッシング",
+      "de": "Auf großer Fahrt",
+      "fr": "Pêche en mer"
     },
     "type": 16,
     "level": 1,
@@ -12557,10 +12542,10 @@
   "1102": {
     "name": {
       "chs": "休兵书库",
-      "en": "",
-      "ja": "",
-      "de": "",
-      "fr": ""
+      "en": "Archeia Harmonias",
+      "ja": "ハルモニア戦争図書館",
+      "de": "Archeia Harmonias",
+      "fr": "La Bibliothèque Harmonia"
     },
     "type": 6,
     "level": 30,
@@ -12572,10 +12557,10 @@
   "1103": {
     "name": {
       "chs": "休兵书库",
-      "en": "",
-      "ja": "",
-      "de": "",
-      "fr": ""
+      "en": "Archeia Harmonias",
+      "ja": "ハルモニア戦争図書館",
+      "de": "Archeia Harmonias",
+      "fr": "La Bibliothèque Harmonia"
     },
     "type": 6,
     "level": 30,
@@ -12587,10 +12572,10 @@
   "1104": {
     "name": {
       "chs": "休兵书库",
-      "en": "",
-      "ja": "",
-      "de": "",
-      "fr": ""
+      "en": "Archeia Harmonias",
+      "ja": "ハルモニア戦争図書館",
+      "de": "Archeia Harmonias",
+      "fr": "La Bibliothèque Harmonia"
     },
     "type": 6,
     "level": 30,
@@ -12602,10 +12587,10 @@
   "1105": {
     "name": {
       "chs": "休兵书库",
-      "en": "",
-      "ja": "",
-      "de": "",
-      "fr": ""
+      "en": "Archeia Harmonias",
+      "ja": "ハルモニア戦争図書館",
+      "de": "Archeia Harmonias",
+      "fr": "La Bibliothèque Harmonia"
     },
     "type": 6,
     "level": 30,
@@ -12617,10 +12602,10 @@
   "1106": {
     "name": {
       "chs": "休兵书库",
-      "en": "",
-      "ja": "",
-      "de": "",
-      "fr": ""
+      "en": "Archeia Harmonias",
+      "ja": "ハルモニア戦争図書館",
+      "de": "Archeia Harmonias",
+      "fr": "La Bibliothèque Harmonia"
     },
     "type": 6,
     "level": 30,
@@ -12632,10 +12617,10 @@
   "1107": {
     "name": {
       "chs": "休兵书库",
-      "en": "",
-      "ja": "",
-      "de": "",
-      "fr": ""
+      "en": "Archeia Harmonias",
+      "ja": "ハルモニア戦争図書館",
+      "de": "Archeia Harmonias",
+      "fr": "La Bibliothèque Harmonia"
     },
     "type": 6,
     "level": 30,
@@ -12647,10 +12632,10 @@
   "1108": {
     "name": {
       "chs": "休兵书库",
-      "en": "",
-      "ja": "",
-      "de": "",
-      "fr": ""
+      "en": "Archeia Harmonias",
+      "ja": "ハルモニア戦争図書館",
+      "de": "Archeia Harmonias",
+      "fr": "La Bibliothèque Harmonia"
     },
     "type": 6,
     "level": 30,
@@ -12662,10 +12647,10 @@
   "1109": {
     "name": {
       "chs": "休兵书库",
-      "en": "",
-      "ja": "",
-      "de": "",
-      "fr": ""
+      "en": "Archeia Harmonias",
+      "ja": "ハルモニア戦争図書館",
+      "de": "Archeia Harmonias",
+      "fr": "La Bibliothèque Harmonia"
     },
     "type": 6,
     "level": 30,
@@ -12677,10 +12662,10 @@
   "1110": {
     "name": {
       "chs": "休兵书库",
-      "en": "",
-      "ja": "",
-      "de": "",
-      "fr": ""
+      "en": "Archeia Harmonias",
+      "ja": "ハルモニア戦争図書館",
+      "de": "Archeia Harmonias",
+      "fr": "La Bibliothèque Harmonia"
     },
     "type": 6,
     "level": 30,
@@ -12692,10 +12677,10 @@
   "1111": {
     "name": {
       "chs": "休兵书库",
-      "en": "",
-      "ja": "",
-      "de": "",
-      "fr": ""
+      "en": "Archeia Harmonias",
+      "ja": "ハルモニア戦争図書館",
+      "de": "Archeia Harmonias",
+      "fr": "La Bibliothèque Harmonia"
     },
     "type": 6,
     "level": 30,
@@ -12707,10 +12692,10 @@
   "1112": {
     "name": {
       "chs": "休兵书库",
-      "en": "",
-      "ja": "",
-      "de": "",
-      "fr": ""
+      "en": "Archeia Harmonias",
+      "ja": "ハルモニア戦争図書館",
+      "de": "Archeia Harmonias",
+      "fr": "La Bibliothèque Harmonia"
     },
     "type": 6,
     "level": 30,
@@ -12722,10 +12707,10 @@
   "1113": {
     "name": {
       "chs": "水晶冲突（休兵书库：自定赛）",
-      "en": "",
-      "ja": "",
-      "de": "",
-      "fr": ""
+      "en": "Crystalline Conflict (Custom Match - Archeia Harmonias)",
+      "ja": "クリスタルコンフリクト(ハルモニア戦争図書館：カスタムマッチ)",
+      "de": "Crystalline Conflict: Archeia Harmonias (Schaukampf)",
+      "fr": "Crys. Conflict (partie perso. - La Bibliothèque Harmonia)"
     },
     "type": 6,
     "level": 30,
@@ -12737,10 +12722,10 @@
   "1115": {
     "name": {
       "chs": "恩欧歼灭战",
-      "en": "",
-      "ja": "",
-      "de": "",
-      "fr": ""
+      "en": "the Unmaking",
+      "ja": "エヌオー討滅戦",
+      "de": "Zel Tajaal - Enuo",
+      "fr": "L'Anticréation"
     },
     "type": 4,
     "level": 100,
@@ -12752,10 +12737,10 @@
   "1116": {
     "name": {
       "chs": "恩欧歼殛战",
-      "en": "",
-      "ja": "",
-      "de": "",
-      "fr": ""
+      "en": "the Unmaking (Extreme)",
+      "ja": "極エヌオー討滅戦",
+      "de": "Gok Tajaal - Enuo",
+      "fr": "L'Anticréation (extrême)"
     },
     "type": 4,
     "level": 100,
@@ -12767,10 +12752,10 @@
   "1117": {
     "name": {
       "chs": "温达斯：第三巡行",
-      "en": "",
-      "ja": "",
-      "de": "",
-      "fr": ""
+      "en": "Windurst: The Third Walk",
+      "ja": "ウィンダス：ザ・サードウォーク",
+      "de": "Windurst: Die dritte Etappe",
+      "fr": "Windurst - La troisième perambulation"
     },
     "type": 5,
     "level": 100,
@@ -12782,10 +12767,10 @@
   "1118": {
     "name": {
       "chs": "神龙幻巧战",
-      "en": "",
-      "ja": "",
-      "de": "",
-      "fr": ""
+      "en": "Shinryu's Domain (Unreal)",
+      "ja": "幻神龍討滅戦",
+      "de": "Traumprüfung - Heldenlied von Shinryu",
+      "fr": "Le domaine de Shinryu (irréel)"
     },
     "type": 4,
     "level": 100,
