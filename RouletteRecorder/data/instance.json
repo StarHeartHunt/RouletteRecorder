@@ -12853,5 +12853,95 @@
     "item": 690,
     "itemSync": 695,
     "memberType": 3
+  },
+  "1088": {
+    "name": {
+      "chs": "斗兽奇弈 第一盘",
+      "en": "",
+      "ja": "",
+      "de": "",
+      "fr": ""
+    },
+    "type": 40,
+    "level": 30,
+    "levelSync": 30,
+    "item": 0,
+    "itemSync": 0,
+    "memberType": 1
+  },
+  "1089": {
+    "name": {
+      "chs": "斗兽奇弈 第二盘",
+      "en": "",
+      "ja": "",
+      "de": "",
+      "fr": ""
+    },
+    "type": 40,
+    "level": 40,
+    "levelSync": 40,
+    "item": 0,
+    "itemSync": 0,
+    "memberType": 1
+  },
+  "1090": {
+    "name": {
+      "chs": "斗兽奇弈 第三盘",
+      "en": "",
+      "ja": "",
+      "de": "",
+      "fr": ""
+    },
+    "type": 40,
+    "level": 50,
+    "levelSync": 50,
+    "item": 0,
+    "itemSync": 100,
+    "memberType": 1
+  },
+  "1091": {
+    "name": {
+      "chs": "斗兽奇弈高段 第一盘",
+      "en": "",
+      "ja": "",
+      "de": "",
+      "fr": ""
+    },
+    "type": 40,
+    "level": 50,
+    "levelSync": 50,
+    "item": 0,
+    "itemSync": 120,
+    "memberType": 1
+  },
+  "1092": {
+    "name": {
+      "chs": "斗兽奇弈高段 第二盘",
+      "en": "",
+      "ja": "",
+      "de": "",
+      "fr": ""
+    },
+    "type": 40,
+    "level": 50,
+    "levelSync": 50,
+    "item": 0,
+    "itemSync": 135,
+    "memberType": 1
+  },
+  "1101": {
+    "name": {
+      "chs": "寒风来临之时",
+      "en": "",
+      "ja": "",
+      "de": "",
+      "fr": ""
+    },
+    "type": 7,
+    "level": 100,
+    "levelSync": 100,
+    "item": 0,
+    "itemSync": 755,
+    "memberType": 1
   }
 }
