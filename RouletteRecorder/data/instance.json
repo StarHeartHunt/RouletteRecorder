@@ -12520,7 +12520,7 @@
     "type": 40,
     "level": 30,
     "levelSync": 30,
-    "item": 0,
+    "item": 25,
     "itemSync": 0,
     "memberType": 1
   },
@@ -12535,7 +12535,7 @@
     "type": 40,
     "level": 40,
     "levelSync": 40,
-    "item": 0,
+    "item": 35,
     "itemSync": 0,
     "memberType": 1
   },
@@ -12550,7 +12550,7 @@
     "type": 40,
     "level": 50,
     "levelSync": 50,
-    "item": 0,
+    "item": 82,
     "itemSync": 100,
     "memberType": 1
   },
@@ -12565,7 +12565,7 @@
     "type": 40,
     "level": 50,
     "levelSync": 50,
-    "item": 0,
+    "item": 82,
     "itemSync": 120,
     "memberType": 1
   },
@@ -12580,7 +12580,7 @@
     "type": 40,
     "level": 50,
     "levelSync": 50,
-    "item": 0,
+    "item": 82,
     "itemSync": 135,
     "memberType": 1
   },
